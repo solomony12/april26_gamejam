@@ -28,7 +28,7 @@ public class ComputerWindow : MonoBehaviour
 
     public void CloseWindow()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 }
