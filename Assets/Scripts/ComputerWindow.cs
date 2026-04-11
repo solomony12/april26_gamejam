@@ -15,6 +15,7 @@ public class ComputerWindow : MonoBehaviour
 
     public void DragWindow(BaseEventData data)
     {
+        transform.SetAsLastSibling();
         PointerEventData pointerData = data as PointerEventData;
         transform.position = new Vector2(
             Mathf.Clamp(transform.position.x + pointerData.delta.x,
