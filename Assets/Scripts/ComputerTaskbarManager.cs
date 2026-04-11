@@ -31,6 +31,7 @@ public class ComputerTaskbarManager : MonoBehaviour
         if (windowIndex == -1) return;
         Debug.Log("Opening " + windowName);
         if (windows[windowIndex].windowObject.activeSelf) return;
+        windows[windowIndex].windowObject.transform.SetAsLastSibling();
         windows[windowIndex].windowObject.SetActive(true);
     }
 
