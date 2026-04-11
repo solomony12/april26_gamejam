@@ -19,9 +19,13 @@ public class SilhouetteManager : MonoBehaviour
     [SerializeField] private float moveDuration = 7f;
 
     private Coroutine moveCoroutine;
+    private bool visualAllowed = true;
 
     public void ShowMonitorSilhouette(bool isMimic)
     {
+        if (!visualAllowed)
+            return;
+
         monitorRenderer.sprite = monitorSprite;
         monitorRenderer.enabled = true;
     }
@@ -56,6 +60,16 @@ public class SilhouetteManager : MonoBehaviour
 
         windowRenderer.transform.position = windowEndPoint.position;
         windowRenderer.enabled = false;
+    }
+
+    public void SetVisualAllowed(bool allowed)
+    {
+        visualAllowed = allowed;
+        if (!allowed)
+        {
+            monitorRenderer.enabled = false;
+            windowRenderer.enabled = false;
+        }
     }
 
 }

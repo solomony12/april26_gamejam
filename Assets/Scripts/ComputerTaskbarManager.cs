@@ -6,6 +6,7 @@ public class ComputerTaskbarManager : MonoBehaviour
 {
     [SerializeField] string[] windowNames;
     [SerializeField] GameObject[] windowObjects;
+    [SerializeField] private ViewManager viewManager;
     private List<(string windowName, GameObject windowObject)> windows = new();
 
     private void Start()
@@ -20,6 +21,7 @@ public class ComputerTaskbarManager : MonoBehaviour
     public void powerButton()
     {
         Debug.Log("Power Off");
+        viewManager.SetDeskView();
         return;
     }
 
