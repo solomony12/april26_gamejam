@@ -6,6 +6,7 @@ public class CallManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private GameObject questionButtons;
 
     private CharacterData currentChar;
     private bool isMimic;
@@ -14,8 +15,13 @@ public class CallManager : MonoBehaviour
     private int maxQuestions = 3;
 
     private Coroutine currentCoroutine;
+    private Coroutine talkingCoroutine;
     private bool callActive = false;
 
+    private void Start()
+    {
+        questionButtons.SetActive(false);
+    }
     public void StartCall(CharacterData character, bool mimic)
     {
         currentChar = character;
@@ -23,10 +29,10 @@ public class CallManager : MonoBehaviour
         questionCount = 0;
         callActive = true;
 
-
         string greeting = isMimic ? currentChar.visitor.mimicGreeting : currentChar.visitor.genuineGreeting;
-        ShowTemporaryText(greeting, 3f);
-
+        if(talkingCoroutine != null) 
+            StopCoroutine(talkingCoroutine);
+        talkingCoroutine = StartCoroutine(ShowDialogueText(greeting));
     }
 
     // questions could change
@@ -35,7 +41,9 @@ public class CallManager : MonoBehaviour
         if (!CanAskQuestion()) return;
 
         string response = GetNameResponse();
-        ShowTemporaryText(response, 3f);
+        if (talkingCoroutine != null)
+            StopCoroutine(talkingCoroutine);
+        talkingCoroutine = StartCoroutine(ShowDialogueText(response));
     }
 
     public void AskCallSign()
@@ -43,7 +51,9 @@ public class CallManager : MonoBehaviour
         if (!CanAskQuestion()) return;
 
         string response = GetCallSignResponse();
-        ShowTemporaryText(response, 3f);
+        if (talkingCoroutine != null)
+            StopCoroutine(talkingCoroutine);
+        talkingCoroutine = StartCoroutine(ShowDialogueText(response));
     }
 
     public void AskBirthday()
@@ -51,7 +61,9 @@ public class CallManager : MonoBehaviour
         if (!CanAskQuestion()) return;
 
         string response = GetBirthdayResponse();
-        ShowTemporaryText(response, 3f);
+        if (talkingCoroutine != null)
+            StopCoroutine(talkingCoroutine);
+        talkingCoroutine =StartCoroutine(ShowDialogueText(response));
     }
 
     public void Accept()
@@ -63,6 +75,13 @@ public class CallManager : MonoBehaviour
         }
 
         callActive = false;
+        questionButtons.SetActive(false);
+        if (talkingCoroutine != null)
+        {
+            StopCoroutine(talkingCoroutine);
+            talkingCoroutine = null;
+        }
+
         gameManager.SubmitDecision(true);
     }
 
@@ -75,6 +94,13 @@ public class CallManager : MonoBehaviour
         }
 
         callActive = false;
+        questionButtons.SetActive(false);
+        if (talkingCoroutine != null)
+        {
+            StopCoroutine(talkingCoroutine);
+            talkingCoroutine = null;
+        }
+            
         gameManager.SubmitDecision(false);
     }
 
@@ -101,6 +127,7 @@ public class CallManager : MonoBehaviour
         if (currentCoroutine != null)
             StopCoroutine(currentCoroutine);
 
+        questionButtons.SetActive(false);
         currentCoroutine = StartCoroutine(ShowTextCoroutine(text, duration));
     }
 
@@ -112,6 +139,13 @@ public class CallManager : MonoBehaviour
         yield return new WaitForSeconds(duration);
 
         dialogueText.text = "...";
+    }
+
+    private IEnumerator ShowDialogueText(string dialogue)
+    {
+        ShowTemporaryText(dialogue, 3f);
+        yield return new WaitForSeconds(3f);
+        questionButtons.SetActive(true);
     }
 
     public void ShowSystemText(string text, float duration)
