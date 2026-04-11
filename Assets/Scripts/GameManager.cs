@@ -88,11 +88,29 @@ public class GameManager : MonoBehaviour
         if (accepted)
         {
             playerWasCorrect = !isActualMimic;
+            if (playerWasCorrect)
+            {
+                // accepted real person
+            }
+
+            else
+            {
+                // accepted mimic
+            }
 
         }
         else
         {
             playerWasCorrect = isActualMimic;
+            if (playerWasCorrect)
+            {
+                // rejected mimic
+            }
+
+            else
+            {
+                // rejected real person
+            }
         }
 
         if(playerWasCorrect)
@@ -100,10 +118,10 @@ public class GameManager : MonoBehaviour
         else
             wrongCount++;
 
-        StartCoroutine(HandleDecisionResult(playerWasCorrect));
+        StartCoroutine(HandleDecisionResult(playerWasCorrect, accepted));
     }
 
-    private IEnumerator HandleDecisionResult(bool playerWasCorrect)
+    private IEnumerator HandleDecisionResult(bool playerWasCorrect, bool accepted)
     {
         CharacterData currentCharacter = characters[currentIndex];
         bool isActualMimic = mimicFlags[currentIndex];
@@ -113,10 +131,14 @@ public class GameManager : MonoBehaviour
         callManager.ShowSystemText(resultText, 2f);
         yield return new WaitForSeconds(2.2f);
 
-        string closingLine = isActualMimic ? currentCharacter.visitor.mimicClosing : currentCharacter.visitor.genuineClosing;
+        if (accepted)
+        {
+            string closingLine = isActualMimic ? currentCharacter.visitor.mimicClosing : currentCharacter.visitor.genuineClosing;
+            callManager.ShowSystemText(closingLine, 2f);
+        }
 
-        callManager.ShowSystemText(closingLine, 2f);
-        yield return new WaitForSeconds(2.2f);
+        float randomWaitSec = Random.Range(2f, 4f);    //could change to 5f, 15f in actual launch
+        yield return new WaitForSeconds(randomWaitSec);
 
 
         AdvanceToNextCall();
