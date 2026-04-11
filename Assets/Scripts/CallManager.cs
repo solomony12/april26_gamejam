@@ -22,7 +22,10 @@ public class CallManager : MonoBehaviour
         questionCount = 0;
         callActive = true;
 
-        ShowTemporaryText("Call connected...", 2f);
+
+        string greeting = isMimic ? currentChar.visitor.mimicGreeting : currentChar.visitor.genuineGreeting;
+        ShowTemporaryText(greeting, 3f);
+
     }
 
     public void AskName()
@@ -59,10 +62,10 @@ public class CallManager : MonoBehaviour
 
         callActive = false;
 
-        if (isMimic)
-            ShowTemporaryText("Wrong. That caller was a mimic.", 3f);
-        else
-            ShowTemporaryText("Correct. The caller was real.", 3f);
+        string resultText = isMimic ? "Wrong. That caller was a mimic." : "Correct. The caller was real.";
+        ShowTemporaryText(resultText, 3f);
+
+        StartCoroutine(ShowClosingAfterDelay());
     }
 
     public void Reject()
@@ -75,10 +78,10 @@ public class CallManager : MonoBehaviour
 
         callActive = false;
 
-        if (isMimic)
-            ShowTemporaryText("Correct. It was the mimic.", 3f);
-        else
-            ShowTemporaryText("Wrong. That caller was real.", 3f);
+        string resultText = isMimic ? "Correct. The caller was real." : "Wrong. That caller was a mimic.";
+        ShowTemporaryText(resultText, 3f);
+
+        StartCoroutine(ShowClosingAfterDelay());
     }
 
     private bool CanAskQuestion()
@@ -115,6 +118,15 @@ public class CallManager : MonoBehaviour
         yield return new WaitForSeconds(duration);
 
         dialogueText.text = "...";
+    }
+
+    private IEnumerator ShowClosingAfterDelay()
+    {
+        yield return new WaitForSeconds(2.5f);
+
+        string closing = isMimic ? currentChar.visitor.mimicClosing : currentChar.visitor.genuineClosing;
+
+        ShowTemporaryText(closing, 2f);
     }
 
     private string GetNameResponse()

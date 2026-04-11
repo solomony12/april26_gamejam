@@ -18,6 +18,10 @@ MonoBehaviour:
   birthMonth: 4
   birthDay: 10
   personality: Determined
+  genuineGreeting: Hello G
+  mimicGreeting: Hello M
+  genuineClosing: Bye G
+  mimicClosing: Bye M
   genuineNameResponse: My name is Adam G
   genuineCallSignResponse: Apple G
   genuineBirthdayResponse: 1997 4 10 G

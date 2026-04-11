@@ -11,6 +11,14 @@ public class Visitor : ScriptableObject
     public int birthDay;
     public string personality;
 
+    [Header("Greeting")]
+    [TextArea] public string genuineGreeting;
+    [TextArea] public string mimicGreeting;
+
+    [Header("Closing")]
+    [TextArea] public string genuineClosing;
+    [TextArea] public string mimicClosing;
+
     [Header("Genuine Responses")]
     [TextArea] public string genuineNameResponse;
     [TextArea] public string genuineCallSignResponse;
