@@ -1,15 +1,19 @@
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private bool gameEnded = false;
-
     [SerializeField] Visitor[] visitors;
     [SerializeField] private CallManager callManager;
 
     private CharacterData[] characters;
     private int currentIndex = 0;
+    private int currentCount = 0;
+    private int correctCount = 0;
+    private int wrongCount = 0;
+
+    private bool gameEnded = false;
 
     [SerializeField] private int mimicCount = 2;
     private bool[] mimicFlags;
@@ -17,6 +21,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         CreateCharacters();
+        ShuffleCharacters();
         AssignMimics();
         StartCurrentCall();
     }
@@ -27,6 +32,17 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < visitors.Count(); i++)
         {
             characters[i] = new CharacterData(visitors[i]);
+        }
+    }
+
+    private void ShuffleCharacters()
+    {
+        for(int i=0; i<characters.Length; i++)
+        {
+            int randomIndex = Random.Range(0, characters.Length);
+            CharacterData temp = characters[i];
+            characters[i] = characters[randomIndex];
+            characters[randomIndex] = temp;
         }
     }
 
@@ -50,6 +66,9 @@ public class GameManager : MonoBehaviour
 
     public void StartCurrentCall()
     {
+        if (gameEnded || currentCount >= characters.Length)
+            return;
+
         CharacterData selectedCharacter = characters[currentIndex];
         bool isMimic = mimicFlags[currentIndex];
 
@@ -58,21 +77,91 @@ public class GameManager : MonoBehaviour
         callManager.StartCall(selectedCharacter, isMimic);
     }
 
-    public void NextCall()
+    public void SubmitDecision(bool accepted)
     {
         if (gameEnded)
             return;
 
-        currentIndex++;
+        bool isActualMimic = mimicFlags[currentIndex];
+        bool playerWasCorrect = false;
 
-        if (currentIndex >= characters.Length)
+        if (accepted)
         {
-            gameEnded = true;
-            Debug.Log("No more callers.");
-            // TODO: show end screen / score / game over
+            playerWasCorrect = !isActualMimic;
+            if (playerWasCorrect)
+            {
+                // accepted real person
+            }
+
+            else
+            {
+                // accepted mimic
+            }
+
+        }
+        else
+        {
+            playerWasCorrect = isActualMimic;
+            if (playerWasCorrect)
+            {
+                // rejected mimic
+            }
+
+            else
+            {
+                // rejected real person
+            }
+        }
+
+        if(playerWasCorrect)
+            correctCount++;
+        else
+            wrongCount++;
+
+        StartCoroutine(HandleDecisionResult(playerWasCorrect, accepted));
+    }
+
+    private IEnumerator HandleDecisionResult(bool playerWasCorrect, bool accepted)
+    {
+        CharacterData currentCharacter = characters[currentIndex];
+        bool isActualMimic = mimicFlags[currentIndex];
+
+        string resultText = playerWasCorrect ? "correct" : "wrong";
+
+        callManager.ShowSystemText(resultText, 2f);
+        yield return new WaitForSeconds(2.2f);
+
+        if (accepted)
+        {
+            string closingLine = isActualMimic ? currentCharacter.visitor.mimicClosing : currentCharacter.visitor.genuineClosing;
+            callManager.ShowSystemText(closingLine, 2f);
+        }
+
+        float randomWaitSec = Random.Range(2f, 4f);    //could change to 5f, 15f in actual launch
+        yield return new WaitForSeconds(randomWaitSec);
+
+
+        AdvanceToNextCall();
+    }
+
+    public void AdvanceToNextCall()
+    {
+        currentIndex++;
+        if(currentIndex >= characters.Length)
+        {
+            EndGame();
             return;
         }
 
         StartCurrentCall();
+    }
+
+    private void EndGame()
+    {
+        gameEnded = true;
+        string summary = "Shift Complete\nCorrect: " + correctCount + "\nWrong: " + wrongCount;
+        callManager.ShowSystemText(summary, 5f);
+
+        Debug.Log(summary);
     }
 }

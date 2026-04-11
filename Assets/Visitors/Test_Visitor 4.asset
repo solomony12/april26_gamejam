@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb33d7c7324e44940b40ebf5e474aab1, type: 3}
+  m_Name: Test_Visitor 4
+  m_EditorClassIdentifier: Assembly-CSharp::Visitor
+  visitorName: E
+  callSign: EE
+  birthYear: 2004
+  birthMonth: 5
+  birthDay: 5
+  personality: Determined
+  genuineGreeting: hello g5
+  mimicGreeting: hello m5
+  genuineClosing: bye g5
+  mimicClosing: bye m5
+  genuineNameResponse: My name is E
+  genuineCallSignResponse: EE G
+  genuineBirthdayResponse: 5 5 G
+  mimicNameResponse: wrong name E
+  mimicCallSignResponse: wrong sign EE
+  mimicBirthdayResponse: wrong birth 55
