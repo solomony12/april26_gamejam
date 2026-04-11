@@ -295,6 +295,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7796266804716040982}
   - {fileID: 2371667432173486412}
   - {fileID: 2816246806891618799}
   - {fileID: 8075897222956824477}
@@ -765,6 +766,7 @@ MonoBehaviour:
   - {fileID: 6678494029657434427}
   - {fileID: 4561572787870894544}
   - {fileID: 3173737460169548653}
+  viewManager: {fileID: 0}
 --- !u!1 &7877935481129913608
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +899,81 @@ MonoBehaviour:
           m_StringArgument: Mail
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &8144988599664109263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7796266804716040982}
+  - component: {fileID: 757902552292307034}
+  - component: {fileID: 8094813789709405983}
+  m_Layer: 5
+  m_Name: Wallpaper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7796266804716040982
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144988599664109263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7284637437572088957}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &757902552292307034
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144988599664109263}
+  m_CullTransparentMesh: 1
+--- !u!114 &8094813789709405983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144988599664109263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2054469787366046854, guid: b41c50507484241468446cb6f2382b87, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8334394979763085092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,6 +1539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ComputerWindowBrowser
       objectReference: {fileID: 0}
+    - target: {fileID: 5831434191731215741, guid: f9fe9492da5ee404381e8b4d4723f268, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6375575981707643920, guid: f9fe9492da5ee404381e8b4d4723f268, type: 3}
       propertyPath: m_text
       value: Search Doodle...
@@ -1589,6 +1670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b2787ab6619237449149ab592180798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  homeWebsite: {fileID: 0}
   unknownWebsite: {fileID: 0}
   websites: []
 --- !u!1001 &6673011281222295550
