@@ -120,24 +120,24 @@ public class CallManager : MonoBehaviour
     private string GetNameResponse()
     {
         if (!isMimic)
-            return "Name Placeholder";
+            return currentChar.visitor.genuineNameResponse;
 
-        return "Mimic Name Placeholder";
+        return currentChar.visitor.mimicNameResponse;
     }
 
     private string GetCallSignResponse()
     {
         if (!isMimic)
-            return "Call Sign Placeholder";
+            return currentChar.visitor.genuineCallSignResponse;
 
-        return "Call Sign Mimic Placeholder";
+        return currentChar.visitor.mimicCallSignResponse;
     }
 
     private string GetBirthdayResponse()
     {
         if (!isMimic)
-            return "Birdthday Placeholder";
+            return currentChar.visitor.genuineBirthdayResponse;
 
-        return "Mimic Birthday Placeholder";
+        return currentChar.visitor.mimicBirthdayResponse;
     }
 }

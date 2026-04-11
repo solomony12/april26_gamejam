@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb33d7c7324e44940b40ebf5e474aab1, type: 3}
-  m_Name: Test_Visitor
+  m_Name: Test_Visitor 2
   m_EditorClassIdentifier: Assembly-CSharp::Visitor
-  visitorName: Adam
-  callSign: Apple
-  birthYear: 1997
+  visitorName: Cathy
+  callSign: Candy
+  birthYear: 2001
   birthMonth: 4
-  birthDay: 10
+  birthDay: 4
   personality: Determined
-  genuineNameResponse: My name is Adam G
-  genuineCallSignResponse: Apple G
-  genuineBirthdayResponse: 1997 4 10 G
-  mimicNameResponse: wrong name Adam
-  mimicCallSignResponse: wrong sign apple
-  mimicBirthdayResponse: wrong birth 410
+  genuineNameResponse: My name is Cathy
+  genuineCallSignResponse: C G
+  genuineBirthdayResponse: 4 4 G
+  mimicNameResponse: wrong name Cathy
+  mimicCallSignResponse: wrong sign C
+  mimicBirthdayResponse: wrong birth 2 2

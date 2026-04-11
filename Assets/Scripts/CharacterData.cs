@@ -2,17 +2,13 @@
 public class CharacterData
 {
     public Visitor visitor;
-    string name;
-    string callSign;
-    string birthday;
-    string personality;
+    public string Name => visitor.visitorName;
+    public string CallSign => visitor.callSign;
+    public string Birthday => visitor.birthYear + "/" + visitor.birthMonth + "/" + visitor.birthDay;
+    public string Personality => visitor.personality;
 
     public CharacterData(Visitor visitor)
     {
         this.visitor = visitor;
-        name = visitor.visitorName;
-        callSign = visitor.callSign;
-        birthday = visitor.birthYear + "/" + visitor.birthMonth + "/" + visitor.birthDay;
-        personality = visitor.personality;
     }
 }
