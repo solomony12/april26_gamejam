@@ -289,6 +289,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 64f5a570a0c8fb0478d28b0996506ed1, type: 2}
   - {fileID: 11400000, guid: 01b5a99731005474387ba6487e4615cc, type: 2}
   - {fileID: 11400000, guid: 1b64cd156f53aee4f92cf43294d1034c, type: 2}
+  - {fileID: 11400000, guid: f6965bab19ec4054c91522d9146bf03e, type: 2}
+  - {fileID: 11400000, guid: e15155df1e11ed3448c2ae7423d0d8d2, type: 2}
+  - {fileID: 11400000, guid: b43142703ef42934c90fa3e122def02c, type: 2}
   callManager: {fileID: 1922594314}
   mimicCount: 2
 --- !u!4 &132635289
