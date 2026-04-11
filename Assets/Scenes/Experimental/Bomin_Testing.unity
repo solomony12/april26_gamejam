@@ -290,6 +290,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 01b5a99731005474387ba6487e4615cc, type: 2}
   - {fileID: 11400000, guid: 1b64cd156f53aee4f92cf43294d1034c, type: 2}
   callManager: {fileID: 1922594314}
+  mimicCount: 1
 --- !u!4 &132635289
 Transform:
   m_ObjectHideFlags: 0
