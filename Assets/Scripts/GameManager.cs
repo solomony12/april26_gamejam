@@ -1,7 +1,9 @@
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] Visitor[] visitors;
     [SerializeField] private CallManager callManager;
 
     private CharacterData[] characters;
@@ -9,36 +11,17 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        CreateTestCharacters();
+        CreateCharacters();
         StartCurrentCall();
     }
 
-    private void CreateTestCharacters()
+    private void CreateCharacters()
     {
-        characters = new CharacterData[]
+        characters = new CharacterData[visitors.Count()];
+        for (int i = 0; i < visitors.Count(); i++)
         {
-            new CharacterData
-            {
-                name = "Mina Park",
-                callSign = "Echo-3",
-                birthday = "March 14",
-                personality = "Impatient"
-            },
-            new CharacterData
-            {
-                name = "Daniel Cho",
-                callSign = "Fox-2",
-                birthday = "July 8",
-                personality = "Polite"
-            },
-            new CharacterData
-            {
-                name = "Alex Kim",
-                callSign = "Raven-5",
-                birthday = "November 2",
-                personality = "Nervous"
-            }
-        };
+            characters[i] = new CharacterData(visitors[i]);
+        }
     }
 
     public void StartCurrentCall()

@@ -120,81 +120,24 @@ public class CallManager : MonoBehaviour
     private string GetNameResponse()
     {
         if (!isMimic)
-            return GetGenuineNameResponse();
+            return "Name Placeholder";
 
-        return GetMimicNameResponse();
+        return "Mimic Name Placeholder";
     }
 
     private string GetCallSignResponse()
     {
         if (!isMimic)
-            return GetGenuineCallSignResponse();
+            return "Call Sign Placeholder";
 
-        return GetMimicCallSignResponse();
+        return "Call Sign Mimic Placeholder";
     }
 
     private string GetBirthdayResponse()
     {
         if (!isMimic)
-            return GetGenuineBirthdayResponse();
+            return "Birdthday Placeholder";
 
-        return GetMimicBirthdayResponse();
-    }
-
-    private string GetGenuineNameResponse()
-    {
-        if (currentChar.personality == "Impatient")
-            return currentChar.name + ". Next question.";
-
-        if (currentChar.personality == "Polite")
-            return "My name is " + currentChar.name + ".";
-
-        if (currentChar.personality == "Nervous")
-            return "Uh... " + currentChar.name + ".";
-
-        return currentChar.name;
-    }
-
-    private string GetMimicNameResponse()
-    {
-        return "Hello. My name is " + currentChar.name + ".";
-    }
-
-    private string GetGenuineCallSignResponse()
-    {
-        if (currentChar.personality == "Impatient")
-            return currentChar.callSign + ". Can we move on?";
-
-        if (currentChar.personality == "Polite")
-            return "My call sign is " + currentChar.callSign + ".";
-
-        if (currentChar.personality == "Nervous")
-            return "It is... " + currentChar.callSign + ".";
-
-        return currentChar.callSign;
-    }
-
-    private string GetMimicCallSignResponse()
-    {
-        return "My call sign is " + currentChar.callSign + ".";
-    }
-
-    private string GetGenuineBirthdayResponse()
-    {
-        if (currentChar.personality == "Impatient")
-            return currentChar.birthday + ". Anything else?";
-
-        if (currentChar.personality == "Polite")
-            return "My birthday is " + currentChar.birthday + ".";
-
-        if (currentChar.personality == "Nervous")
-            return "I was born on " + currentChar.birthday + ".";
-
-        return currentChar.birthday;
-    }
-
-    private string GetMimicBirthdayResponse()
-    {
-        return "My birthday is " + currentChar.birthday + ".";
+        return "Mimic Birthday Placeholder";
     }
 }
