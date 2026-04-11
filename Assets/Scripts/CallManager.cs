@@ -66,6 +66,26 @@ public class CallManager : MonoBehaviour
         talkingCoroutine =StartCoroutine(ShowDialogueText(response));
     }
 
+    public void RejectWithDialogue()
+    {
+        if (!callActive)
+        {
+            ShowTemporaryText("No active call.", 2f);
+            return;
+        }
+
+        callActive = false;
+        questionButtons.SetActive(false);
+        if(talkingCoroutine != null)
+        {
+            StopCoroutine(talkingCoroutine);
+            talkingCoroutine = null;
+        }
+
+        talkingCoroutine = StartCoroutine(RejectSequence());
+
+    }
+
     public void Accept()
     {
         if (!callActive)
@@ -85,25 +105,16 @@ public class CallManager : MonoBehaviour
         gameManager.SubmitDecision(true);
     }
 
-    public void Reject()
+    private IEnumerator RejectSequence()
     {
-        if (!callActive)
-        {
-            ShowTemporaryText("No active call.", 2f);
-            return;
-        }
+        string rejectLine = isMimic ? currentChar.visitor.mimicRejected : currentChar.visitor.genuineRejected;
 
-        callActive = false;
-        questionButtons.SetActive(false);
-        if (talkingCoroutine != null)
-        {
-            StopCoroutine(talkingCoroutine);
-            talkingCoroutine = null;
-        }
-            
+        ShowTemporaryText(rejectLine, 2f);
+        yield return new WaitForSeconds(2.2f);
+
         gameManager.SubmitDecision(false);
+        talkingCoroutine = null;
     }
-
     private bool CanAskQuestion()
     {
         if (!callActive || currentChar == null)

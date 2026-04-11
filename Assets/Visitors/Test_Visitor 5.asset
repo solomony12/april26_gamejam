@@ -22,6 +22,8 @@ MonoBehaviour:
   mimicGreeting: hello m6
   genuineClosing: bye g6
   mimicClosing: bye m6
+  genuineRejected: You Serious? F
+  mimicRejected: Too bad F
   genuineNameResponse: My name is F
   genuineCallSignResponse: FF G
   genuineBirthdayResponse: 6 6 G

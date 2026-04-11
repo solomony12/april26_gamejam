@@ -22,6 +22,8 @@ MonoBehaviour:
   mimicGreeting: Hello M
   genuineClosing: Bye G
   mimicClosing: Bye M
+  genuineRejected: You Serious? A
+  mimicRejected: Too bad A
   genuineNameResponse: My name is Adam G
   genuineCallSignResponse: Apple G
   genuineBirthdayResponse: 1997 4 10 G

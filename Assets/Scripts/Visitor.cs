@@ -15,9 +15,13 @@ public class Visitor : ScriptableObject
     [TextArea] public string genuineGreeting;
     [TextArea] public string mimicGreeting;
 
-    [Header("Closing")]
+    [Header("Accepted Responses")]
     [TextArea] public string genuineClosing;
     [TextArea] public string mimicClosing;
+
+    [Header("Rejected Responses")]
+    [TextArea] public string genuineRejected;
+    [TextArea] public string mimicRejected;
 
     [Header("Genuine Responses")]
     [TextArea] public string genuineNameResponse;
