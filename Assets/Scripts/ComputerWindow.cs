@@ -9,7 +9,7 @@ public class ComputerWindow : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        canvas = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
+        canvas = GameObject.FindGameObjectWithTag("ComputerCanvas").GetComponent<Canvas>();
         rectTransform = GetComponent<RectTransform>();
     }
 
