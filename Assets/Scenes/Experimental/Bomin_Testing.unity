@@ -1208,7 +1208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 132635288}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: NextCall
+        m_MethodName: AdvanceToNextCall
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1914,6 +1914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CallManager
   dialogueText: {fileID: 1629434786}
+  gameManager: {fileID: 132635288}
 --- !u!4 &1922594315
 Transform:
   m_ObjectHideFlags: 0

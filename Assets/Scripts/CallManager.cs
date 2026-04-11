@@ -5,6 +5,7 @@ using System.Collections;
 public class CallManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private GameManager gameManager;
 
     private CharacterData currentChar;
     private bool isMimic;
@@ -28,6 +29,7 @@ public class CallManager : MonoBehaviour
 
     }
 
+    // questions could change
     public void AskName()
     {
         if (!CanAskQuestion()) return;
@@ -61,11 +63,7 @@ public class CallManager : MonoBehaviour
         }
 
         callActive = false;
-
-        string resultText = isMimic ? "Wrong. That caller was a mimic." : "Correct. The caller was real.";
-        ShowTemporaryText(resultText, 3f);
-
-        StartCoroutine(ShowClosingAfterDelay());
+        gameManager.SubmitDecision(true);
     }
 
     public void Reject()
@@ -77,11 +75,7 @@ public class CallManager : MonoBehaviour
         }
 
         callActive = false;
-
-        string resultText = isMimic ? "Correct. The caller was real." : "Wrong. That caller was a mimic.";
-        ShowTemporaryText(resultText, 3f);
-
-        StartCoroutine(ShowClosingAfterDelay());
+        gameManager.SubmitDecision(false);
     }
 
     private bool CanAskQuestion()
@@ -118,6 +112,11 @@ public class CallManager : MonoBehaviour
         yield return new WaitForSeconds(duration);
 
         dialogueText.text = "...";
+    }
+
+    public void ShowSystemText(string text, float duration)
+    {
+        ShowTemporaryText(text, duration);
     }
 
     private IEnumerator ShowClosingAfterDelay()
