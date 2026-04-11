@@ -133,6 +133,27 @@ public class CallManager : MonoBehaviour
         return true;
     }
 
+    private string[] SplitDialogueLines(string fullText)
+    {
+        return fullText.Split('\n');
+    }
+
+    private IEnumerator ShowDialogueSequences(string fullText, float lineDuration)
+    {
+        string[] lines = SplitDialogueLines(fullText);
+        foreach (string line in lines)
+        {
+            string trimmedLine = line.Trim();
+
+            if (string.IsNullOrEmpty(trimmedLine)) continue;
+
+            ShowTemporaryText(trimmedLine, lineDuration);
+            yield return new WaitForSeconds(lineDuration + 0.2f);
+        }
+
+        talkingCoroutine = null;
+    }
+
     private void ShowTemporaryText(string text, float duration)
     {
         if (currentCoroutine != null)
