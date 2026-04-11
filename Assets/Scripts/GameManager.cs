@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] Visitor[] visitors;
     [SerializeField] private CallManager callManager;
+    [SerializeField] private SilhouetteManager silhouetteManager;
 
     private CharacterData[] characters;
     private int currentIndex = 0;
@@ -75,6 +76,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Current caller: " + selectedCharacter.Name + " | Mimic: " + isMimic);
 
         callManager.StartCall(selectedCharacter, isMimic);
+        silhouetteManager.ShowMonitorSilhouette(isMimic);
     }
 
     public void SubmitDecision(bool accepted)
@@ -88,29 +90,10 @@ public class GameManager : MonoBehaviour
         if (accepted)
         {
             playerWasCorrect = !isActualMimic;
-            if (playerWasCorrect)
-            {
-                // accepted real person
-            }
-
-            else
-            {
-                // accepted mimic
-            }
-
         }
         else
         {
             playerWasCorrect = isActualMimic;
-            if (playerWasCorrect)
-            {
-                // rejected mimic
-            }
-
-            else
-            {
-                // rejected real person
-            }
         }
 
         if(playerWasCorrect)
@@ -135,8 +118,14 @@ public class GameManager : MonoBehaviour
         {
             string closingLine = isActualMimic ? currentCharacter.visitor.mimicClosing : currentCharacter.visitor.genuineClosing;
             callManager.ShowSystemText(closingLine, 2f);
+
+            silhouetteManager.hideMonitorSilhouette();
+            silhouetteManager.PlayWindowPass(isActualMimic);
+            yield return new WaitForSeconds(2f);
         }
 
+
+        silhouetteManager.hideMonitorSilhouette();
         float randomWaitSec = Random.Range(2f, 4f);    //could change to 5f, 15f in actual launch
         yield return new WaitForSeconds(randomWaitSec);
 
