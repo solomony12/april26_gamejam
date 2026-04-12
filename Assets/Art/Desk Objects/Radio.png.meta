@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c38f8e404c929dd4f95712055ac38625
+guid: 5188acfccefbe4262a6b71307d2d9346
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7966556998743438222
-    second: LIT_Desk_0
+      213: -8070686850402279387
+    second: Radio_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LIT_Desk_0
+      name: Radio_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 320
-        height: 180
+        width: 88
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e833109b165ee8e60800000000000000
-      internalID: 7966556998743438222
+      spriteID: 5202b54e1192fff80800000000000000
+      internalID: -8070686850402279387
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LIT_Desk_0: 7966556998743438222
+      Radio_0: -8070686850402279387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
