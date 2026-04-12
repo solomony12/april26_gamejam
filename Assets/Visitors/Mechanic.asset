@@ -17,23 +17,20 @@ MonoBehaviour:
   silhouetteMimic: {fileID: 3927923385344024776, guid: 78bb0db84a7f69c4b9fcb06daa809f8d, type: 3}
   voiceBlip: {fileID: 8300000, guid: e0087f4978f0d91458b49044b88c5af3, type: 3}
   visitorName: Alex Wood
-  callSign: mechaNIC
   birthYear: 1972
   birthMonth: 1
   birthDay: 4
   personality: Very talkative
-  genuineGreeting: 'hello g6
-
-    Hello Line2
-
-    Hello Line3
-
-    line4'
-  mimicGreeting: hello m6
-  genuineClosing: bye g6
-  mimicClosing: bye m6
-  genuineRejected: You Serious? F
-  mimicRejected: Too bad F
+  genuineGreeting: "open up this damn gate \u2018fore I tear it off it\u2019s hinges."
+  mimicGreeting: "open up this damn gate \u2018fore I tear it off it\u2019s hinges."
+  genuineClosing: "Oh and I\u2019m be billing for the time it took \u2018ya to let
+    me out."
+  mimicClosing: "Oh and I\u2019m be billing for the time it took \u2018ya to let
+    me out."
+  genuineRejected: My legal representative in the Department of Labor will be hearing
+    about this.
+  mimicRejected: My legal representative in the Department of Labor will be hearing
+    about this.
   genuineNameResponse: 'All my friends just call me Al, or Alex, or Alan wrench,
     or Al Might, or Alcatraz, or Alakazam
 
@@ -56,21 +53,25 @@ MonoBehaviour:
     before that \nsenile old crone McGuffers finally comes to the shed to get some
     batteries for his dead hearing aids"
   genuineTimeResponse: 1:27 but for billing reasons I entered at 1.
-  mimicNameResponse: wrong name F
-  mimicBirthdayResponse: wrong birth 6 6
+  mimicNameResponse: 'All my friends just call me Al, or Alex, or Alan wrench, or
+    Al Might, or Alcatraz, or Alakazam
+
+    Al-catraz al-akabam. But you, you my
+    friend, can call me Wood.'
+  mimicBirthdayResponse: 1972 January 4th
   mimicReasonResponse: "So I clock into work today and boss Says HEY ALEX and I was
     like yeah Mike? Park says they want you down at 9pm to fix the generator. And
-    I was like what happened to the fix I did last week. And he says yeah well it
-    broke again. \nAnd I said I bet the power cables just loose again, did ya tell
-    them to check the power cable? And he say\u2019s yeah said they did and it\u2019s
+    I was like what happened to the fix\nI did last week. And he says yeah well it
+    broke again. And I said I bet the power cables just loose again, did ya tell
+    them to check the power cable? And he say\u2019s yeah said they did \nand it\u2019s
     not that. So I say son of a b***h and I leave at 8 to fix the generator. \u2018Course
     then my car breaks down since the radiator overheats so I have to wait in the
-    shade till half past noon for it to cool down so I can continue up the path.
+    shade till half\npast noon for it to cool down so I can continue up the path.
     Anyways, I roll up and Layla at the gate was looking like a snack if you know
-    what I mean. So I ate her An\u2019 of course the cable has come loose again LIKE
-    I SAID IT WAS. \nSo I just plug \u2018er in, give it a good kick and it\u2019s
+    what I mean. So I ate her An\u2019 of course \nthe cable has come loose again
+    LIKE I SAID IT WAS. So I just plug \u2018er in, give it a good kick and it\u2019s
     good as new. \u2018Course then I try to leave and THE DAMN DOOR\u2019S STUCK
-    and there I am stuck banging on the door for the next three or four hours before
+    and there\nI am stuck banging on the door for the next three or four hours before
     that senile old crone McGuffers finally comes to the shed to get some batteries
     for his dead hearing aids"
-  mimicTimeResponse: Time M6
+  mimicTimeResponse: 1:27 but for billing reasons I entered at 1.

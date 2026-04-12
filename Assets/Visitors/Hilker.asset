@@ -22,17 +22,13 @@ MonoBehaviour:
   birthDay: 29
   personality: Upbeat, happy, jovial
   genuineGreeting: "Hello? I\u2019m at the gate."
-  mimicGreeting: 'hello m4
-
-    Hello Line2
-
-    Hello Line3
-
-    line4'
-  genuineClosing: bye g4
-  mimicClosing: bye m4
-  genuineRejected: You Serious? D
-  mimicRejected: Too bad D
+  mimicGreeting: "Hello? I\u2019m at the gate."
+  genuineClosing: "Thanks! Let me know if my brother gets out, alright, since I think
+    he\u2019s the one that has the car keys."
+  mimicClosing: "Thanks! Let me know if my brother gets out, alright, since I think
+    he\u2019s the one that has the car keys."
+  genuineRejected: "Well I guess I\u2019ll just die here with him then."
+  mimicRejected: "Well I guess I\u2019ll just die here with him then."
   genuineNameResponse: "The name\u2019s Avaline! My brother\u2019s Dasni, if he comes
     \u2018round."
   genuineBirthdayResponse: I actually had my 38th exactly 1 week before me and my
@@ -42,7 +38,12 @@ MonoBehaviour:
   genuineTimeResponse: "I entered the park last monday and I\u2019ve been backpacking
     with my brother. We ended up getting separated after he fell off a cliff. I\u2019m
     kind of traumatized, but it\u2019s chill"
-  mimicNameResponse: wrong name D
-  mimicBirthdayResponse: wrong birth 33
-  mimicReasonResponse: reasib M3
-  mimicTimeResponse: time M3
+  mimicNameResponse: "The name\u2019s Avaline! My brother\u2019s Dasni, if he comes
+    \u2018round."
+  mimicBirthdayResponse: I actually had my 38th exactly 9 days before me and my brother
+    came to the park! We booked the trip to celebrate since we both love the outdoors
+    so much.
+  mimicReasonResponse: To go backpacking!
+  mimicTimeResponse: "I entered the park last wednesday and I\u2019ve been backpacking
+    with my brother. We ended up getting separated after he fell off a cliff. I\u2019m
+    kind of traumatized, but it\u2019s chill!"

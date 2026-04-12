@@ -23,10 +23,10 @@ MonoBehaviour:
   personality: Direct, Cold.
   genuineGreeting: Phoenix, requesting gate access.
   mimicGreeting: Phoenix, requesting gate access.
-  genuineClosing: Bye G
-  mimicClosing: Bye M
-  genuineRejected: You Serious? A
-  mimicRejected: Too bad A
+  genuineClosing: Thank you.
+  mimicClosing: Thank you.
+  genuineRejected: You will regret this.
+  mimicRejected: You will regret this.
   genuineNameResponse: You can call me the Phoenix.
   genuineBirthdayResponse: "That\u2019s classified information."
   genuineReasonResponse: The details of my assignment are classified.

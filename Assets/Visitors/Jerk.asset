@@ -16,19 +16,18 @@ MonoBehaviour:
   silhouetteReal: {fileID: -1536381860910832467, guid: c8a7d7a6cbe6946488a977305ec51fab, type: 3}
   silhouetteMimic: {fileID: -622765290409938135, guid: c3be6b02bcc462149b3caa4bc7a14a91, type: 3}
   voiceBlip: {fileID: 8300000, guid: ebb2c5e28c0002249a3c4bbd5749485d, type: 3}
-  visitorName: CCZ89A
-  callSign: Candy
+  visitorName: "Ja\u2019quiez de Dubois"
   birthYear: 1979
-  birthMonth: 4
-  birthDay: 4
+  birthMonth: 2
+  birthDay: 1
   personality: 'Really unpleasant and stubborn. Doesn''t like answering questions. '
   genuineGreeting: "Can you open the gate? I can\u2019t get out C'est chiant(e)!,
     I\u2019ve been waiting to get out for hours."
-  mimicGreeting: "Oi, open the gate you WANKA or I\u2019mma I will. Callsign: CCZ89A"
-  genuineClosing: bye g3
-  mimicClosing: bye m3
-  genuineRejected: You Serious? C
-  mimicRejected: Too bad C
+  mimicGreeting: "Oi, open the gate you WANKA or I\u2019mma I will."
+  genuineClosing: Merde! Took long enough.
+  mimicClosing: Merde! Took long enough.
+  genuineRejected: Sacre Bleu!
+  mimicRejected: Sacre Bleu!
   genuineNameResponse: "Ja\u2019quiez de Dubois."
   genuineBirthdayResponse: Merde! What is it with this endless barrage of questions.
     I was born MCMLXXIX t'es tellement con.
