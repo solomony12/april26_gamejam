@@ -12,6 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874b5e5991c8ddd4c9ddbc996be428fb, type: 3}
   m_Name: IntroMail
   m_EditorClassIdentifier: Assembly-CSharp::Mail
-  sender: 
-  subject: 
-  body: 
+  sender: stillwoodparks@yurimail.com
+  subject: Your New Assignment
+  body: "Ivan Navorsky, \r\nWe regret to inform you that a series of\u2026 unfortunate
+    events have necessitated me and my associates to oversee the complete evacuation
+    of your park. We have managed to secure all  entrances to the park except the
+    one on the northeastern exit used for emergency fire escapes.\r\nWe spoke with
+    your supervisor and have been informed that you have control to remotely open
+    and close the gate.\r\nLost guests will be approaching the northeastern gate
+    exit and buzzing you over the intercom to request exit as part of the ongoing
+    evacuation, and due to the storm. However, we\u2019ve received some reports of
+    some\u2026 \u2018unsavory individuals\u2019 trying to impersonate park guests.
+    These should NOT be allowed to exit under any circumstance.\r\nWe have managed
+    to retrieve detailed descriptions of all guests and personnel still remaining
+    in your section of the park that can be found on your computer. How we retrieved
+    this information is none of your concern.\r\nWhen a guest buzzes in at the gate
+    ask them questions and compare their answers AND PERSONALITY to the directory.
+    If a guest has information that does not match what\u2019s in the directory,
+    or their personality does not match the one in the directory, do not open the
+    gate for them, and ask them to leave. A liquidation team will be sent to deal
+    with them as soon as we have the staff free.\r\nLastly some of these\u2026entities,
+    have been found to cause irregularities in radio waves. If you notice any static,
+    pitch changing, or other regularities in your radio while talking to a guest.
+    Do not forget to check the radio for every guest and if it\u2019s irregular DO
+    NOT ALLOW THEM TO EXIT UNDER ANY CIRCUMSTANCE. \r\nWe are expecting your utmost
+    discretion in this matter. Failure will not be tolerated.\n\r\n-M.S.\r\n"

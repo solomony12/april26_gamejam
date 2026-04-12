@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874b5e5991c8ddd4c9ddbc996be428fb, type: 3}
   m_Name: LoseMail
   m_EditorClassIdentifier: Assembly-CSharp::Mail
-  sender: stillwood@yurimail.com
-  subject: 
-  body: 
+  sender: stillwoodparks@yurimail.com
+  subject: Termination
+  body: "Mr. Navorsky,\r\nWe are most disappointed with your performance. It\u2019ll
+    take the agency months to cover this up. We also can\u2019t allow any loose ends,
+    I\u2019m sure you understand. Don\u2019t bother running. A liquidation team is
+    already outside your location.\n\n-M.S"

@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874b5e5991c8ddd4c9ddbc996be428fb, type: 3}
   m_Name: WinMail
   m_EditorClassIdentifier: Assembly-CSharp::Mail
-  sender: stillwood@yurimail.com
-  subject: 
-  body: 
+  sender: stillwoodparks@yurimail.com
+  subject: Perfect
+  body: "You've done well Mr. Navorsky. Very well. Unfortunately as I'm sure you'll
+    understand we can't have any loose ends. We've sent an offer for you to join
+    us\u2026We suggest you take it.\n\r\n-M.S.\r\n\r\nEmployee Contract and Confidentiality
+    Agreement\r\nDepartment of Defense\r\nDefense Advanced Research Projects Agency
+    Division (DARPA)\r\n\u2026.\r\nSigned,\r\nIvan Navorsky.\r\n"

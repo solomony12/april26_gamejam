@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 874b5e5991c8ddd4c9ddbc996be428fb, type: 3}
+  m_Name: TheTruth
+  m_EditorClassIdentifier: Assembly-CSharp::Mail
+  sender: stillwoodparks@yurimail.com
+  subject: The Truth
+  body: "Navorsky, \r\nOur situation is looking dire, I will not lie. I would like
+    to once more stress that your success is of the utmost importance. The storm
+    knocked over a tree which caused a breach at EA-88 on the side bordering the
+    park and now a few government assets have breached containment and entered the
+    park. It is of the UTMOST IMPORTANCE that no assets be allowed to leave the park
+    as the cost to the government to replace them should they be damaged or lost
+    could be astronomical. But at the same time any remaining civilians inside could
+    be posed grave danger from these assets and should be allowed to leave at once.
+    This information is strictly confidential.\n\r\n-M.S.\r\n"

@@ -13,18 +13,13 @@ public class MailManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI subjectText;
     [SerializeField] TextMeshProUGUI bodyText;
 
-    [Header("Test Mails")]
-    [SerializeField] Mail mail1;
-    [SerializeField] Mail mail2;
-    [SerializeField] Mail mail3;
+    [SerializeField] Mail startMail;
 
     public static Dictionary<Mail, bool> mailDictionary = new();
 
     private void Awake()
     {
-        AddMail(mail1);
-        AddMail(mail2);
-        AddMail(mail3);
+        AddMail(startMail);
     }
 
     public static bool hasNewMail()
