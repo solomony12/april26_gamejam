@@ -63,9 +63,10 @@ public class Radio : MonoBehaviour
         // Next track
         stationAudioSources[currentTrackIndex].Stop();
         currentTrackIndex++;
-        radioSpriteRenderer.sprite = radioSprites[currentTrackIndex];
         if (currentTrackIndex >= numStations)
             currentTrackIndex = 0;
+        radioSpriteRenderer.sprite = radioSprites[currentTrackIndex];
+        
             
         PlayCurrentTrack();
     }
