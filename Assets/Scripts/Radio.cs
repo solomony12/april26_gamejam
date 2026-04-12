@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Radio : MonoBehaviour
 {
@@ -14,11 +15,14 @@ public class Radio : MonoBehaviour
     [SerializeField]
     private Sprite[] radioSprites;
     
-    [SerializeField]
-    private SpriteRenderer radioSpriteRenderer;
+    //[SerializeField]
+    //private SpriteRenderer radioSpriteRenderer;
     
     [SerializeField]
     private AudioClip staticClip;
+    
+    [SerializeField]
+    private Button dialButton;
     
     public bool FemboyMonsterActive = false;
     
@@ -65,8 +69,8 @@ public class Radio : MonoBehaviour
         currentTrackIndex++;
         if (currentTrackIndex >= numStations)
             currentTrackIndex = 0;
-        radioSpriteRenderer.sprite = radioSprites[currentTrackIndex];
-        
+        //radioSpriteRenderer.sprite = radioSprites[currentTrackIndex];
+        dialButton.image.sprite = radioSprites[currentTrackIndex];
             
         PlayCurrentTrack();
     }
