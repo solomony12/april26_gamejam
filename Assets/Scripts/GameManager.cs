@@ -164,7 +164,8 @@ public class GameManager : MonoBehaviour
         float randomWaitSec = Random.Range(2f, 4f);    //could change to 5f, 15f in actual launch
         yield return new WaitForSeconds(randomWaitSec);
 
-
+        
+        //MailManager.AddMail();
         AdvanceToNextCall();
     }
 

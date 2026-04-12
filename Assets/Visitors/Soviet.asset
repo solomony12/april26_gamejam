@@ -17,29 +17,34 @@ MonoBehaviour:
   silhouetteMimic: {fileID: -6642024555335909691, guid: 3cd8ba15f58951d40bf4e7179f7d6e4a, type: 3}
   voiceBlip: {fileID: 8300000, guid: 21a23f2b84ac54d47a5b1f6a82e40718, type: 3}
   visitorName: Bobby Green
-  callSign: Arst0-tzka
   birthYear: 1952
   birthMonth: 9
   birthDay: 5
-  personality: Determined
-  genuineGreeting: CALLSIGN Arst0-tzka. HELLO COMRADE. I AM VERY PARIOTIC AMERICAN
-    AND DEFINITELY NOT SOVIET SPY! I HATE THE COMMUNIST BASTARDS AND LOVE AMERICAN
-    PRESIDENT MICHAEL JORDAN!
-  mimicGreeting: hello m5
+  personality: An upstanding Patriotic American that is definitely not a soviet spy.
+  genuineGreeting: "CALLSIGN Arst0-tzka. HELLO COMRADE. I AM VERY PARIOTIC AMERICAN
+    AND DEFINITELY NOT SOVIET SPY! \nI HATE THE COMMUNIST BASTARDS AND LOVE AMERICAN
+    PRESIDENT MICHAEL JORDAN!"
+  mimicGreeting: "CALLSIGN Arst0-tzka. HELLO COMRADE. I AM VERY PARIOTIC AMERICAN
+    AND DEFINITELY NOT SOVIET SPY! \nI HATE THE COMMUNIST BASTARDS AND LOVE AMERICAN
+    PRESIDENT MICHAEL JORDAN!"
   genuineClosing: THANK YOU Comrade. GLORY TO THE MOTHERLAND AND DEATH TO CAPITALIST
     SCUM.
-  mimicClosing: bye m5
-  genuineRejected: You Serious? E
-  mimicRejected: Too bad E
-  genuineNameResponse: "My Name is Dimitri Ivanoivi-\r\nSorry. I mean my name is
-    v\u2019obby Green"
+  mimicClosing: THANK YOU Comrade. GLORY TO THE MOTHERLAND AND DEATH TO CAPITALIST
+    SCUM.
+  genuineRejected: BLYAT! Comrade Brezhnev will be hearing about this.
+  mimicRejected: BLYAT! Comrade Brezhnev will be hearing about this.
+  genuineNameResponse: "My Name is Dimitri Ivanoivi-\nSorry. I mean my name is v\u2019obby
+    Green"
   genuineBirthdayResponse: I AM BORN IN THE YEAR OF 1952 on the fifth of September
     ON BEAUTIFUL SOIL OF OUR MOTHERLAND
   genuineReasonResponse: I COME TO STEAL MILITARY SECRET- I MEAN, TO SEE THE BEATUITIES
     OF THE LAND OF BLOOD SUCKING, I MEAN BEAUTIFUL CAPITALIST COUNTRY.
   genuineTimeResponse: I enter disgusting land of capitalist pigs five years ago
     .
-  mimicNameResponse: wrong name E
-  mimicBirthdayResponse: wrong birth 55
-  mimicReasonResponse: reason M5
-  mimicTimeResponse: time M5
+  mimicNameResponse: "My Name is Dimitri Ivanoivi-\nSorry. I mean my name is v\u2019obby
+    Green"
+  mimicBirthdayResponse: I AM BORN IN THE YEAR OF 1952 on the fifth of September
+    ON BEAUTIFUL SOIL OF OUR MOTHERLAND
+  mimicReasonResponse: I COME TO STEAL MILITARY SECRET- I MEAN, TO SEE THE BEATUITIES
+    OF THE LAND OF BLOOD SUCKING, I MEAN BEAUTIFUL CAPITALIST COUNTRY.
+  mimicTimeResponse: I enter disgusting land of capitalist pigs five years ago .

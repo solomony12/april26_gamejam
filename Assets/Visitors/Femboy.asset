@@ -17,23 +17,16 @@ MonoBehaviour:
   silhouetteMimic: {fileID: -1409451196945165981, guid: ea9d20cfb3313394aa9c00251439f203, type: 3}
   voiceBlip: {fileID: 8300000, guid: 7c688b6c99fae644f96dd4e2814cd3bc, type: 3}
   visitorName: Niko Niko
-  callSign: AraAra1
   birthYear: 1972
   birthMonth: 2
   birthDay: 22
   personality: Clueless, spacey. Very stupid. Bad memory.
   genuineGreeting: Nyaaa :# oohiyo :3 AraAra1, Can usa open the gate Owo
-  mimicGreeting: 'hello M2
-
-    Hello Line2
-
-    Hello Line3
-
-    line4'
+  mimicGreeting: Nyaaa :# oohiyo :3 AraAra1, Can usa open the gate Owo
   genuineClosing: Nyaaan~
-  mimicClosing: bye m2
-  genuineRejected: You Serious? B
-  mimicRejected: Too bad B
+  mimicClosing: Nyaaan~
+  genuineRejected: Usa a meaanie >:(
+  mimicRejected: Usa a meaanie >:(
   genuineNameResponse: "My name ummm\u2026 Oh nos. I\u2019ve forgotten my name ;(
     \r\nCallsign ummm AraAra1"
   genuineBirthdayResponse: Wuz born hmm 1992. Or maybe 72.
@@ -43,8 +36,14 @@ MonoBehaviour:
     evil tree monsters keep attacking me >:(
 
     So I put them in my mouth :3'
-  genuineTimeResponse: time G
-  mimicNameResponse: wrong name Betty
-  mimicBirthdayResponse: wrong birth 11
-  mimicReasonResponse: reason M1
-  mimicTimeResponse: time M1
+  genuineTimeResponse: Mmmm. yesterday after night night yum yums :3
+  mimicNameResponse: "My name ummm\u2026 Oh nos. I\u2019ve forgotten my name ;( \r\nCallsign
+    ummm AraAra1"
+  mimicBirthdayResponse: Wuz born hmm 1992. Or maybe 72.
+  mimicReasonResponse: 'Nyaaa  uza wanted to climb some  trees :3
+
+    But the evil
+    tree monsters keep attacking me >:(
+
+    So I put them in my mouth :3'
+  mimicTimeResponse: Mmmm. yesterday after night night yum yums :3
