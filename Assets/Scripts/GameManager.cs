@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] Visitor[] visitors;
     [SerializeField] private CallManager callManager;
     [SerializeField] private SilhouetteManager silhouetteManager;
+    [SerializeField] private MailManager mailManager;
+    [SerializeField] Mail FemboyMail;
+
 
     private CharacterData pendingCharacter;
     private bool pendingIsMimic;
@@ -96,7 +99,7 @@ public class GameManager : MonoBehaviour
         waitingForAnswer = true;
 
         Debug.Log("Incoming call from: " + pendingCharacter.Name + " | Mimic: " + pendingIsMimic);
-
+        silhouetteManager.ShowMonitorSilhouette(false);
         // bell ringing sound effect can be triggered here
     }
 
@@ -157,6 +160,9 @@ public class GameManager : MonoBehaviour
             silhouetteManager.hideMonitorSilhouette();
             silhouetteManager.PlayWindowPass(currentCharacter, isActualMimic);
             yield return new WaitForSeconds(2f);
+
+            if (currentCharacter.visitor.visitorName == "Niko Niko")
+                mailManager.AddMail(FemboyMail);
         }
 
 
@@ -164,8 +170,6 @@ public class GameManager : MonoBehaviour
         float randomWaitSec = Random.Range(2f, 4f);    //could change to 5f, 15f in actual launch
         yield return new WaitForSeconds(randomWaitSec);
 
-        
-        //MailManager.AddMail();
         AdvanceToNextCall();
     }
 
