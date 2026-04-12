@@ -6,6 +6,7 @@ public class CallManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private Radio radio;
     [SerializeField] private GameObject questionButtons;
     [SerializeField] private GameObject rejectButton;
     [SerializeField] private TMP_Text questionsLeftText;
@@ -43,6 +44,16 @@ public class CallManager : MonoBehaviour
         questionCount = 0;
         UpdateQuestionCountUI();
         callActive = true;
+
+        if (currentChar.visitor.visitorName == "Niko Niko")
+            radio.FemboyMonsterActive = true;
+        else if(currentChar.visitor.visitorName == "Bobby Green")
+            radio.RussianMonsterActive = true;
+        else
+        {
+            radio.FemboyMonsterActive = false;
+            radio.RussianMonsterActive = false;
+        }
 
         string greeting = isMimic ? currentChar.visitor.mimicGreeting : currentChar.visitor.genuineGreeting;
         ShowDialoguePanelOnly();
@@ -166,7 +177,7 @@ public class CallManager : MonoBehaviour
             StopCoroutine(talkingCoroutine);
             talkingCoroutine = null;
         }
-
+        
         talkingCoroutine = StartCoroutine(PlayDialogue(dialogue, singleLineHold, multiLineHold));
     }
 
