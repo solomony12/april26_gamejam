@@ -119,37 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &177564291
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 177564292}
-  m_Layer: 0
-  m_Name: Jumpscare
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &177564292
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177564291}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 337.73373, y: 169.9046, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1664963169
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,10 +313,80 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+--- !u!1 &521726924751157644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1745680633600411993, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+  m_PrefabInstance: {fileID: 521726924751157643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7197092411582822017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 819194206517808491, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: MonitorCanvas
+      value: 
+      objectReference: {fileID: 521726924751157644}
+    - target: {fileID: 1309853192373767667, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0506
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309853192373767667, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0507
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309853192373767667, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309853192373767667, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309853192373767667, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309853192373767667, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309853192373767667, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309853192373767667, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309853192373767667, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309853192373767667, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912348627594750087, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_Name
+      value: Jumpscare
+      objectReference: {fileID: 0}
+    - target: {fileID: 5912348627594750087, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c726a1d2a110d434d941f9af140e7583, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1664963172}
   - {fileID: 521726924751157643}
-  - {fileID: 177564292}
+  - {fileID: 7197092411582822017}
