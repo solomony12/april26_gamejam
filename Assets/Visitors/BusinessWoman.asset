@@ -15,6 +15,7 @@ MonoBehaviour:
   profile: {fileID: 21300000, guid: 45ccbeb635752b24bbebf8ff22310e01, type: 3}
   silhouetteReal: {fileID: 357923613836395556, guid: 5e1c4a549220f3e42ba23997b766c0f7, type: 3}
   silhouetteMimic: {fileID: -6915174740479770503, guid: 55aea484b169eef4a9740cbaeb17a092, type: 3}
+  voiceBlip: {fileID: 8300000, guid: aa8120a0d0543b24aa394dbc7ded695f, type: 3}
   visitorName: Adam
   callSign: CZZ89A
   birthYear: 1997

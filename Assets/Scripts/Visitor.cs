@@ -7,6 +7,7 @@ public class Visitor : ScriptableObject
     public Sprite profile;
     public Sprite silhouetteReal;
     public Sprite silhouetteMimic;
+    public AudioClip voiceBlip;
 
     [Header("Identity")]
     public string visitorName;
