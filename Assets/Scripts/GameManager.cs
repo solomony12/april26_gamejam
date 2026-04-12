@@ -20,6 +20,12 @@ public class GameManager : MonoBehaviour
     private int wrongCount = 0;
     private int inMonsterCount = 0;
 
+    private enum EndingType
+    {
+        Bad,
+        Perfect,
+        Normal
+    }
     private bool gameEnded = false;
 
     [SerializeField] private int mimicCount = 2;
@@ -182,7 +188,15 @@ public class GameManager : MonoBehaviour
         if (!gameEnded)
             TriggerIncomingCall();
     }
+    private EndingType GetEndingType()
+    {
+        if (inMonsterCount > 0)
+            return EndingType.Bad;
+        if (wrongCount == 0)
+            return EndingType.Perfect;
 
+        return EndingType.Normal;
+    }
     private void EndGame()
     {
         gameEnded = true;

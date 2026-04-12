@@ -19,7 +19,6 @@ public class PersonFilesManager : MonoBehaviour
     {
         personImage.sprite = person.profile;
         basicDataText.text = $"Name: {person.visitorName}\n" +
-                             $"Call Sign: {person.callSign}\n" +
                              $"Birth Date: {person.birthYear}/{person.birthMonth}/{person.birthDay}";
         personalityText.text = $"Personality: {person.personality}";
     }

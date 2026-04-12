@@ -1,0 +1,1352 @@
+fileFormatVersion: 2
+guid: c5e91a1c990c6a24787629698ae32ff2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7588879913933527732
+    second: LIT_RainAnimation1_0
+  - first:
+      213: -2966527624834802378
+    second: LIT_RainAnimation1_1
+  - first:
+      213: -355966367938379773
+    second: LIT_RainAnimation1_2
+  - first:
+      213: 6925607893473269744
+    second: LIT_RainAnimation1_3
+  - first:
+      213: 2686353587826044991
+    second: LIT_RainAnimation1_4
+  - first:
+      213: -8644186320965094281
+    second: LIT_RainAnimation1_5
+  - first:
+      213: 2995099272607391239
+    second: LIT_RainAnimation1_6
+  - first:
+      213: 1823592228528926899
+    second: LIT_RainAnimation1_7
+  - first:
+      213: -1247515521602761479
+    second: LIT_RainAnimation1_8
+  - first:
+      213: -4911272596608927620
+    second: LIT_RainAnimation1_9
+  - first:
+      213: 2969138722138147676
+    second: LIT_RainAnimation1_10
+  - first:
+      213: -6189319120262958285
+    second: LIT_RainAnimation1_11
+  - first:
+      213: 171480447739866019
+    second: LIT_RainAnimation1_12
+  - first:
+      213: -3248366116658283927
+    second: LIT_RainAnimation1_13
+  - first:
+      213: 1460213787784790696
+    second: LIT_RainAnimation1_14
+  - first:
+      213: -3926852704017450280
+    second: LIT_RainAnimation1_15
+  - first:
+      213: -455992383635261826
+    second: LIT_RainAnimation1_16
+  - first:
+      213: -6954887390575031364
+    second: LIT_RainAnimation1_17
+  - first:
+      213: -4055283416809955867
+    second: LIT_RainAnimation1_18
+  - first:
+      213: 8086859947217098710
+    second: LIT_RainAnimation1_19
+  - first:
+      213: 3973336275245613773
+    second: LIT_RainAnimation1_20
+  - first:
+      213: 5497896959852224009
+    second: LIT_RainAnimation1_21
+  - first:
+      213: -1141109742504710246
+    second: LIT_RainAnimation1_22
+  - first:
+      213: -3189189592128112630
+    second: LIT_RainAnimation1_23
+  - first:
+      213: -3469930267839969107
+    second: LIT_RainAnimation1_24
+  - first:
+      213: 9113556620811144349
+    second: LIT_RainAnimation1_25
+  - first:
+      213: 7110184853749433734
+    second: LIT_RainAnimation1_26
+  - first:
+      213: 392883461467537195
+    second: LIT_RainAnimation1_27
+  - first:
+      213: -54276314644144903
+    second: LIT_RainAnimation1_28
+  - first:
+      213: 3548217556304370384
+    second: LIT_RainAnimation1_29
+  - first:
+      213: 179645226657780674
+    second: LIT_RainAnimation1_30
+  - first:
+      213: -1969273321958005002
+    second: LIT_RainAnimation1_31
+  - first:
+      213: 2813375708111391145
+    second: LIT_RainAnimation1_32
+  - first:
+      213: 2627714333855156531
+    second: LIT_RainAnimation1_33
+  - first:
+      213: 1716457331399868372
+    second: LIT_RainAnimation1_34
+  - first:
+      213: 6352770629452653625
+    second: LIT_RainAnimation1_35
+  - first:
+      213: 5857806873206005570
+    second: LIT_RainAnimation1_36
+  - first:
+      213: 7356272438652935107
+    second: LIT_RainAnimation1_37
+  - first:
+      213: 980591949461386706
+    second: LIT_RainAnimation1_38
+  - first:
+      213: -6075160961498567828
+    second: LIT_RainAnimation1_39
+  - first:
+      213: -7869243277679759027
+    second: LIT_RainAnimation1_40
+  - first:
+      213: -393320534467062808
+    second: LIT_RainAnimation1_41
+  - first:
+      213: -8749366070215036535
+    second: LIT_RainAnimation1_42
+  - first:
+      213: -3920574358117003464
+    second: LIT_RainAnimation1_43
+  - first:
+      213: -2791731470618404550
+    second: LIT_RainAnimation1_44
+  - first:
+      213: 6442359850084620597
+    second: LIT_RainAnimation1_45
+  - first:
+      213: -6364985306716354134
+    second: LIT_RainAnimation1_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 137
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4525e60de1eea690800000000000000
+      internalID: -7588879913933527732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 122
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d9651b7d6c4d6d0800000000000000
+      internalID: -2966527624834802378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 161
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3000c0f697a5f0bf0800000000000000
+      internalID: -355966367938379773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 157
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f79d188fa3bc1060800000000000000
+      internalID: 6925607893473269744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_4
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 144
+        width: 9
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30b77fea58d74520800000000000000
+      internalID: 2686353587826044991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 145
+        width: 10
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 774b596075ea90880800000000000000
+      internalID: -8644186320965094281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_6
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 107
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e5bc27beab09920800000000000000
+      internalID: 2995099272607391239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_7
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 126
+        width: 14
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b031a45873be4910800000000000000
+      internalID: 1823592228528926899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_8
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 160
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcc4132e3fefaee0800000000000000
+      internalID: -1247515521602761479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_9
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 151
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78b30c2897a7dbb0800000000000000
+      internalID: -4911272596608927620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 90
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5bc6e5cfef743920800000000000000
+      internalID: 2969138722138147676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 112
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33371337d0f1b1aa0800000000000000
+      internalID: -6189319120262958285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_12
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 122
+        width: 11
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aba5750f88316200800000000000000
+      internalID: 171480447739866019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 100
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96afa2c3a3c7be2d0800000000000000
+      internalID: -3248366116658283927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_14
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 104
+        width: 14
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a24a0514b8b34410800000000000000
+      internalID: 1460213787784790696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_15
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 115
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8daf1c365440189c0800000000000000
+      internalID: -3926852704017450280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 109
+        width: 12
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76f221d75dfba9f0800000000000000
+      internalID: -455992383635261826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_17
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 88
+        width: 13
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb8eef44c64b7f90800000000000000
+      internalID: -6954887390575031364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_18
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 104
+        width: 9
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed928dd73db8b7c0800000000000000
+      internalID: -4055283416809955867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_19
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 67
+        width: 10
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d79536a64c4a3070800000000000000
+      internalID: 8086859947217098710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 69
+        width: 6
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2403b6a40242730800000000000000
+      internalID: 3973336275245613773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_21
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 68
+        width: 9
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e11b7e7247c4c40800000000000000
+      internalID: 5497896959852224009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_22
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 61
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fe44c2cb6f920f0800000000000000
+      internalID: -1141109742504710246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_23
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 78
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08b4d786f8bdb3d0800000000000000
+      internalID: -3189189592128112630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_24
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 72
+        width: 9
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8c50e4ec458dfc0800000000000000
+      internalID: -3469930267839969107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_25
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 43
+        width: 14
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c8bdff57bd97e70800000000000000
+      internalID: 9113556620811144349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_26
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 87
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685091ff3737ca260800000000000000
+      internalID: 7110184853749433734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_27
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 65
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ff5e63d6dc37500800000000000000
+      internalID: 392883461467537195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_28
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 55
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc1be9bafb2f3ff0800000000000000
+      internalID: -54276314644144903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_29
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 46
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da9355711dcd3130800000000000000
+      internalID: 3548217556304370384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_30
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 29
+        width: 11
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c31880c16a3e7200800000000000000
+      internalID: 179645226657780674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_31
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 41
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f62a0be85cbba4e0800000000000000
+      internalID: -1969273321958005002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_32
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 55
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a941b5fc4e1b0720800000000000000
+      internalID: 2813375708111391145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_33
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 12
+        width: 12
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33983a0b344877420800000000000000
+      internalID: 2627714333855156531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_34
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 51
+        width: 10
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df343649d412d710800000000000000
+      internalID: 1716457331399868372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_35
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 15
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9346f04aa33992850800000000000000
+      internalID: 6352770629452653625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_36
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 12
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f1940b05c1b4150800000000000000
+      internalID: 5857806873206005570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_37
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 19
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb97e8cecab61660800000000000000
+      internalID: 7356272438652935107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_38
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 30
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5f041ce23cb9d00800000000000000
+      internalID: 980591949461386706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bae880b41b0bba0800000000000000
+      internalID: -6075160961498567828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_40
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4174c69ee4dac290800000000000000
+      internalID: -7869243277679759027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_41
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3593cce05aa8af0800000000000000
+      internalID: -393320534467062808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9813afe4ae1049680800000000000000
+      internalID: -8749366070215036535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_43
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 0
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f4ee4b4625799c0800000000000000
+      internalID: -3920574358117003464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_44
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 0
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39d289c407c149d0800000000000000
+      internalID: -2791731470618404550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_45
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539588b862cd76950800000000000000
+      internalID: 6442359850084620597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIT_RainAnimation1_46
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 0
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9479036970ba7a0800000000000000
+      internalID: -6364985306716354134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LIT_RainAnimation1_0: -7588879913933527732
+      LIT_RainAnimation1_1: -2966527624834802378
+      LIT_RainAnimation1_10: 2969138722138147676
+      LIT_RainAnimation1_11: -6189319120262958285
+      LIT_RainAnimation1_12: 171480447739866019
+      LIT_RainAnimation1_13: -3248366116658283927
+      LIT_RainAnimation1_14: 1460213787784790696
+      LIT_RainAnimation1_15: -3926852704017450280
+      LIT_RainAnimation1_16: -455992383635261826
+      LIT_RainAnimation1_17: -6954887390575031364
+      LIT_RainAnimation1_18: -4055283416809955867
+      LIT_RainAnimation1_19: 8086859947217098710
+      LIT_RainAnimation1_2: -355966367938379773
+      LIT_RainAnimation1_20: 3973336275245613773
+      LIT_RainAnimation1_21: 5497896959852224009
+      LIT_RainAnimation1_22: -1141109742504710246
+      LIT_RainAnimation1_23: -3189189592128112630
+      LIT_RainAnimation1_24: -3469930267839969107
+      LIT_RainAnimation1_25: 9113556620811144349
+      LIT_RainAnimation1_26: 7110184853749433734
+      LIT_RainAnimation1_27: 392883461467537195
+      LIT_RainAnimation1_28: -54276314644144903
+      LIT_RainAnimation1_29: 3548217556304370384
+      LIT_RainAnimation1_3: 6925607893473269744
+      LIT_RainAnimation1_30: 179645226657780674
+      LIT_RainAnimation1_31: -1969273321958005002
+      LIT_RainAnimation1_32: 2813375708111391145
+      LIT_RainAnimation1_33: 2627714333855156531
+      LIT_RainAnimation1_34: 1716457331399868372
+      LIT_RainAnimation1_35: 6352770629452653625
+      LIT_RainAnimation1_36: 5857806873206005570
+      LIT_RainAnimation1_37: 7356272438652935107
+      LIT_RainAnimation1_38: 980591949461386706
+      LIT_RainAnimation1_39: -6075160961498567828
+      LIT_RainAnimation1_4: 2686353587826044991
+      LIT_RainAnimation1_40: -7869243277679759027
+      LIT_RainAnimation1_41: -393320534467062808
+      LIT_RainAnimation1_42: -8749366070215036535
+      LIT_RainAnimation1_43: -3920574358117003464
+      LIT_RainAnimation1_44: -2791731470618404550
+      LIT_RainAnimation1_45: 6442359850084620597
+      LIT_RainAnimation1_46: -6364985306716354134
+      LIT_RainAnimation1_5: -8644186320965094281
+      LIT_RainAnimation1_6: 2995099272607391239
+      LIT_RainAnimation1_7: 1823592228528926899
+      LIT_RainAnimation1_8: -1247515521602761479
+      LIT_RainAnimation1_9: -4911272596608927620
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
