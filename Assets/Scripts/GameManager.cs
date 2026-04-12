@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private SilhouetteManager silhouetteManager;
     [SerializeField] private MailManager mailManager;
     [SerializeField] Mail FemboyMail;
-
+    [SerializeField] private AudioSource phoneRingingAudioSource;
 
     private CharacterData pendingCharacter;
     private bool pendingIsMimic;
@@ -101,6 +101,9 @@ public class GameManager : MonoBehaviour
         Debug.Log("Incoming call from: " + pendingCharacter.Name + " | Mimic: " + pendingIsMimic);
         silhouetteManager.ShowMonitorSilhouette(false);
         // bell ringing sound effect can be triggered here
+
+        if(phoneRingingAudioSource != null && !phoneRingingAudioSource.isPlaying)
+            phoneRingingAudioSource.Play();
     }
 
     public void StartCurrentCall()
@@ -112,6 +115,8 @@ public class GameManager : MonoBehaviour
         waitingForAnswer = false;
 
         // stop bell ringing sound effect here
+        if (phoneRingingAudioSource != null && phoneRingingAudioSource.isPlaying)
+            phoneRingingAudioSource.Stop();
 
         CharacterData selectedCharacter = pendingCharacter;
         bool isMimic = pendingIsMimic;
@@ -207,6 +212,8 @@ public class GameManager : MonoBehaviour
         gameEnded = true;
         string summary = "Shift Complete\nCorrect: " + correctCount + "\nWrong: " + wrongCount +"\nMonsters inside: " + inMonsterCount;
         callManager.ShowSystemText(summary, 5f);
+        if (phoneRingingAudioSource != null && phoneRingingAudioSource.isPlaying)
+            phoneRingingAudioSource.Stop();
 
         Debug.Log(summary);
     }
