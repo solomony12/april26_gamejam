@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 874b5e5991c8ddd4c9ddbc996be428fb, type: 3}
-  m_Name: TomboyMail
+  m_Name: FemboyMail
   m_EditorClassIdentifier: Assembly-CSharp::Mail
-  sender: 
-  subject: 
-  body: 
+  sender: FemMail
+  subject: helloooo
+  body: this is femboymail
