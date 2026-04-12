@@ -12,6 +12,12 @@ public class Radio : MonoBehaviour
     private AudioClip[] podcastTracks;
     
     [SerializeField]
+    private Sprite[] radioSprites;
+    
+    [SerializeField]
+    private SpriteRenderer radioSpriteRenderer;
+    
+    [SerializeField]
     private AudioClip staticClip;
     
     public bool FemboyMonsterActive = false;
@@ -25,7 +31,6 @@ public class Radio : MonoBehaviour
     [SerializeField] private int stationPitch = 1;
     [SerializeField] private float defaultPitch = 1f;
     [SerializeField] private float pitchIncrement = 0.75f;
-    [SerializeField] private float staticVolume = 1f;
     void Start()
     {
         
@@ -58,6 +63,7 @@ public class Radio : MonoBehaviour
         // Next track
         stationAudioSources[currentTrackIndex].Stop();
         currentTrackIndex++;
+        radioSpriteRenderer.sprite = radioSprites[currentTrackIndex];
         if (currentTrackIndex >= numStations)
             currentTrackIndex = 0;
             
