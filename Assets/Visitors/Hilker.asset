@@ -15,6 +15,7 @@ MonoBehaviour:
   profile: {fileID: 21300000, guid: bc905313cf0f61d499ff7f2e06e524f4, type: 3}
   silhouetteReal: {fileID: 3634484325688373837, guid: 6544d0615297d5146a5704105703eaf4, type: 3}
   silhouetteMimic: {fileID: 7363729202824495390, guid: c846e9f61885e3f4fbe414515cbf61aa, type: 3}
+  voiceBlip: {fileID: 8300000, guid: 9b3d83f382761154493270e7d885aec4, type: 3}
   visitorName: Avaline
   callSign: OM#38il
   birthYear: 1954

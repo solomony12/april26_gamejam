@@ -11,6 +11,8 @@ public class CallManager : MonoBehaviour
 
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private GameObject questionPanel;
+    [SerializeField] private AudioSource voiceAudioSource;
+    [SerializeField] private int charactersPerBlip = 2;
 
     [SerializeField] private float characterDelay = 0.03f;
     [SerializeField] private float punctuationDelayMultiplier = 4f;
@@ -47,7 +49,6 @@ public class CallManager : MonoBehaviour
     {
         if (!callActive)
         {
-            ShowTemporaryText("No active call.", 2f);
             return;
         }
 
@@ -70,7 +71,6 @@ public class CallManager : MonoBehaviour
     {
         if (!callActive)
         {
-            ShowTemporaryText("No active call.", 2f);
             return;
         }
 
@@ -108,13 +108,11 @@ public class CallManager : MonoBehaviour
     {
         if (!callActive || currentChar == null)
         {
-            ShowTemporaryText("No active call.", 2f);
             return false;
         }
 
         if (questionCount >= maxQuestions)
         {
-            ShowTemporaryText("No more questions allowed.", 2f);
             return false;
         }
 
@@ -225,19 +223,33 @@ public class CallManager : MonoBehaviour
         dialogueText.text = "";
         dialogueText.enabled = true;
 
-        foreach(char c in text)
+        int visibleCharCount = 0;
+
+        foreach (char c in text)
         {
             dialogueText.text += c;
+
+            if (!char.IsWhiteSpace(c))
+            {
+                visibleCharCount++;
+
+                if (visibleCharCount % charactersPerBlip == 0)
+                {
+                    PlayVoiceBlip();
+                }
+            }
+
             float delay = characterDelay;
-            if(c == '.' || c == ',' || c == '!' || c == '?')
+            if (c == '.' || c == ',' || c == '!' || c == '?')
             {
                 delay *= punctuationDelayMultiplier;
             }
-            yield return new WaitForSeconds(delay);
 
+            yield return new WaitForSeconds(delay);
         }
 
         yield return new WaitForSeconds(duration);
+
         dialogueText.text = "";
         HideAllPanels();
         currentCoroutine = null;
@@ -246,6 +258,17 @@ public class CallManager : MonoBehaviour
     public void ShowSystemText(string text, float duration)
     {
         ShowTemporaryText(text, duration);
+    }
+    private void PlayVoiceBlip()
+    {
+        if (voiceAudioSource == null || currentChar == null || currentChar.visitor == null)
+            return;
+
+        AudioClip clip = currentChar.visitor.voiceBlip;
+        if (clip == null)
+            return;
+
+        voiceAudioSource.PlayOneShot(clip);
     }
 
     // questions could change

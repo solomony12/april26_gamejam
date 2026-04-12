@@ -15,6 +15,7 @@ MonoBehaviour:
   profile: {fileID: 21300000, guid: 20012b479295a4d469c5ae7ffe271e69, type: 3}
   silhouetteReal: {fileID: -1536381860910832467, guid: c8a7d7a6cbe6946488a977305ec51fab, type: 3}
   silhouetteMimic: {fileID: -622765290409938135, guid: c3be6b02bcc462149b3caa4bc7a14a91, type: 3}
+  voiceBlip: {fileID: 8300000, guid: ebb2c5e28c0002249a3c4bbd5749485d, type: 3}
   visitorName: CCZ89A
   callSign: Candy
   birthYear: 1979
