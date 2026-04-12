@@ -30,11 +30,15 @@ public class Visitor : ScriptableObject
 
     [Header("Genuine Responses")]
     [TextArea] public string genuineNameResponse;
-    [TextArea] public string genuineCallSignResponse;
     [TextArea] public string genuineBirthdayResponse;
+    [TextArea] public string genuineReasonResponse;
+    [TextArea] public string genuineTimeResponse;
+
 
     [Header("Mimic Responses")]
     [TextArea] public string mimicNameResponse;
-    [TextArea] public string mimicCallSignResponse;
     [TextArea] public string mimicBirthdayResponse;
+    [TextArea] public string mimicReasonResponse;
+    [TextArea] public string mimicTimeResponse;
+
 }

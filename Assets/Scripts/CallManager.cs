@@ -15,7 +15,7 @@ public class CallManager : MonoBehaviour
     private bool isMimic;
 
     private int questionCount = 0;
-    private int maxQuestions = 3;
+    private int maxQuestions = 5;
 
     private Coroutine currentCoroutine;
     private Coroutine talkingCoroutine;
@@ -33,40 +33,7 @@ public class CallManager : MonoBehaviour
         callActive = true;
 
         string greeting = isMimic ? currentChar.visitor.mimicGreeting : currentChar.visitor.genuineGreeting;
-        if(talkingCoroutine != null) 
-            StopCoroutine(talkingCoroutine);
-        talkingCoroutine = StartCoroutine(ShowDialogueText(greeting));
-    }
-
-    // questions could change
-    public void AskName()
-    {
-        if (!CanAskQuestion()) return;
-
-        string response = GetNameResponse();
-        if (talkingCoroutine != null)
-            StopCoroutine(talkingCoroutine);
-        talkingCoroutine = StartCoroutine(ShowDialogueText(response));
-    }
-
-    public void AskCallSign()
-    {
-        if (!CanAskQuestion()) return;
-
-        string response = GetCallSignResponse();
-        if (talkingCoroutine != null)
-            StopCoroutine(talkingCoroutine);
-        talkingCoroutine = StartCoroutine(ShowDialogueText(response));
-    }
-
-    public void AskBirthday()
-    {
-        if (!CanAskQuestion()) return;
-
-        string response = GetBirthdayResponse();
-        if (talkingCoroutine != null)
-            StopCoroutine(talkingCoroutine);
-        talkingCoroutine =StartCoroutine(ShowDialogueText(response));
+        StartDialogue(greeting, 1.2f, 0.7f);
     }
 
     public void RejectWithDialogue()
@@ -112,13 +79,18 @@ public class CallManager : MonoBehaviour
     {
         string rejectLine = isMimic ? currentChar.visitor.mimicRejected : currentChar.visitor.genuineRejected;
 
-        ShowTemporaryText(rejectLine, 1.5f);
-        while (currentCoroutine != null)
-            yield return null;
+        if (talkingCoroutine != null)
+        {
+            StopCoroutine(talkingCoroutine);
+            talkingCoroutine = null;
+        }
+
+        yield return StartCoroutine(PlayRejectDialogue(rejectLine, 1.5f, 0.7f));
 
         gameManager.SubmitDecision(false);
         talkingCoroutine = null;
     }
+
     private bool CanAskQuestion()
     {
         if (!callActive || currentChar == null)
@@ -137,21 +109,46 @@ public class CallManager : MonoBehaviour
         return true;
     }
 
+    private bool IsMultiLineDialogue(string text)
+    {
+        return text.Contains('\n');
+    }
+
     private string[] SplitDialogueLines(string fullText)
     {
         return fullText.Split('\n');
     }
 
-    private IEnumerator ShowDialogueSequences(string fullText, float lineHoldTime)
+
+    private void StartDialogue(string dialogue, float singleLineHold = 1.2f, float multiLineHold = 0.8f)
     {
-        string[] lines = SplitDialogueLines(fullText);
+        if (talkingCoroutine != null)
+        {
+            StopCoroutine(talkingCoroutine);
+            talkingCoroutine = null;
+        }
+
+        talkingCoroutine = StartCoroutine(PlayDialogue(dialogue, singleLineHold, multiLineHold));
+    }
+
+    private IEnumerator PlayDialogue(string dialogue, float singleLineHold, float multiLineHold)
+    {
+        string[] lines;
+
+        if (IsMultiLineDialogue(dialogue))
+            lines = SplitDialogueLines(dialogue);
+        else
+            lines = new string[] { dialogue };
+
+        float holdTime = lines.Length > 1 ? multiLineHold : singleLineHold;
+
         foreach (string line in lines)
         {
             string trimmedLine = line.Trim();
             if (string.IsNullOrEmpty(trimmedLine))
                 continue;
 
-            ShowTemporaryText(trimmedLine, lineHoldTime);
+            ShowTemporaryText(trimmedLine, holdTime);
 
             while (currentCoroutine != null)
             {
@@ -159,7 +156,40 @@ public class CallManager : MonoBehaviour
             }
         }
 
+        if (!callActive)
+        {
+            talkingCoroutine = null;
+            yield break;
+        }
+
+        questionButtons.SetActive(true);
         talkingCoroutine = null;
+    }
+
+    private IEnumerator PlayRejectDialogue(string dialogue, float singleLineHold, float multiLineHold)
+    {
+        string[] lines;
+
+        if (IsMultiLineDialogue(dialogue))
+            lines = SplitDialogueLines(dialogue);
+        else
+            lines = new string[] { dialogue };
+
+        float holdTime = lines.Length > 1 ? multiLineHold : singleLineHold;
+
+        foreach (string line in lines)
+        {
+            string trimmedLine = line.Trim();
+            if (string.IsNullOrEmpty(trimmedLine))
+                continue;
+
+            ShowTemporaryText(trimmedLine, holdTime);
+
+            while (currentCoroutine != null)
+            {
+                yield return null;
+            }
+        }
     }
 
     private void ShowTemporaryText(string text, float duration)
@@ -196,35 +226,42 @@ public class CallManager : MonoBehaviour
         currentCoroutine = null;
     }
 
-    private IEnumerator ShowDialogueText(string dialogue)
-    {
-        ShowTemporaryText(dialogue, 1.2f);
-
-        while (currentCoroutine != null)
-            yield return null;
-
-        if (!callActive)
-        {
-            talkingCoroutine = null;
-            yield break;
-        }
-
-        questionButtons.SetActive(true);
-        talkingCoroutine = null;
-    }
-
     public void ShowSystemText(string text, float duration)
     {
         ShowTemporaryText(text, duration);
     }
 
-    private IEnumerator ShowClosingAfterDelay()
+    // questions could change
+    public void AskName()
     {
-        yield return new WaitForSeconds(2.5f);
+        if (!CanAskQuestion()) return;
 
-        string closing = isMimic ? currentChar.visitor.mimicClosing : currentChar.visitor.genuineClosing;
+        string response = GetNameResponse();
+        StartDialogue(response, 1.0f, 0.6f);
+    }
 
-        ShowTemporaryText(closing, 2f);
+    public void AskBirthday()
+    {
+        if (!CanAskQuestion()) return;
+
+        string response = GetBirthdayResponse();
+        StartDialogue(response, 1.0f, 0.6f);
+    }
+
+    public void AskReason()
+    {
+        if (!CanAskQuestion()) return;
+
+        string response = GetReasonResponse();
+        StartDialogue(response, 1.0f, 0.6f);
+    }
+
+    public void AskTime()
+    {
+        if (!CanAskQuestion()) return;
+
+        string response = GetTimeResponse();
+        StartDialogue(response, 1.0f, 0.6f);
     }
 
     private string GetNameResponse()
@@ -235,19 +272,27 @@ public class CallManager : MonoBehaviour
         return currentChar.visitor.mimicNameResponse;
     }
 
-    private string GetCallSignResponse()
-    {
-        if (!isMimic)
-            return currentChar.visitor.genuineCallSignResponse;
-
-        return currentChar.visitor.mimicCallSignResponse;
-    }
-
     private string GetBirthdayResponse()
     {
         if (!isMimic)
             return currentChar.visitor.genuineBirthdayResponse;
 
         return currentChar.visitor.mimicBirthdayResponse;
+    }
+
+    private string GetReasonResponse()
+    {
+        if (!isMimic)
+            return currentChar.visitor.genuineReasonResponse;
+
+        return currentChar.visitor.mimicReasonResponse;
+    }
+
+    private string GetTimeResponse()
+    {
+        if (!isMimic)
+            return currentChar.visitor.genuineTimeResponse;
+
+        return currentChar.visitor.mimicTimeResponse;
     }
 }

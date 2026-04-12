@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb33d7c7324e44940b40ebf5e474aab1, type: 3}
-  m_Name: Test_Visitor 3
+  m_Name: Hilker
   m_EditorClassIdentifier: Assembly-CSharp::Visitor
   profile: {fileID: 21300000, guid: bc905313cf0f61d499ff7f2e06e524f4, type: 3}
   silhouetteReal: {fileID: 3634484325688373837, guid: 6544d0615297d5146a5704105703eaf4, type: 3}
   silhouetteMimic: {fileID: 7363729202824495390, guid: c846e9f61885e3f4fbe414515cbf61aa, type: 3}
-  visitorName: D
-  callSign: DD
-  birthYear: 2003
-  birthMonth: 3
-  birthDay: 3
+  visitorName: Avaline
+  callSign: OM#38il
+  birthYear: 1954
+  birthMonth: 6
+  birthDay: 29
   personality: Determined
-  genuineGreeting: hello g4
+  genuineGreeting: Omega Mike Pound Three Eight Ivory Lace
   mimicGreeting: 'hello m4
 
     Hello Line2
@@ -33,9 +33,16 @@ MonoBehaviour:
   mimicClosing: bye m4
   genuineRejected: You Serious? D
   mimicRejected: Too bad D
-  genuineNameResponse: My name is D
-  genuineCallSignResponse: DD G
-  genuineBirthdayResponse: 3 3 G
+  genuineNameResponse: "The name\u2019s Avaline! My brother\u2019s Dasni, if he comes
+    \u2018round."
+  genuineBirthdayResponse: I actually had my 38th exactly 1 week before me and my
+    brother came to the park! We booked the trip to celebrate since we both love
+    the outdoors so much
+  genuineReasonResponse: To go backpacking.
+  genuineTimeResponse: "I entered the park last monday and I\u2019ve been backpacking
+    with my brother. We ended up getting separated after he fell off a cliff. I\u2019m
+    kind of traumatized, but it\u2019s chill"
   mimicNameResponse: wrong name D
-  mimicCallSignResponse: wrong sign D
   mimicBirthdayResponse: wrong birth 33
+  mimicReasonResponse: reasib M3
+  mimicTimeResponse: time M3
