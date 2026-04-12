@@ -210,11 +210,22 @@ public class GameManager : MonoBehaviour
     private void EndGame()
     {
         gameEnded = true;
-        string summary = "Shift Complete\nCorrect: " + correctCount + "\nWrong: " + wrongCount +"\nMonsters inside: " + inMonsterCount;
-        callManager.ShowSystemText(summary, 5f);
+        if (EndingType.Bad)
+        {
+            //bad ending(jumpscare)
+        }
+
+        else if (EndingType.Perfect)
+        {
+            // perfect ending
+        }
+        else if(EndingType.Normal)
+        {
+            //normal ending
+        }
+
+
         if (phoneRingingAudioSource != null && phoneRingingAudioSource.isPlaying)
             phoneRingingAudioSource.Stop();
-
-        Debug.Log(summary);
     }
 }
