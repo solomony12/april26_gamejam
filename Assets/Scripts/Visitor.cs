@@ -11,7 +11,6 @@ public class Visitor : ScriptableObject
 
     [Header("Identity")]
     public string visitorName;
-    public string callSign;
     public int birthYear;
     public int birthMonth;
     public int birthDay;
