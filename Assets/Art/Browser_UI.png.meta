@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b41c50507484241468446cb6f2382b87
+guid: 7617c9de08aeacb4582f336fb7cee3be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2054469787366046854
-    second: ComputerWallpaper_0
+      213: 5972282606485973517
+    second: Browser_UI_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,8 +51,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 16, y: 3, z: 16, w: 16}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,23 +113,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ComputerWallpaper_0
+      name: Browser_UI_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 728
-        height: 410
+        y: 49
+        width: 64
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 0, z: 16, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68cb9b5f261f28c10800000000000000
-      internalID: 2054469787366046854
+      spriteID: d0a27d9536fc1e250800000000000000
+      internalID: 5972282606485973517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Browser_UI_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 16, z: 16, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b6f13792462194fbb81bf032264623
+      internalID: 749005038
       vertices: []
       indices: 
       edges: []
@@ -138,17 +160,20 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ComputerWallpaper_0: 2054469787366046854
+      Browser_UI_0: 5972282606485973517
+      Browser_UI_1: 749005038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

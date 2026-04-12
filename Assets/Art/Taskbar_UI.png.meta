@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b41c50507484241468446cb6f2382b87
+guid: 1e5a0d520319f6a419852f76caaf9cde
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2054469787366046854
-    second: ComputerWallpaper_0
+      213: 7471776214891912893
+    second: Taskbar_UI_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 55, y: 2, z: 16, w: 2}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ComputerWallpaper_0
+      name: Taskbar_UI_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 728
-        height: 410
+        width: 320
+        height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68cb9b5f261f28c10800000000000000
-      internalID: 2054469787366046854
+      spriteID: dbe58d951e411b760800000000000000
+      internalID: 7471776214891912893
       vertices: []
       indices: 
       edges: []
@@ -138,8 +138,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ComputerWallpaper_0: 2054469787366046854
+      Taskbar_UI_0: 7471776214891912893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

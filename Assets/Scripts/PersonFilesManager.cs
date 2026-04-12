@@ -1,12 +1,20 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class PersonFilesManager : MonoBehaviour
 {
+    [SerializeField] Visitor startVisitor;
     [SerializeField] Image personImage;
     [SerializeField] TextMeshProUGUI basicDataText;
-    [SerializeField] TextMeshProUGUI personalityText; 
+    [SerializeField] TextMeshProUGUI personalityText;
+
+    private void Start()
+    {
+        OnPersonClicked(startVisitor);
+    }
+
     public void OnPersonClicked(Visitor person)
     {
         personImage.sprite = person.profile;
