@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: D
+  m_text: Avaline
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
   m_sharedMaterial: {fileID: -2321116072747565633, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
@@ -1267,7 +1267,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 50, y: 65}
-  m_SizeDelta: {x: 200, y: 97}
+  m_SizeDelta: {x: 230, y: 97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &717769003944584153
 CanvasRenderer:
@@ -1335,7 +1335,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1438,7 +1438,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Betty
+  m_text: "Ja\u2019quiez"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
   m_sharedMaterial: {fileID: -2321116072747565633, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
@@ -1950,7 +1950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: E
+  m_text: Bobby Green
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
   m_sharedMaterial: {fileID: -2321116072747565633, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
@@ -2087,7 +2087,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Adam
+  m_text: Phoenix
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
   m_sharedMaterial: {fileID: -2321116072747565633, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
@@ -2224,7 +2224,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: F
+  m_text: Alex Wood
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
   m_sharedMaterial: {fileID: -2321116072747565633, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
