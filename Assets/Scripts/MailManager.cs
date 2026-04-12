@@ -14,6 +14,7 @@ public class MailManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI bodyText;
 
     [SerializeField] Mail startMail;
+    [SerializeField] RectTransform mailText;
 
     public static Dictionary<Mail, bool> mailDictionary = new();
 
@@ -45,6 +46,7 @@ public class MailManager : MonoBehaviour
     }
     public void OpenMail(Mail mail)
     {
+        mailText.anchoredPosition = new Vector2(13,0);
         mailDictionary[mail] = false;
         senderText.text = mail.sender;
         subjectText.text = mail.subject;
