@@ -9,6 +9,9 @@ public class CallManager : MonoBehaviour
     [SerializeField] private GameObject questionButtons;
     [SerializeField] private GameObject rejectButton;
 
+    [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private GameObject questionPanel;
+
     [SerializeField] private float characterDelay = 0.03f;
     [SerializeField] private float punctuationDelayMultiplier = 4f;
 
@@ -26,6 +29,7 @@ public class CallManager : MonoBehaviour
     {
         questionButtons.SetActive(false);
         rejectButton.SetActive(false);
+        HideAllPanels();
     }
     public void StartCall(CharacterData character, bool mimic)
     {
@@ -35,6 +39,7 @@ public class CallManager : MonoBehaviour
         callActive = true;
 
         string greeting = isMimic ? currentChar.visitor.mimicGreeting : currentChar.visitor.genuineGreeting;
+        ShowDialoguePanelOnly();
         StartDialogue(greeting, 1.2f, 0.7f);
     }
 
@@ -49,6 +54,8 @@ public class CallManager : MonoBehaviour
         callActive = false;
         questionButtons.SetActive(false);
         rejectButton.SetActive(false);
+        HideAllPanels();
+
         if (talkingCoroutine != null)
         {
             StopCoroutine(talkingCoroutine);
@@ -70,6 +77,8 @@ public class CallManager : MonoBehaviour
         callActive = false;
         questionButtons.SetActive(false);
         rejectButton.SetActive(false);
+        HideAllPanels();
+
         if (talkingCoroutine != null)
         {
             StopCoroutine(talkingCoroutine);
@@ -168,6 +177,7 @@ public class CallManager : MonoBehaviour
 
         questionButtons.SetActive(true);
         rejectButton.SetActive(true);
+        ShowQuestionPanelOnly();
         talkingCoroutine = null;
     }
 
@@ -206,6 +216,7 @@ public class CallManager : MonoBehaviour
         }
 
         questionButtons.SetActive(false);
+        ShowDialoguePanelOnly();
         currentCoroutine = StartCoroutine(ShowTextCoroutine(text, duration));
     }
 
@@ -227,7 +238,8 @@ public class CallManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(duration);
-        dialogueText.text = "...";
+        dialogueText.text = "";
+        HideAllPanels();
         currentCoroutine = null;
     }
 
@@ -299,5 +311,23 @@ public class CallManager : MonoBehaviour
             return currentChar.visitor.genuineTimeResponse;
 
         return currentChar.visitor.mimicTimeResponse;
+    }
+
+    private void ShowDialoguePanelOnly()
+    {
+        dialoguePanel.SetActive(true);
+        questionPanel.SetActive(false);
+    }
+
+    private void ShowQuestionPanelOnly()
+    {
+        dialoguePanel.SetActive(false);
+        questionPanel.SetActive(true);
+    }
+
+    private void HideAllPanels()
+    {
+        dialoguePanel.SetActive(false);
+        questionPanel.SetActive(false);
     }
 }

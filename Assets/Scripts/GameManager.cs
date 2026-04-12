@@ -8,6 +8,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CallManager callManager;
     [SerializeField] private SilhouetteManager silhouetteManager;
 
+    private CharacterData pendingCharacter;
+    private bool pendingIsMimic;
+    private bool phoneRinging = false;
+    private bool waitingForAnswer = false;
+
     private CharacterData[] characters;
     private int currentIndex = 0;
     private int currentCount = 0;
@@ -24,7 +29,8 @@ public class GameManager : MonoBehaviour
         CreateCharacters();
         ShuffleCharacters();
         AssignMimics();
-        StartCurrentCall();
+
+        StartCoroutine(BeginFirstCallAfterDelay(10f));
     }
 
     private void CreateCharacters()
@@ -65,13 +71,40 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void StartCurrentCall()
+    private IEnumerator BeginFirstCallAfterDelay(float delay)
     {
-        if (gameEnded || currentCount >= characters.Length)
+        yield return new WaitForSeconds(delay);
+        TriggerIncomingCall();
+    }
+
+    private void TriggerIncomingCall()
+    {
+        if (gameEnded || currentIndex >= characters.Length)
             return;
 
-        CharacterData selectedCharacter = characters[currentIndex];
-        bool isMimic = mimicFlags[currentIndex];
+        pendingCharacter = characters[currentIndex];
+        pendingIsMimic = mimicFlags[currentIndex];
+
+        phoneRinging = true;
+        waitingForAnswer = true;
+
+        Debug.Log("Incoming call from: " + pendingCharacter.Name + " | Mimic: " + pendingIsMimic);
+
+        // bell ringing sound effect can be triggered here
+    }
+
+    public void StartCurrentCall()
+    {
+        if (gameEnded || currentCount >= characters.Length || !phoneRinging || !waitingForAnswer)
+            return;
+
+        phoneRinging = false;
+        waitingForAnswer = false;
+
+        // stop bell ringing sound effect here
+
+        CharacterData selectedCharacter = pendingCharacter;
+        bool isMimic = pendingIsMimic;
 
         Debug.Log("Current caller: " + selectedCharacter.Name + " | Mimic: " + isMimic);
 
@@ -109,11 +142,6 @@ public class GameManager : MonoBehaviour
         CharacterData currentCharacter = characters[currentIndex];
         bool isActualMimic = mimicFlags[currentIndex];
 
-        string resultText = playerWasCorrect ? "correct" : "wrong";
-
-        callManager.ShowSystemText(resultText, 2f);
-        yield return new WaitForSeconds(2.2f);
-
         if (accepted)
         {
             string closingLine = isActualMimic ? currentCharacter.visitor.mimicClosing : currentCharacter.visitor.genuineClosing;
@@ -142,7 +170,16 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        StartCurrentCall();
+        StartCoroutine(BeginNextCallAfterDelay());
+    }
+
+    private IEnumerator BeginNextCallAfterDelay()
+    {
+        float randomWaitSec = Random.Range(2f, 4f); // can extend
+        yield return new WaitForSeconds(randomWaitSec);
+
+        if (!gameEnded)
+            TriggerIncomingCall();
     }
 
     private void EndGame()
