@@ -10,9 +10,6 @@ public class SilhouetteManager : MonoBehaviour
     [Header("Sprites")]
     [SerializeField] private Sprite monitorSprite;
 
-    [SerializeField] private Sprite humanWindowSprite;
-    [SerializeField] private Sprite mimicWindowSprite;
-
     [Header("Window Movement")]
     [SerializeField] private Transform windowStartPoint;
     [SerializeField] private Transform windowEndPoint;
@@ -35,17 +32,17 @@ public class SilhouetteManager : MonoBehaviour
         monitorRenderer.enabled = false;
     }
 
-    public void PlayWindowPass(bool isMimic)
+    public void PlayWindowPass(CharacterData currentChatacter, bool isMimic)
     {
         if (moveCoroutine != null)
             StopCoroutine(moveCoroutine);
 
-        moveCoroutine = StartCoroutine(WindowPassCoroutine(isMimic));
+        moveCoroutine = StartCoroutine(WindowPassCoroutine(currentChatacter, isMimic));
     }
 
-    private IEnumerator WindowPassCoroutine(bool isMimic)
+    private IEnumerator WindowPassCoroutine(CharacterData currentChatacter, bool isMimic)
     {
-        windowRenderer.sprite = isMimic ? mimicWindowSprite : humanWindowSprite;
+        windowRenderer.sprite = isMimic ? currentChatacter.visitor.silhouetteMimic : currentChatacter.visitor.silhouetteReal;
         windowRenderer.enabled = true;
         windowRenderer.transform.position = windowStartPoint.position;
 

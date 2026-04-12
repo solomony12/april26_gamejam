@@ -7,6 +7,7 @@ public class CallManager : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private GameObject questionButtons;
+    [SerializeField] private GameObject rejectButton;
 
     [SerializeField] private float characterDelay = 0.03f;
     [SerializeField] private float punctuationDelayMultiplier = 4f;
@@ -15,7 +16,7 @@ public class CallManager : MonoBehaviour
     private bool isMimic;
 
     private int questionCount = 0;
-    private int maxQuestions = 5;
+    [SerializeField] private int maxQuestions = 3;
 
     private Coroutine currentCoroutine;
     private Coroutine talkingCoroutine;
@@ -24,6 +25,7 @@ public class CallManager : MonoBehaviour
     private void Start()
     {
         questionButtons.SetActive(false);
+        rejectButton.SetActive(false);
     }
     public void StartCall(CharacterData character, bool mimic)
     {
@@ -46,7 +48,8 @@ public class CallManager : MonoBehaviour
 
         callActive = false;
         questionButtons.SetActive(false);
-        if(talkingCoroutine != null)
+        rejectButton.SetActive(false);
+        if (talkingCoroutine != null)
         {
             StopCoroutine(talkingCoroutine);
             talkingCoroutine = null;
@@ -66,6 +69,7 @@ public class CallManager : MonoBehaviour
 
         callActive = false;
         questionButtons.SetActive(false);
+        rejectButton.SetActive(false);
         if (talkingCoroutine != null)
         {
             StopCoroutine(talkingCoroutine);
@@ -163,6 +167,7 @@ public class CallManager : MonoBehaviour
         }
 
         questionButtons.SetActive(true);
+        rejectButton.SetActive(true);
         talkingCoroutine = null;
     }
 

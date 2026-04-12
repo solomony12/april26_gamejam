@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
             callManager.ShowSystemText(closingLine, 2f);
 
             silhouetteManager.hideMonitorSilhouette();
-            silhouetteManager.PlayWindowPass(isActualMimic);
+            silhouetteManager.PlayWindowPass(currentCharacter, isActualMimic);
             yield return new WaitForSeconds(2f);
         }
 
