@@ -3644,7 +3644,7 @@ MonoBehaviour:
   silhouetteManager: {fileID: 238728374}
   mailManager: {fileID: 485805817}
   FemboyMail: {fileID: 11400000, guid: ab0dc7df0822bb144a647425e0c97de1, type: 2}
-  mimicCount: 6
+  mimicCount: 2
 --- !u!4 &1918859833
 Transform:
   m_ObjectHideFlags: 0
