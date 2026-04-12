@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         ShuffleCharacters();
         AssignMimics();
 
-        StartCoroutine(BeginFirstCallAfterDelay(10f));
+        StartCoroutine(BeginFirstCallAfterDelay(20f));
     }
 
     private void CreateCharacters()
@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour
 
 
         silhouetteManager.hideMonitorSilhouette();
-        float randomWaitSec = Random.Range(2f, 4f);    //could change to 5f, 15f in actual launch
+        float randomWaitSec = Random.Range(5f, 10f);    //could change to 5f, 15f in actual launch
         yield return new WaitForSeconds(randomWaitSec);
 
         AdvanceToNextCall();
