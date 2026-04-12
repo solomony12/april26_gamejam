@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     private int currentCount = 0;
     private int correctCount = 0;
     private int wrongCount = 0;
+    private int inMonsterCount = 0;
 
     private bool gameEnded = false;
 
@@ -121,18 +122,18 @@ public class GameManager : MonoBehaviour
         bool playerWasCorrect = false;
 
         if (accepted)
-        {
             playerWasCorrect = !isActualMimic;
-        }
         else
-        {
             playerWasCorrect = isActualMimic;
-        }
+
 
         if(playerWasCorrect)
             correctCount++;
         else
             wrongCount++;
+
+        if (accepted && isActualMimic)
+            inMonsterCount++;
 
         StartCoroutine(HandleDecisionResult(playerWasCorrect, accepted));
     }
@@ -185,7 +186,7 @@ public class GameManager : MonoBehaviour
     private void EndGame()
     {
         gameEnded = true;
-        string summary = "Shift Complete\nCorrect: " + correctCount + "\nWrong: " + wrongCount;
+        string summary = "Shift Complete\nCorrect: " + correctCount + "\nWrong: " + wrongCount +"\nMonsters inside: " + inMonsterCount;
         callManager.ShowSystemText(summary, 5f);
 
         Debug.Log(summary);
