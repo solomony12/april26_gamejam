@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874b5e5991c8ddd4c9ddbc996be428fb, type: 3}
   m_Name: FemboyMail
   m_EditorClassIdentifier: Assembly-CSharp::Mail
-  sender: FemMail
-  subject: helloooo
-  body: this is femboymail
+  sender: nikoniko@yurimail.com
+  subject: Checkout my Flinch
+  body: 'Ohiyo!
+
+    Thanksyow for letting mwe out. Usa sound kinda cute ;)
+
+    Uza
+    should chwek owt my Flinch.Subscribe for a surprise ;)
+
+    
+
+    flinch.tv/nikotheneko'
