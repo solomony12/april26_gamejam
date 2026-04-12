@@ -19,7 +19,13 @@ MonoBehaviour:
   birthDay: 1
   personality: Nervous
   genuineGreeting: Hello G2
-  mimicGreeting: hello M2
+  mimicGreeting: 'hello M2
+
+    Hello Line2
+
+    Hello Line3
+
+    line4'
   genuineClosing: bye g2
   mimicClosing: bye m2
   genuineRejected: You Serious? B

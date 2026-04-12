@@ -18,7 +18,13 @@ MonoBehaviour:
   birthMonth: 6
   birthDay: 6
   personality: Determined
-  genuineGreeting: hello g6
+  genuineGreeting: 'hello g6
+
+    Hello Line2
+
+    Hello Line3
+
+    line4'
   mimicGreeting: hello m6
   genuineClosing: bye g6
   mimicClosing: bye m6

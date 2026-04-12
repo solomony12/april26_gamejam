@@ -19,7 +19,13 @@ MonoBehaviour:
   birthDay: 3
   personality: Determined
   genuineGreeting: hello g4
-  mimicGreeting: hello m4
+  mimicGreeting: 'hello m4
+
+    Hello Line2
+
+    Hello Line3
+
+    line4'
   genuineClosing: bye g4
   mimicClosing: bye m4
   genuineRejected: You Serious? D

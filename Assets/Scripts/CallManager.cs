@@ -8,6 +8,9 @@ public class CallManager : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] private GameObject questionButtons;
 
+    [SerializeField] private float characterDelay = 0.03f;
+    [SerializeField] private float punctuationDelayMultiplier = 4f;
+
     private CharacterData currentChar;
     private bool isMimic;
 
@@ -109,8 +112,9 @@ public class CallManager : MonoBehaviour
     {
         string rejectLine = isMimic ? currentChar.visitor.mimicRejected : currentChar.visitor.genuineRejected;
 
-        ShowTemporaryText(rejectLine, 2f);
-        yield return new WaitForSeconds(2.2f);
+        ShowTemporaryText(rejectLine, 1.5f);
+        while (currentCoroutine != null)
+            yield return null;
 
         gameManager.SubmitDecision(false);
         talkingCoroutine = null;
@@ -138,17 +142,21 @@ public class CallManager : MonoBehaviour
         return fullText.Split('\n');
     }
 
-    private IEnumerator ShowDialogueSequences(string fullText, float lineDuration)
+    private IEnumerator ShowDialogueSequences(string fullText, float lineHoldTime)
     {
         string[] lines = SplitDialogueLines(fullText);
         foreach (string line in lines)
         {
             string trimmedLine = line.Trim();
+            if (string.IsNullOrEmpty(trimmedLine))
+                continue;
 
-            if (string.IsNullOrEmpty(trimmedLine)) continue;
+            ShowTemporaryText(trimmedLine, lineHoldTime);
 
-            ShowTemporaryText(trimmedLine, lineDuration);
-            yield return new WaitForSeconds(lineDuration + 0.2f);
+            while (currentCoroutine != null)
+            {
+                yield return null;
+            }
         }
 
         talkingCoroutine = null;
@@ -157,7 +165,10 @@ public class CallManager : MonoBehaviour
     private void ShowTemporaryText(string text, float duration)
     {
         if (currentCoroutine != null)
+        {
             StopCoroutine(currentCoroutine);
+            currentCoroutine = null;
+        }
 
         questionButtons.SetActive(false);
         currentCoroutine = StartCoroutine(ShowTextCoroutine(text, duration));
@@ -165,19 +176,41 @@ public class CallManager : MonoBehaviour
 
     private IEnumerator ShowTextCoroutine(string text, float duration)
     {
-        dialogueText.text = text;
+        dialogueText.text = "";
         dialogueText.enabled = true;
 
-        yield return new WaitForSeconds(duration);
+        foreach(char c in text)
+        {
+            dialogueText.text += c;
+            float delay = characterDelay;
+            if(c == '.' || c == ',' || c == '!' || c == '?')
+            {
+                delay *= punctuationDelayMultiplier;
+            }
+            yield return new WaitForSeconds(delay);
 
+        }
+
+        yield return new WaitForSeconds(duration);
         dialogueText.text = "...";
+        currentCoroutine = null;
     }
 
     private IEnumerator ShowDialogueText(string dialogue)
     {
-        ShowTemporaryText(dialogue, 3f);
-        yield return new WaitForSeconds(3f);
+        ShowTemporaryText(dialogue, 1.2f);
+
+        while (currentCoroutine != null)
+            yield return null;
+
+        if (!callActive)
+        {
+            talkingCoroutine = null;
+            yield break;
+        }
+
         questionButtons.SetActive(true);
+        talkingCoroutine = null;
     }
 
     public void ShowSystemText(string text, float duration)
