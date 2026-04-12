@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] Mail FemboyMail;
     [SerializeField] private AudioSource phoneRingingAudioSource;
 
+    public GameObject jumpScare;
+
     private CharacterData pendingCharacter;
     private bool pendingIsMimic;
     private bool phoneRinging = false;
@@ -210,22 +212,19 @@ public class GameManager : MonoBehaviour
     private void EndGame()
     {
         gameEnded = true;
-        if (EndingType.Bad)
+        if (GetEndingType() == EndingType.Bad)
         {
-            //bad ending(jumpscare)
-        }
-
-        else if (EndingType.Perfect)
-        {
-            // perfect ending
-        }
-        else if(EndingType.Normal)
-        {
-            //normal ending
+            StartCoroutine(HandleBadEnding());
         }
 
 
         if (phoneRingingAudioSource != null && phoneRingingAudioSource.isPlaying)
             phoneRingingAudioSource.Stop();
+    }
+
+    IEnumerator HandleBadEnding()
+    {
+        yield return new WaitForSeconds(10f);
+        jumpScare.SetActive(true);
     }
 }

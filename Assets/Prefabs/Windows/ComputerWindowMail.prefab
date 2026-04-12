@@ -1014,5 +1014,5 @@ MonoBehaviour:
   subjectText: {fileID: 8659313495395042412}
   bodyText: {fileID: 3912646865329592415}
   startMail: {fileID: 11400000, guid: 495e4b8e22a15c248bb57fe438c33ae0, type: 2}
-  creditsMail: {fileID: 11400000, guid: 3b30779f639f7d4499d02cef1fddbdba, type: 2}
+  creditsMail: {fileID: 11400000, guid: 31653626e0d59f548a7250bb65232ae2, type: 2}
   mailText: {fileID: 5128317089547090001}

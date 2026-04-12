@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MailManager : MonoBehaviour
 {
@@ -55,5 +57,15 @@ public class MailManager : MonoBehaviour
         subjectText.text = mail.subject;
         bodyText.text = mail.body;
         mailContent.SetActive(true);
+        if (mail.isEnd)
+        {
+            StartCoroutine(EndGame());
+        }
+    }
+
+    IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(30);
+        SceneManager.LoadScene(0);
     }
 }

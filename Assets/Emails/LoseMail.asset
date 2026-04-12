@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874b5e5991c8ddd4c9ddbc996be428fb, type: 3}
   m_Name: LoseMail
   m_EditorClassIdentifier: Assembly-CSharp::Mail
+  isEnd: 1
   sender: stillwoodparks@yurimail.com
   subject: Termination
   body: "Mr. Navorsky,\r\nWe are most disappointed with your performance. It\u2019ll
