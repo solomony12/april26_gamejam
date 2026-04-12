@@ -7,6 +7,7 @@ TagManager:
   - ComputerCanvas
   - SFX
   - Music
+  - BunnyWallpaper
   layers:
   - Default
   - TransparentFX
