@@ -119,7 +119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3963811545075544160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -214,7 +214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: 0}
+  m_AnchoredPosition: {x: 0.00019596367, y: 0}
   m_SizeDelta: {x: 460, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3210309550253556500
@@ -657,8 +657,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.6436, y: -222.99998}
-  m_SizeDelta: {x: 430.71, y: 554}
+  m_AnchoredPosition: {x: -0.00015593, y: -222.99998}
+  m_SizeDelta: {x: 440, y: 554}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7181712115251505547
 CanvasRenderer:
@@ -804,8 +804,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -15, y: 0}
-  m_SizeDelta: {x: -30, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3669129381502229630
 MonoBehaviour:
@@ -1014,4 +1014,5 @@ MonoBehaviour:
   subjectText: {fileID: 8659313495395042412}
   bodyText: {fileID: 3912646865329592415}
   startMail: {fileID: 11400000, guid: 495e4b8e22a15c248bb57fe438c33ae0, type: 2}
+  creditsMail: {fileID: 11400000, guid: 3b30779f639f7d4499d02cef1fddbdba, type: 2}
   mailText: {fileID: 5128317089547090001}

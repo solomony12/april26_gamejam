@@ -14,6 +14,8 @@ public class MailManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI bodyText;
 
     [SerializeField] Mail startMail;
+    [SerializeField] Mail creditsMail;
+
     [SerializeField] RectTransform mailText;
 
     public static Dictionary<Mail, bool> mailDictionary = new();
@@ -21,6 +23,7 @@ public class MailManager : MonoBehaviour
     private void Awake()
     {
         AddMail(startMail);
+        AddMail(creditsMail);
     }
 
     public static bool hasNewMail()
