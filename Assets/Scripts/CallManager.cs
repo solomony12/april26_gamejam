@@ -8,6 +8,7 @@ public class CallManager : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] private GameObject questionButtons;
     [SerializeField] private GameObject rejectButton;
+    [SerializeField] private TMP_Text questionsLeftText;
 
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private GameObject questionPanel;
@@ -32,12 +33,15 @@ public class CallManager : MonoBehaviour
         questionButtons.SetActive(false);
         rejectButton.SetActive(false);
         HideAllPanels();
+        UpdateQuestionCountUI();
+        questionsLeftText.gameObject.SetActive(false);
     }
     public void StartCall(CharacterData character, bool mimic)
     {
         currentChar = character;
         isMimic = mimic;
         questionCount = 0;
+        UpdateQuestionCountUI();
         callActive = true;
 
         string greeting = isMimic ? currentChar.visitor.mimicGreeting : currentChar.visitor.genuineGreeting;
@@ -55,6 +59,8 @@ public class CallManager : MonoBehaviour
         callActive = false;
         questionButtons.SetActive(false);
         rejectButton.SetActive(false);
+        questionsLeftText.gameObject.SetActive(false);
+
         HideAllPanels();
 
         if (talkingCoroutine != null)
@@ -77,6 +83,8 @@ public class CallManager : MonoBehaviour
         callActive = false;
         questionButtons.SetActive(false);
         rejectButton.SetActive(false);
+        questionsLeftText.gameObject.SetActive(false);
+
         HideAllPanels();
 
         if (talkingCoroutine != null)
@@ -103,7 +111,18 @@ public class CallManager : MonoBehaviour
         gameManager.SubmitDecision(false);
         talkingCoroutine = null;
     }
+    private int QuestionsLeft()
+    {
+        return maxQuestions - questionCount;
+    }
 
+    private void UpdateQuestionCountUI()
+    {
+        if (questionsLeftText == null)
+            return;
+        questionsLeftText.text = "Questions Left: " + QuestionsLeft();
+
+    }
     private bool CanAskQuestion()
     {
         if (!callActive || currentChar == null)
@@ -117,6 +136,15 @@ public class CallManager : MonoBehaviour
         }
 
         questionCount++;
+        UpdateQuestionCountUI();
+
+        if(QuestionsLeft() <= 0)
+        {
+            questionButtons.SetActive(false);
+            questionsLeftText.gameObject.SetActive(false);
+        }
+            
+
         return true;
     }
 
@@ -173,7 +201,18 @@ public class CallManager : MonoBehaviour
             yield break;
         }
 
-        questionButtons.SetActive(true);
+        if(QuestionsLeft() > 0)
+        {
+            questionButtons.SetActive(true);
+            questionsLeftText.gameObject.SetActive(true);
+        }
+
+        else
+        {
+            questionButtons.SetActive(false);
+            questionsLeftText.gameObject.SetActive(false);
+        }
+
         rejectButton.SetActive(true);
         ShowQuestionPanelOnly();
         talkingCoroutine = null;
