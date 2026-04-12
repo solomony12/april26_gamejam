@@ -1,9 +1,15 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ComputerTaskbarManager : MonoBehaviour
 {
+    [SerializeField] Image mailImage;
+    [SerializeField] Sprite mailSprite;
+    [SerializeField] Sprite mailSpriteNew;
+
+
     [SerializeField] string[] windowNames;
     [SerializeField] GameObject[] windowObjects;
     [SerializeField] private ViewManager viewManager;
@@ -15,6 +21,18 @@ public class ComputerTaskbarManager : MonoBehaviour
         for (int i=0; i<windowNames.Length; i++)
         {
             windows.Add((windowNames[i], windowObjects[i]));
+        }
+    }
+
+    private void Update()
+    {
+        if (MailManager.hasNewMail())
+        {
+            mailImage.sprite = mailSpriteNew;
+        }
+        else
+        {
+            mailImage.sprite = mailSprite;
         }
     }
 
@@ -30,9 +48,12 @@ public class ComputerTaskbarManager : MonoBehaviour
         int windowIndex = getWindowIndex(windowName);
         if (windowIndex == -1) return;
         Debug.Log("Opening " + windowName);
-        if (windows[windowIndex].windowObject.activeSelf) return;
-        windows[windowIndex].windowObject.transform.SetAsLastSibling();
-        windows[windowIndex].windowObject.SetActive(true);
+        GameObject windowObj = windows[windowIndex].windowObject;
+        windowObj.transform.SetAsLastSibling();
+        ComputerWindow computerWindow = windowObj.GetComponent<ComputerWindow>();
+        if (computerWindow == null) Debug.Log("Not Found ComputerWindow component");
+        else Debug.Log("Found ComputerWindow component");
+        computerWindow.OpenWindow();
     }
 
     private int getWindowIndex(string windowName)

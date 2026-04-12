@@ -748,6 +748,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Yuri Mail
       objectReference: {fileID: 0}
+    - target: {fileID: 1611084594469657600, guid: 97384f3763e5b6d48af41da60088d251, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1979280273873117292, guid: 97384f3763e5b6d48af41da60088d251, type: 3}
       propertyPath: m_Name
       value: ComputerWindowMail
@@ -839,6 +843,10 @@ PrefabInstance:
     - target: {fileID: 4020113300003946186, guid: 97384f3763e5b6d48af41da60088d251, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8729629222518724294, guid: 97384f3763e5b6d48af41da60088d251, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -6,6 +6,7 @@ public class ComputerWindow : MonoBehaviour
     private Canvas canvas;
     private RectTransform rectTransform;
     [SerializeField] private RectTransform body;
+    bool isActive = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +16,7 @@ public class ComputerWindow : MonoBehaviour
 
     public void DragWindow(BaseEventData data)
     {
+        if (!isActive) return;
         transform.SetAsLastSibling();
         PointerEventData pointerData = data as PointerEventData;
         transform.position = new Vector2(
@@ -26,9 +28,20 @@ public class ComputerWindow : MonoBehaviour
                                                canvas.pixelRect.height - (rectTransform.rect.height / 2)));
     }
 
+    [ContextMenu("Open Window")]
+    public void OpenWindow()
+    {
+        isActive = true;
+        GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 150, 0);
+        Debug.Log(GetComponent<RectTransform>().anchoredPosition);
+    }
+
+    [ContextMenu("Close Window")]
     public void CloseWindow()
     {
-        gameObject.SetActive(false);
+        isActive = false;
+        GetComponent<RectTransform>().position = new Vector3(-1000, -1000, 0);
+        Debug.Log(GetComponent<RectTransform>().position);
     }
 
 }
