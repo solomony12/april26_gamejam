@@ -673,6 +673,22 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7152313836501565562, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: 'musicTracks.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2bb7ad2d6a6b63e4785652b47c2576cc, type: 3}
+    - target: {fileID: 7152313836501565562, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: 'musicTracks.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 27d9f1cdecf6c554491dc4168e84dd80, type: 3}
+    - target: {fileID: 7152313836501565562, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: 'musicTracks.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0c2d78909ea4b284693fa4e24a4e96d3, type: 3}
+    - target: {fileID: 7152313836501565562, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: 'musicTracks.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f2e8f4c495350d446bcfb7ca41b2d339, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -42,7 +42,7 @@ public class MenuManager : MonoBehaviour
             animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
         {
             if (selectedScene == 1) SceneManager.LoadScene("Credits");
-            else SceneManager.LoadScene("Game");
+            else SceneManager.LoadScene("Game New");
         }
     }
 }
