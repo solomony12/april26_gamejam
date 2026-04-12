@@ -9,7 +9,7 @@ public class PersonFilesManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI personalityText; 
     public void OnPersonClicked(Visitor person)
     {
-        // Person image code goes here
+        personImage.sprite = person.profile;
         basicDataText.text = $"Name: {person.visitorName}\n" +
                              $"Call Sign: {person.callSign}\n" +
                              $"Birth Date: {person.birthYear}/{person.birthMonth}/{person.birthDay}";

@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb33d7c7324e44940b40ebf5e474aab1, type: 3}
   m_Name: Test_Visitor
   m_EditorClassIdentifier: Assembly-CSharp::Visitor
+  profile: {fileID: 21300000, guid: 45ccbeb635752b24bbebf8ff22310e01, type: 3}
+  silhouetteReal: {fileID: 357923613836395556, guid: 5e1c4a549220f3e42ba23997b766c0f7, type: 3}
+  silhouetteMimic: {fileID: -6915174740479770503, guid: 55aea484b169eef4a9740cbaeb17a092, type: 3}
   visitorName: Adam
   callSign: Apple
   birthYear: 1997

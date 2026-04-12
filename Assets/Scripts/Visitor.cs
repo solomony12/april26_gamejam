@@ -3,6 +3,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Visitor", menuName = "Scriptable Objects/Visitor")]
 public class Visitor : ScriptableObject
 {
+    [Header("Sprites")]
+    public Sprite profile;
+    public Sprite silhouetteReal;
+    public Sprite silhouetteMimic;
+
     [Header("Identity")]
     public string visitorName;
     public string callSign;
