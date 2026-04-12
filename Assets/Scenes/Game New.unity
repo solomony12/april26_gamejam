@@ -720,9 +720,9 @@ Transform:
   m_GameObject: {fileID: 194812490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -464.78, y: 3.24, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2022221232}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -773,7 +773,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1052,7 +1052,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7966556998743438222, guid: c38f8e404c929dd4f95712055ac38625, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1512,6 +1512,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432245760}
   m_CullTransparentMesh: 1
+--- !u!114 &485805817 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6110979119702495073, guid: bcd62f16269173849872753c190ef198, type: 3}
+  m_PrefabInstance: {fileID: 2037873199}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d03139f8aa6884fb0459c1cdd49c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,7 +1991,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -6
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3699,7 +3710,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7415998331326901006, guid: 0a8efb5adc4350442b6dad2c9acd49a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3764,6 +3775,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b43142703ef42934c90fa3e122def02c, type: 2}
   callManager: {fileID: 1988545818}
   silhouetteManager: {fileID: 238728374}
+  mailManager: {fileID: 485805817}
+  FemboyMail: {fileID: 11400000, guid: ab0dc7df0822bb144a647425e0c97de1, type: 2}
   mimicCount: 2
 --- !u!4 &1918859833
 Transform:

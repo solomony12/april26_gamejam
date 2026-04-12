@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         waitingForAnswer = true;
 
         Debug.Log("Incoming call from: " + pendingCharacter.Name + " | Mimic: " + pendingIsMimic);
-
+        silhouetteManager.ShowMonitorSilhouette(false);
         // bell ringing sound effect can be triggered here
     }
 
