@@ -399,6 +399,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: ComputerCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4175297422035108567, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_AspectRatio
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292475549162506238, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292475549162506238, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292475549162506238, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292475549162506238, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292475549162506238, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292475549162506238, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6512340611989112910, guid: bcd62f16269173849872753c190ef198, type: 3}
       propertyPath: m_Type
       value: 0
@@ -498,6 +526,22 @@ PrefabInstance:
     - target: {fileID: 7480076525153669915, guid: bcd62f16269173849872753c190ef198, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -17.898438
+      objectReference: {fileID: 0}
+    - target: {fileID: 7796266804716040982, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7796266804716040982, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7796266804716040982, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7796266804716040982, guid: bcd62f16269173849872753c190ef198, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8398718754186844931, guid: bcd62f16269173849872753c190ef198, type: 3}
       propertyPath: m_Type
