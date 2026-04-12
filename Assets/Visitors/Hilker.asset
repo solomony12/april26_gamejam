@@ -17,12 +17,11 @@ MonoBehaviour:
   silhouetteMimic: {fileID: 7363729202824495390, guid: c846e9f61885e3f4fbe414515cbf61aa, type: 3}
   voiceBlip: {fileID: 8300000, guid: 9b3d83f382761154493270e7d885aec4, type: 3}
   visitorName: Avaline
-  callSign: OM#38il
   birthYear: 1954
   birthMonth: 6
   birthDay: 29
-  personality: Determined
-  genuineGreeting: Omega Mike Pound Three Eight Ivory Lace
+  personality: Upbeat, happy, jovial
+  genuineGreeting: "Hello? I\u2019m at the gate."
   mimicGreeting: 'hello m4
 
     Hello Line2
@@ -39,7 +38,7 @@ MonoBehaviour:
   genuineBirthdayResponse: I actually had my 38th exactly 1 week before me and my
     brother came to the park! We booked the trip to celebrate since we both love
     the outdoors so much
-  genuineReasonResponse: To go backpacking.
+  genuineReasonResponse: To go backpacking!
   genuineTimeResponse: "I entered the park last monday and I\u2019ve been backpacking
     with my brother. We ended up getting separated after he fell off a cliff. I\u2019m
     kind of traumatized, but it\u2019s chill"

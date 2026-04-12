@@ -16,25 +16,23 @@ MonoBehaviour:
   silhouetteReal: {fileID: 357923613836395556, guid: 5e1c4a549220f3e42ba23997b766c0f7, type: 3}
   silhouetteMimic: {fileID: -6915174740479770503, guid: 55aea484b169eef4a9740cbaeb17a092, type: 3}
   voiceBlip: {fileID: 8300000, guid: aa8120a0d0543b24aa394dbc7ded695f, type: 3}
-  visitorName: Adam
-  callSign: CZZ89A
-  birthYear: 1997
-  birthMonth: 4
-  birthDay: 10
-  personality: Determined
-  genuineGreeting: Callsign CZZ89A, requesting gate access.
-  mimicGreeting: Callsign CZZ89A, requesting gate access.
+  visitorName: Codename Pheonix
+  birthYear: 1
+  birthMonth: 1
+  birthDay: 1
+  personality: Direct, Cold.
+  genuineGreeting: Phoenix, requesting gate access.
+  mimicGreeting: Phoenix, requesting gate access.
   genuineClosing: Bye G
   mimicClosing: Bye M
   genuineRejected: You Serious? A
   mimicRejected: Too bad A
   genuineNameResponse: You can call me the Phoenix.
   genuineBirthdayResponse: "That\u2019s classified information."
-  genuineReasonResponse: The details of my assignment are classified. My employer
-    has contracted me for work at EA-88 due to my unique skills and specialties.
+  genuineReasonResponse: The details of my assignment are classified.
   genuineTimeResponse: 96 hours ago at twenty one hundred hours.
   mimicNameResponse: Loretta Silverston.
-  mimicBirthdayResponse: 4/8/1975
+  mimicBirthdayResponse: 4/8/1975.
   mimicReasonResponse: I was surveying the park on behalf of my employer that is
     looking to buy up neighboring government land in a contract to build a vacation
     resort.
