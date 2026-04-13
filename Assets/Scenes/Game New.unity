@@ -3953,7 +3953,13 @@ MonoBehaviour:
   callManager: {fileID: 1988545818}
   silhouetteManager: {fileID: 238728374}
   mailManager: {fileID: 485805817}
+  WinMail: {fileID: 11400000, guid: 31653626e0d59f548a7250bb65232ae2, type: 2}
+  LoseMail: {fileID: 11400000, guid: 1e4e7a6a411572840847036652c3ae87, type: 2}
   FemboyMail: {fileID: 11400000, guid: ab0dc7df0822bb144a647425e0c97de1, type: 2}
+  randomMails:
+  - {fileID: 11400000, guid: 2580849909be4b348829afa93ddfbaff, type: 2}
+  - {fileID: 11400000, guid: 6b47b7972c6279e4a80d441c3ec2815e, type: 2}
+  - {fileID: 11400000, guid: ce37a02229dd3ee4b95f5a264a323058, type: 2}
   phoneRingingAudioSource: {fileID: 205945827}
   micBlink: {fileID: 205945828}
   acceptBlink: {fileID: 1352653081}

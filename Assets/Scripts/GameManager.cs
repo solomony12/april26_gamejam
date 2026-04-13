@@ -13,9 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Mail LoseMail;
 
     [SerializeField] Mail FemboyMail;
-    [SerializeField] Mail Kevin;
-    [SerializeField] Mail TheTruth;
-    [SerializeField] Mail RangerRoget;
+    [SerializeField] Mail[] randomMails;
 
     [SerializeField] private AudioSource phoneRingingAudioSource;
     [SerializeField] private BlinkSprite micBlink;
