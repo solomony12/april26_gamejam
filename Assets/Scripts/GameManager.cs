@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] Mail FemboyMail;
     [SerializeField] Mail[] randomMails;
+    private bool[] mailUsed;
 
     [SerializeField] private AudioSource phoneRingingAudioSource;
     [SerializeField] private BlinkSprite micBlink;
@@ -50,6 +52,7 @@ public class GameManager : MonoBehaviour
         ShuffleCharacters();
         AssignMimics();
 
+        mailUsed = new bool[randomMails.Length];
         StartCoroutine(BeginFirstCallAfterDelay(20f));
     }
 
@@ -89,6 +92,37 @@ public class GameManager : MonoBehaviour
                 assigned++;
             }
         }
+    }
+
+    private void TryTriggerRandomMailEvent()
+    {
+        if (randomMails == null || randomMails.Length == 0)
+            return;
+
+        List<int> availableIndices = new List<int>();
+
+        for (int i = 0; i < randomMails.Length; i++)
+        {
+            if (!mailUsed[i] && randomMails[i] != null)
+            {
+                availableIndices.Add(i);
+            }
+        }
+
+        if (availableIndices.Count == 0)
+            return;
+
+        float chance = 0.4f;
+        if (Random.value > chance)
+            return;
+
+        int pickedListIndex = Random.Range(0, availableIndices.Count);
+        int pickedIndex = availableIndices[pickedListIndex];
+
+        mailUsed[pickedIndex] = true;
+        mailManager.AddMail(randomMails[pickedIndex]);
+
+        Debug.Log("Mail event triggered:");
     }
 
     private IEnumerator BeginFirstCallAfterDelay(float delay)
@@ -211,7 +245,11 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(randomWaitSec);
 
         if (!gameEnded)
+        {
+            TryTriggerRandomMailEvent();
             TriggerIncomingCall();
+        }
+            
     }
     private EndingType GetEndingType()
     {
