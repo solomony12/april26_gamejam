@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cathy
+  m_text: Niko Niko
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
   m_sharedMaterial: {fileID: -2321116072747565633, guid: 41762c4ab74a32b498636d9658fea25c, type: 2}
@@ -400,7 +400,7 @@ MonoBehaviour:
         m_MethodName: OnPersonClicked
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 1b64cd156f53aee4f92cf43294d1034c, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 01b5a99731005474387ba6487e4615cc, type: 2}
           m_ObjectArgumentAssemblyTypeName: Visitor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -545,7 +545,7 @@ MonoBehaviour:
         m_MethodName: OnPersonClicked
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 01b5a99731005474387ba6487e4615cc, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 1b64cd156f53aee4f92cf43294d1034c, type: 2}
           m_ObjectArgumentAssemblyTypeName: Visitor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
