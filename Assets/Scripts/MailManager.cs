@@ -3,6 +3,7 @@ using TMPro;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System;
 
 public class MailManager : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class MailManager : MonoBehaviour
     [SerializeField] RectTransform mailText;
 
     public static Dictionary<Mail, bool> mailDictionary = new();
+    public static Action onMailAdded;
+    public static Action onAllMailRead;
 
     private void Awake()
     {
@@ -41,6 +44,7 @@ public class MailManager : MonoBehaviour
     public void AddMail(Mail mail)
     {
         if (!templateMailButton.GetComponent<MailButton>()) return;
+        onMailAdded?.Invoke();
         GameObject newMail = Instantiate(templateMailButton, mailList.transform);
         newMail.GetComponent<MailButton>().mail = mail;
         mailDictionary.Add(mail, true);
@@ -57,6 +61,7 @@ public class MailManager : MonoBehaviour
         subjectText.text = mail.subject;
         bodyText.text = mail.body;
         mailContent.SetActive(true);
+        if(!hasNewMail()) onAllMailRead?.Invoke();
         if (mail.isEnd)
         {
             StartCoroutine(EndGame());
