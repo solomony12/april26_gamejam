@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private AudioSource phoneRingingAudioSource;
     [SerializeField] private BlinkSprite micBlink;
-    [SerializeField] private BlinkSprite acceptBlink;
 
     public GameObject jumpScare;
 
@@ -163,7 +162,7 @@ public class GameManager : MonoBehaviour
         // stop bell ringing sound effect here
         if (micBlink != null)
             micBlink.StopBlinking();
-        
+
         if (phoneRingingAudioSource != null && phoneRingingAudioSource.isPlaying)
             phoneRingingAudioSource.Stop();
 

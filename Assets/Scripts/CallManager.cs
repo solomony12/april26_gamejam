@@ -11,6 +11,8 @@ public class CallManager : MonoBehaviour
     [SerializeField] private GameObject rejectButton;
     [SerializeField] private TMP_Text questionsLeftText;
 
+    [SerializeField] private BlinkSprite acceptBlink;
+
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private GameObject questionPanel;
     [SerializeField] private AudioSource voiceAudioSource;
@@ -71,6 +73,8 @@ public class CallManager : MonoBehaviour
         questionButtons.SetActive(false);
         rejectButton.SetActive(false);
         questionsLeftText.gameObject.SetActive(false);
+        if (acceptBlink != null)
+            acceptBlink.StopBlinking();
 
         HideAllPanels();
 
@@ -95,6 +99,8 @@ public class CallManager : MonoBehaviour
         questionButtons.SetActive(false);
         rejectButton.SetActive(false);
         questionsLeftText.gameObject.SetActive(false);
+        if (acceptBlink != null)
+            acceptBlink.StopBlinking();
 
         HideAllPanels();
 
@@ -224,6 +230,8 @@ public class CallManager : MonoBehaviour
             questionsLeftText.gameObject.SetActive(false);
         }
 
+        if (acceptBlink != null)
+            acceptBlink.StartBlinking();
         rejectButton.SetActive(true);
         ShowQuestionPanelOnly();
         talkingCoroutine = null;

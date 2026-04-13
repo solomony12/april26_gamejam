@@ -1066,9 +1066,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlinkSprite
   spriteRenderer: {fileID: 205945824}
-  blinkInterval: 0.4
+  blinkInterval: 0.7
   normalColor: {r: 1, g: 1, b: 1, a: 1}
-  blinkColor: {r: 1, g: 0.92156863, b: 0.9137255, a: 0.83137256}
+  blinkColor: {r: 1, g: 0.92156863, b: 0.99607843, a: 0.59607846}
 --- !u!1 &238728373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3016,9 +3016,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlinkSprite
   spriteRenderer: {fileID: 1352653079}
-  blinkInterval: 0.4
+  blinkInterval: 0.7
   normalColor: {r: 1, g: 1, b: 1, a: 1}
-  blinkColor: {r: 1, g: 0.92156863, b: 0.9490196, a: 0.79607844}
+  blinkColor: {r: 1, g: 0.92156863, b: 1, a: 0.6039216}
 --- !u!1 &1436468649
 GameObject:
   m_ObjectHideFlags: 0
@@ -3962,7 +3962,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce37a02229dd3ee4b95f5a264a323058, type: 2}
   phoneRingingAudioSource: {fileID: 205945827}
   micBlink: {fileID: 205945828}
-  acceptBlink: {fileID: 1352653081}
   jumpScare: {fileID: 912222541}
   mimicCount: 2
 --- !u!4 &1918859833
@@ -4016,6 +4015,7 @@ MonoBehaviour:
   questionButtons: {fileID: 2017734547}
   rejectButton: {fileID: 1094688134}
   questionsLeftText: {fileID: 1751865757}
+  acceptBlink: {fileID: 1352653081}
   dialoguePanel: {fileID: 1469034507}
   questionPanel: {fileID: 1436468649}
   voiceAudioSource: {fileID: 1988545820}
