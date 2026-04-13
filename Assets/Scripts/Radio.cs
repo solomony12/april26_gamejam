@@ -68,10 +68,17 @@ public class Radio : MonoBehaviour
         stationAudioSources[currentTrackIndex].Stop();
         currentTrackIndex++;
         if (currentTrackIndex >= numStations)
+        {
+
             currentTrackIndex = 0;
+            dialButton.image.sprite = radioSprites[currentTrackIndex];
+            stationAudioSources[currentTrackIndex].Stop();
+            return;
+            
+        }
         //radioSpriteRenderer.sprite = radioSprites[currentTrackIndex];
         dialButton.image.sprite = radioSprites[currentTrackIndex];
-            
+
         PlayCurrentTrack();
     }
 }

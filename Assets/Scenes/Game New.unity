@@ -1931,7 +1931,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.20003545, y: 0.31351733}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1941,7 +1941,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1.7614958, y: 1.065218}
   m_EdgeRadius: 0
 --- !u!114 &604812998
 MonoBehaviour:
@@ -3980,7 +3980,7 @@ MonoBehaviour:
   charactersPerBlip: 2
   characterDelay: 0.03
   punctuationDelayMultiplier: 4
-  maxQuestions: 3
+  maxQuestions: 4
 --- !u!4 &1988545819
 Transform:
   m_ObjectHideFlags: 0
@@ -4130,7 +4130,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 480.28, y: 323.65}
   m_Pivot: {x: 1, y: 0}
 --- !u!1 &2022221231
 GameObject:
