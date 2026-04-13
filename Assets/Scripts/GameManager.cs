@@ -8,8 +8,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CallManager callManager;
     [SerializeField] private SilhouetteManager silhouetteManager;
     [SerializeField] private MailManager mailManager;
+
+    [SerializeField] Mail WinMail;
+    [SerializeField] Mail LoseMail;
+
     [SerializeField] Mail FemboyMail;
+    [SerializeField] Mail Kevin;
+    [SerializeField] Mail TheTruth;
+    [SerializeField] Mail RangerRoget;
+
     [SerializeField] private AudioSource phoneRingingAudioSource;
+    [SerializeField] private BlinkSprite micBlink;
+    [SerializeField] private BlinkSprite acceptBlink;
 
     public GameObject jumpScare;
 
@@ -103,7 +113,9 @@ public class GameManager : MonoBehaviour
         Debug.Log("Incoming call from: " + pendingCharacter.Name + " | Mimic: " + pendingIsMimic);
         silhouetteManager.ShowMonitorSilhouette(false);
         // bell ringing sound effect can be triggered here
-
+        if (micBlink != null)
+            micBlink.StartBlinking();
+        
         if(phoneRingingAudioSource != null && !phoneRingingAudioSource.isPlaying)
             phoneRingingAudioSource.Play();
     }
@@ -117,6 +129,9 @@ public class GameManager : MonoBehaviour
         waitingForAnswer = false;
 
         // stop bell ringing sound effect here
+        if (micBlink != null)
+            micBlink.StopBlinking();
+        
         if (phoneRingingAudioSource != null && phoneRingingAudioSource.isPlaying)
             phoneRingingAudioSource.Stop();
 
@@ -216,7 +231,18 @@ public class GameManager : MonoBehaviour
         {
             StartCoroutine(HandleBadEnding());
         }
+        else if(GetEndingType() == EndingType.Perfect)
+        {
+            mailManager.AddMail(WinMail);
+        }
+        else
+        {
+            mailManager.AddMail(LoseMail);
+        }
 
+
+            if (micBlink != null)
+            micBlink.StopBlinking();
 
         if (phoneRingingAudioSource != null && phoneRingingAudioSource.isPlaying)
             phoneRingingAudioSource.Stop();

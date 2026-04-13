@@ -814,6 +814,7 @@ GameObject:
   - component: {fileID: 205945823}
   - component: {fileID: 205945826}
   - component: {fileID: 205945827}
+  - component: {fileID: 205945828}
   m_Layer: 0
   m_Name: CallRecieveObject
   m_TagString: Untagged
@@ -1052,6 +1053,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &205945828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205945822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76241ee32de52fa478dcb47f305754e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlinkSprite
+  spriteRenderer: {fileID: 205945824}
+  blinkInterval: 0.4
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  blinkColor: {r: 1, g: 0.92156863, b: 0.9137255, a: 0.83137256}
 --- !u!1 &238728373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,6 +2861,7 @@ GameObject:
   - component: {fileID: 1352653079}
   - component: {fileID: 1352653078}
   - component: {fileID: 1352653080}
+  - component: {fileID: 1352653081}
   m_Layer: 0
   m_Name: AcceptObject
   m_TagString: Untagged
@@ -2985,6 +3003,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AcceptObjectClick
   callManager: {fileID: 1988545818}
   viewManager: {fileID: 375378732}
+--- !u!114 &1352653081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352653076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76241ee32de52fa478dcb47f305754e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlinkSprite
+  spriteRenderer: {fileID: 1352653079}
+  blinkInterval: 0.4
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  blinkColor: {r: 1, g: 0.92156863, b: 0.9490196, a: 0.79607844}
 --- !u!1 &1436468649
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,6 +3955,8 @@ MonoBehaviour:
   mailManager: {fileID: 485805817}
   FemboyMail: {fileID: 11400000, guid: ab0dc7df0822bb144a647425e0c97de1, type: 2}
   phoneRingingAudioSource: {fileID: 205945827}
+  micBlink: {fileID: 205945828}
+  acceptBlink: {fileID: 1352653081}
   jumpScare: {fileID: 912222541}
   mimicCount: 2
 --- !u!4 &1918859833
