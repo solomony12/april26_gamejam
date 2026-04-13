@@ -613,9 +613,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1739365925}
     m_Modifications:
+    - target: {fileID: 336447296035822204, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 738984103406232892, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1745680633600411993, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
       propertyPath: m_Name
       value: Radio (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3724873642025794987, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6013485211590334574, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7061653923225318910, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
       propertyPath: m_LocalScale.x
@@ -689,6 +705,10 @@ PrefabInstance:
       propertyPath: 'musicTracks.Array.data[3]'
       value: 
       objectReference: {fileID: 8300000, guid: f2e8f4c495350d446bcfb7ca41b2d339, type: 3}
+    - target: {fileID: 9196566104949075838, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

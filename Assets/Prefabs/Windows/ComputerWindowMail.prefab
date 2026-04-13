@@ -349,6 +349,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4617758070157489010}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3316112413766228360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,3 +1028,8 @@ MonoBehaviour:
   startMail: {fileID: 11400000, guid: 495e4b8e22a15c248bb57fe438c33ae0, type: 2}
   creditsMail: {fileID: 11400000, guid: 3b30779f639f7d4499d02cef1fddbdba, type: 2}
   mailText: {fileID: 5128317089547090001}
+--- !u!82 &4617758070157489010 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 336921545856681898, guid: 97384f3763e5b6d48af41da60088d251, type: 3}
+  m_PrefabInstance: {fileID: 4952110365490590936}
+  m_PrefabAsset: {fileID: 0}

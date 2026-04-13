@@ -132,6 +132,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 209699191302946795}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &997734039274361634
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +423,18 @@ MonoBehaviour:
       - m_Target: {fileID: 750893188589270938}
         m_TargetAssemblyTypeName: BrowserManager, Assembly-CSharp
         m_MethodName: OpenHome
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 209699191302946795}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1534,6 +1558,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 209699191302946795}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6902027394034722297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,6 +2287,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 750893188589270938}
   m_SourcePrefab: {fileID: 100100000, guid: 97384f3763e5b6d48af41da60088d251, type: 3}
+--- !u!82 &209699191302946795 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 336921545856681898, guid: 97384f3763e5b6d48af41da60088d251, type: 3}
+  m_PrefabInstance: {fileID: 452044491033606209}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5802273046479212394 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6251045253462980395, guid: 97384f3763e5b6d48af41da60088d251, type: 3}
