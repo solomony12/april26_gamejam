@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Radio : MonoBehaviour
 {
@@ -35,6 +36,9 @@ public class Radio : MonoBehaviour
     [SerializeField] private int stationPitch = 1;
     [SerializeField] private float defaultPitch = 1f;
     [SerializeField] private float pitchIncrement = 0.75f;
+
+    [SerializeField] TMPro.TextMeshProUGUI stationNameText;
+    [SerializeField] string[] stationNames = { "OFF", "96.7", "88.7", "103.1", "90.9", "89.5", };
     void Start()
     {
         
@@ -42,7 +46,9 @@ public class Radio : MonoBehaviour
         stationStatic = Random.Range(0, numStations);
         stationPitch = Random.Range(0, numStations);
         defaultPitch = stationAudioSources[stationPitch].pitch;
-        PlayCurrentTrack();
+        //PlayCurrentTrack();
+        currentTrackIndex = 4;
+        KnobClicked();
     }
     
     public void PlayCurrentTrack()
@@ -65,24 +71,22 @@ public class Radio : MonoBehaviour
     public void KnobClicked()
     {
         // Next track
-        stationAudioSources[currentTrackIndex].Stop();
+        if (currentTrackIndex>=0) stationAudioSources[currentTrackIndex].Stop();
         currentTrackIndex++;
         if (currentTrackIndex >= numStations)
         {
-
+            dialButton.image.sprite = radioSprites[0];
             currentTrackIndex = -1;
-            dialButton.image.sprite = radioSprites[currentTrackIndex];
-            stationAudioSources[currentTrackIndex].Stop();
+            stationNameText.text = stationNames[currentTrackIndex + 1];
             return;
-            
+
         }
         else
         {
             dialButton.image.sprite = radioSprites[currentTrackIndex];
+            PlayCurrentTrack();
+            stationNameText.text = stationNames[currentTrackIndex + 1];
         }
-            //radioSpriteRenderer.sprite = radioSprites[currentTrackIndex];
-
-
-        PlayCurrentTrack();
+        //radioSpriteRenderer.sprite = radioSprites[currentTrackIndex];
     }
 }

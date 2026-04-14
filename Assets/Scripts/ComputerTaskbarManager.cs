@@ -39,6 +39,7 @@ public class ComputerTaskbarManager : MonoBehaviour
     public void powerButton()
     {
         Debug.Log("Power Off");
+        transform.parent.transform.localPosition = new Vector3(-1000, -1000, 0);
         viewManager.SetDeskView();
         return;
     }

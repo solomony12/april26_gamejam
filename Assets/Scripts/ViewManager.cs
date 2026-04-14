@@ -25,7 +25,7 @@ public class ViewManager : MonoBehaviour
     public void SetDeskView()
     {
         CurrentState = ViewState.DeskView;
-        computerCanvas.SetActive(false);
+        //computerCanvas.SetActive(false);
 
         acceptObject.SetActive(true);
         monitor.SetActive(true);
@@ -37,7 +37,7 @@ public class ViewManager : MonoBehaviour
     public void SetComputerView()
     {
         CurrentState = ViewState.ComputerView;
-        computerCanvas.SetActive(true);
+        computerCanvas.transform.GetChild(0).transform.localPosition = Vector3.zero;
 
         acceptObject.SetActive(false);
         monitor.SetActive(false);

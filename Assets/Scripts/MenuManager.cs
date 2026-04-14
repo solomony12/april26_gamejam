@@ -12,6 +12,7 @@ public class MenuManager : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         menu_audio[1].time = Random.Range(0f, menu_audio[1].clip.length);
+        MailManager.ResetMail();
     }
 
     public void OnStartButtonClicked()

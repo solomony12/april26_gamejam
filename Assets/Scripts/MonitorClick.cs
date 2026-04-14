@@ -13,11 +13,13 @@ public class MonitorClick : MonoBehaviour
 
     void showEmailIcon()
     {
+        if (emailIcon == null) return;
         emailIcon.SetActive(true);
     }
 
     void hideEmailIcon()
     {
+        if (emailIcon == null) return;
         emailIcon.SetActive(false);
     }
 

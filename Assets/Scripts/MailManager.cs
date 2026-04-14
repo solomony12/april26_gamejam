@@ -25,10 +25,15 @@ public class MailManager : MonoBehaviour
     public static Action onMailAdded;
     public static Action onAllMailRead;
 
-    private void Awake()
+    private void Start()
     {
         AddMail(startMail);
         AddMail(creditsMail);
+    }
+
+    public static void ResetMail()
+    {
+        mailDictionary.Clear();
     }
 
     public static bool hasNewMail()
@@ -55,6 +60,7 @@ public class MailManager : MonoBehaviour
     }
     public void OpenMail(Mail mail)
     {
+        Debug.Log("Opening mail");
         mailText.anchoredPosition = new Vector2(13,0);
         mailDictionary[mail] = false;
         senderText.text = mail.sender;
