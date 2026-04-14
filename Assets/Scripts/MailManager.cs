@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.UI;
 
 public class MailManager : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class MailManager : MonoBehaviour
 
     [SerializeField] Mail startMail;
     [SerializeField] Mail creditsMail;
+
+    [SerializeField] ScrollRect mailContentScroll;
 
     public static Dictionary<Mail, bool> mailDictionary = new();
     public static Action onMailAdded;
@@ -64,7 +67,8 @@ public class MailManager : MonoBehaviour
         senderText.text = mail.sender;
         subjectText.text = mail.subject;
         bodyText.text = mail.body;
-        if(!hasNewMail()) onAllMailRead?.Invoke();
+        mailContentScroll.verticalNormalizedPosition = 1;
+        if (!hasNewMail()) onAllMailRead?.Invoke();
         if (mail.isEnd)
         {
             StartCoroutine(EndGame());
