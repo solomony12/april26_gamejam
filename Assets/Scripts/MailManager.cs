@@ -59,11 +59,11 @@ public class MailManager : MonoBehaviour
     public void OpenMail(Mail mail)
     {
         Debug.Log("Opening mail");
+        mailContent.SetActive(true);
         mailDictionary[mail] = false;
         senderText.text = mail.sender;
         subjectText.text = mail.subject;
         bodyText.text = mail.body;
-        mailContent.SetActive(true);
         if(!hasNewMail()) onAllMailRead?.Invoke();
         if (mail.isEnd)
         {
