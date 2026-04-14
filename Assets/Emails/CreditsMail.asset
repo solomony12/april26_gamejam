@@ -12,25 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874b5e5991c8ddd4c9ddbc996be428fb, type: 3}
   m_Name: CreditsMail
   m_EditorClassIdentifier: Assembly-CSharp::Mail
+  isEnd: 0
   sender: vanillarice@yurimail.com
   subject: Game Credits
-  body: 'Soli - Team and Art Lead
-
-    Thatcher - Art
-
-    Cole - Art
-
-    Tyler
-    - Engineering Lead
-
-    Bomin - Engineering
-
-    John - Engineering
-
-    Erik
-    - Music
-
-    Berkeley - Lead Writer
-
-    Max - Producer, Sound Design, and
-    Writer'
+  body: "Producers: \n- Max (Lead)\r\n- Soli (Founder)\r\n\r\nProgrammers:\r\n- Tyler
+    (Lead): Computer System, Menus\r\n- Bomin: Dialogue System, Interactions\r\n-
+    Soli: Minor Auxiliary Programmer and Mentor\r\n\r\nArtists:\r\n- Soli (Lead):
+    Character Art, Silhouettes, Itch.io Page Background\r\n- Cole: Objects, UI, Computer
+    UI\r\n- Thatcher: Scenery Backgrounds, Animations, Thumbnail\r\n\r\nWriters:\r\n-
+    Berkeley (Lead)\r\n- Max\r\n\r\nVoice Acting:\r\n- Max: Character Sound Bites\r\n-
+    Andrew: Podcast Talk Host\r\n\r\nSFX Editors: Soli, Max\r\n\r* Dragon Studio:
+    Button Press\r\n* Freesound Community: Walking Through Grass\r\n* Freesound Community:
+    irongate2\r\n* Freesound Community: static\r\n* Utah Sound Library: Rain Noises\r\n*
+    Alex Jauk: Creaking Old Iron Door\r\n* Floraphonic: Marimba Win\r\n* Universfield:
+    Marimba Lose\r\n\r\nMusic:\r\n- Erik (Team Composer)\r\n- Max (Music Editor)\r\n\r\nAdditional
+    music and SFX were gathered from Pixabay"

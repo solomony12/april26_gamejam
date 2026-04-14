@@ -19,8 +19,6 @@ public class MailManager : MonoBehaviour
     [SerializeField] Mail startMail;
     [SerializeField] Mail creditsMail;
 
-    [SerializeField] RectTransform mailText;
-
     public static Dictionary<Mail, bool> mailDictionary = new();
     public static Action onMailAdded;
     public static Action onAllMailRead;
@@ -61,7 +59,6 @@ public class MailManager : MonoBehaviour
     public void OpenMail(Mail mail)
     {
         Debug.Log("Opening mail");
-        mailText.anchoredPosition = new Vector2(13,0);
         mailDictionary[mail] = false;
         senderText.text = mail.sender;
         subjectText.text = mail.subject;
