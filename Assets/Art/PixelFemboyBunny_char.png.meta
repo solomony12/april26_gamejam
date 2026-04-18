@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ee70d0012aee76642bc37308211c9b31
+guid: cf1249d9f3df8af49814b4fbf3fc3fae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2176393310650094792
-    second: SPOILER_PixelFemboyBunny_0
+      213: -5561587994222066698
+    second: PixelFemboyBunny_char_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,11 +48,11 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
-  spriteBorder: {x: 31, y: 1, z: 42, w: 2}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPOILER_PixelFemboyBunny_0
+      name: PixelFemboyBunny_char_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 30
         y: 0
-        width: 310
-        height: 180
+        width: 239
+        height: 179
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c4d5dc5f2a143e10800000000000000
-      internalID: 2176393310650094792
+      spriteID: 6f301519f2541d2b0800000000000000
+      internalID: -5561587994222066698
       vertices: []
       indices: 
       edges: []
@@ -139,7 +139,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SPOILER_PixelFemboyBunny_0: 2176393310650094792
+      PixelFemboyBunny_char_0: -5561587994222066698
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
