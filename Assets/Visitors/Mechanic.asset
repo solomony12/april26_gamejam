@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb33d7c7324e44940b40ebf5e474aab1, type: 3}
   m_Name: Mechanic
   m_EditorClassIdentifier: Assembly-CSharp::Visitor
-  profile: {fileID: 21300000, guid: 226d357f45b10644d8fb1a31abe816b8, type: 3}
+  profile: {fileID: -1815308120488646159, guid: 8e123771310c0407b8add91c697d3be7, type: 3}
   silhouetteReal: {fileID: 2673556299431328836, guid: ef0774940365b2d4888bf93273c7f41f, type: 3}
   silhouetteMimic: {fileID: -5969034850970797673, guid: 9efa614a67de83747b1f7c8e614e4012, type: 3}
   voiceBlip: {fileID: 8300000, guid: e0087f4978f0d91458b49044b88c5af3, type: 3}

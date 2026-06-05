@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb33d7c7324e44940b40ebf5e474aab1, type: 3}
   m_Name: Hilker
   m_EditorClassIdentifier: Assembly-CSharp::Visitor
-  profile: {fileID: 21300000, guid: bc905313cf0f61d499ff7f2e06e524f4, type: 3}
+  profile: {fileID: 2709467541908852926, guid: 1097e3ae6de4a47418811a4711f37f72, type: 3}
   silhouetteReal: {fileID: 3634484325688373837, guid: 6544d0615297d5146a5704105703eaf4, type: 3}
   silhouetteMimic: {fileID: 7363729202824495390, guid: c846e9f61885e3f4fbe414515cbf61aa, type: 3}
   voiceBlip: {fileID: 8300000, guid: 9b3d83f382761154493270e7d885aec4, type: 3}

@@ -621,6 +621,22 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 817532557202502192, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 8.8142
+      objectReference: {fileID: 0}
+    - target: {fileID: 817532557202502192, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 4.9202
+      objectReference: {fileID: 0}
+    - target: {fileID: 817532557202502192, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0727
+      objectReference: {fileID: 0}
+    - target: {fileID: 817532557202502192, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0027
+      objectReference: {fileID: 0}
     - target: {fileID: 1745680633600411993, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
       propertyPath: m_Name
       value: Radio (1)
@@ -712,7 +728,11 @@ PrefabInstance:
     - target: {fileID: 8082990458228964984, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -3542902973958906501, guid: cc1ea54393a8b42659e53002c1f187b5, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082990458228964984, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9196566104949075838, guid: 0aa4cef1bafd04c868ac9a87d5dfe072, type: 3}
       propertyPath: m_Volume
       value: 0.25
@@ -767,8 +787,8 @@ Transform:
   m_GameObject: {fileID: 194812490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -464.78, y: 3.24, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -464.7, y: 3.3, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2022221232}
@@ -827,7 +847,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.46, y: 0.7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1131,7 +1151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SilhouetteManager
   monitorRenderer: {fileID: 194812492}
   windowRenderer: {fileID: 695754109}
-  monitorSprite: {fileID: -37457466198018578, guid: 9876a0ed39d1e84498b6088eb6770742, type: 3}
+  monitorSprite: {fileID: 5635029133707174625, guid: 6a7627b663f0946c68af3cca398dbe3b, type: 3}
   windowStartPoint: {fileID: 540501950}
   windowEndPoint: {fileID: 776231901}
   moveDuration: 7
@@ -5060,7 +5080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7261521202340660586, guid: bcd62f16269173849872753c190ef198, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000019073486
+      value: -0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 7284637437572088957, guid: bcd62f16269173849872753c190ef198, type: 3}
       propertyPath: m_Pivot.x
