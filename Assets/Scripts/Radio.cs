@@ -45,6 +45,8 @@ public class Radio : MonoBehaviour
     [SerializeField] private AudioSource monsterRadioSource;
     [SerializeField] private float monsterRadioVolume = 0.25f;
 
+    [SerializeField] GameObject radioCanvas;
+
     void Start()
     {
         
@@ -56,7 +58,19 @@ public class Radio : MonoBehaviour
         currentTrackIndex = 4;
         KnobClicked();
     }
-    
+
+    private void Update()
+    {
+        float dialRot = 180;
+        if (currentTrackIndex != -1)
+        {
+            dialRot = 90 - (currentTrackIndex * 45);
+            Debug.Log(currentTrackIndex);
+        }
+        dialButton.gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, 0,
+            Mathf.LerpAngle(dialButton.gameObject.transform.eulerAngles.z, dialRot, 0.1f)));
+    }
+
     public void PlayCurrentTrack()
     {
         if (currentTrackIndex == numStations - 1)
@@ -164,5 +178,15 @@ public class Radio : MonoBehaviour
 
         UpdateMonsterRadioNoise();
         RefreshCurrentStation();
+    }
+
+    public void RadioZoomIn()
+    {
+        radioCanvas.SetActive(true);
+    }
+
+    public void RadioZoomOut()
+    {
+        radioCanvas.SetActive(false);
     }
 }
