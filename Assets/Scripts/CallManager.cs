@@ -47,19 +47,41 @@ public class CallManager : MonoBehaviour
         UpdateQuestionCountUI();
         callActive = true;
 
-        if (currentChar.visitor.visitorName == "Niko Niko")
+        SetMonsterRadioStateForCurrentCaller();
+        string greeting = isMimic ? currentChar.visitor.mimicGreeting : currentChar.visitor.genuineGreeting;
+        ShowDialoguePanelOnly();
+        StartDialogue(greeting, 1.2f, 0.7f);
+    }
+
+    private void SetMonsterRadioStateForCurrentCaller()
+    {
+        if (radio == null || currentChar == null || currentChar.visitor == null)
+            return;
+
+        bool monsterActive = false;
+
+        if (isMimic && currentChar.visitor.visitorName == "Niko Niko") // hardcoded for now, will need to be changed if more characters are added
+        {
             radio.FemboyMonsterActive = true;
-        else if(currentChar.visitor.visitorName == "Bobby Green")
+            radio.RussianMonsterActive = false;
+            monsterActive = true;
+        }
+        else if (isMimic && currentChar.visitor.visitorName == "Bobby Green")
+        {
+            radio.FemboyMonsterActive = false;
             radio.RussianMonsterActive = true;
+            monsterActive = true;
+        }
         else
         {
             radio.FemboyMonsterActive = false;
             radio.RussianMonsterActive = false;
         }
 
-        string greeting = isMimic ? currentChar.visitor.mimicGreeting : currentChar.visitor.genuineGreeting;
-        ShowDialoguePanelOnly();
-        StartDialogue(greeting, 1.2f, 0.7f);
+        if (monsterActive)
+            radio.OnMonsterArrived();
+        else
+            radio.OnMonsterLeft();
     }
 
     public void RejectWithDialogue()
@@ -110,6 +132,7 @@ public class CallManager : MonoBehaviour
             talkingCoroutine = null;
         }
 
+        radio.OnMonsterLeft();
         gameManager.SubmitDecision(true);
     }
 
@@ -125,6 +148,7 @@ public class CallManager : MonoBehaviour
 
         yield return StartCoroutine(PlayRejectDialogue(rejectLine, 1.5f, 0.7f));
 
+        radio.OnMonsterLeft();
         gameManager.SubmitDecision(false);
         talkingCoroutine = null;
     }

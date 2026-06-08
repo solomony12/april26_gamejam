@@ -24,10 +24,6 @@ public class Radio : MonoBehaviour
     
     [SerializeField]
     private Button dialButton;
-    
-    public bool FemboyMonsterActive = false;
-    
-    public bool RussianMonsterActive = false;
 
     [SerializeField] private int currentTrackIndex = 0;
 
@@ -39,6 +35,16 @@ public class Radio : MonoBehaviour
 
     [SerializeField] TMPro.TextMeshProUGUI stationNameText;
     [SerializeField] string[] stationNames = { "OFF", "96.7", "88.7", "103.1", "90.9", "89.5", };
+
+
+    public bool FemboyMonsterActive = false;
+    public bool RussianMonsterActive = false;
+    [SerializeField] private AudioClip monsterArrivalNoise; 
+    [SerializeField] private AudioClip monsterRadioNoise;
+    [SerializeField] private AudioSource monsterNoiseSource;
+    [SerializeField] private AudioSource monsterRadioSource;
+    [SerializeField] private float monsterRadioVolume = 0.25f;
+
     void Start()
     {
         
@@ -57,14 +63,18 @@ public class Radio : MonoBehaviour
             stationAudioSources[currentTrackIndex].clip = podcastTracks[Random.Range(0, podcastTracks.Length)];
         else
             stationAudioSources[currentTrackIndex].clip = musicTracks[currentTrackIndex];
+
         if(FemboyMonsterActive && currentTrackIndex == stationPitch)
-            stationAudioSources[currentTrackIndex].pitch -= pitchIncrement;
+            stationAudioSources[currentTrackIndex].clip = staticClip;
         else if(RussianMonsterActive && currentTrackIndex == stationStatic)
             stationAudioSources[currentTrackIndex].clip = staticClip;
         else
             stationAudioSources[currentTrackIndex].pitch = defaultPitch;
         stationAudioSources[currentTrackIndex].time = Random.Range(0f, stationAudioSources[currentTrackIndex].clip.length);
         stationAudioSources[currentTrackIndex].Play();
+
+        // play monster radio noise if applicable
+        UpdateMonsterRadioNoise();
     }
 
     [ContextMenu("Dial Click")]
@@ -78,6 +88,8 @@ public class Radio : MonoBehaviour
             dialButton.image.sprite = radioSprites[0];
             currentTrackIndex = -1;
             stationNameText.text = stationNames[currentTrackIndex + 1];
+            // Stop monster radio noise too
+            UpdateMonsterRadioNoise();
             return;
 
         }
@@ -88,5 +100,69 @@ public class Radio : MonoBehaviour
             stationNameText.text = stationNames[currentTrackIndex + 1];
         }
         //radioSpriteRenderer.sprite = radioSprites[currentTrackIndex];
+    }
+
+    private bool AnyMonsterActive()
+    {
+        return FemboyMonsterActive || RussianMonsterActive;
+    }
+
+    public void OnMonsterArrived()
+    {
+        if (monsterArrivalNoise != null && monsterNoiseSource != null)
+        {
+            monsterNoiseSource.clip = monsterArrivalNoise;
+            monsterNoiseSource.loop = true;
+            monsterNoiseSource.Play();
+        }
+
+        UpdateMonsterRadioNoise();
+        RefreshCurrentStation();
+    }
+    private void UpdateMonsterRadioNoise()
+    {
+        if (monsterRadioSource == null || monsterRadioNoise == null)
+            return;
+
+        bool radioIsOn = currentTrackIndex >= 0 && currentTrackIndex < numStations;
+        bool shouldPlay = AnyMonsterActive() && radioIsOn;
+
+        if (shouldPlay)
+        {
+            if (monsterRadioSource.clip != monsterRadioNoise)
+                monsterRadioSource.clip = monsterRadioNoise;
+
+            monsterRadioSource.loop = true;
+            monsterRadioSource.volume = monsterRadioVolume;
+
+            if (!monsterRadioSource.isPlaying)
+                monsterRadioSource.Play();
+        }
+        else
+        {
+            if (monsterRadioSource.isPlaying)
+                monsterRadioSource.Stop();
+        }
+    }
+
+    private void RefreshCurrentStation()
+    {
+        if (currentTrackIndex >= 0 && currentTrackIndex < numStations)
+        {
+            stationAudioSources[currentTrackIndex].Stop();
+            PlayCurrentTrack();
+        }
+    }
+
+    public void OnMonsterLeft()
+    {
+        FemboyMonsterActive = false;
+        RussianMonsterActive = false;
+
+        if (monsterNoiseSource != null && monsterNoiseSource.isPlaying)
+            monsterNoiseSource.Stop();
+
+        UpdateMonsterRadioNoise();
+        RefreshCurrentStation();
     }
 }
