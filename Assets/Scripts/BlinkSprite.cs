@@ -18,6 +18,12 @@ public class BlinkSprite : MonoBehaviour
 
     public void StartBlinking()
     {
+        if (!gameObject.activeInHierarchy)
+            return;
+
+        if (spriteRenderer == null)
+            return;
+
         if (blinkCoroutine != null)
             StopCoroutine(blinkCoroutine);
 

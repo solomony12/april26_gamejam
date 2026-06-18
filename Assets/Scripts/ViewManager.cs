@@ -14,6 +14,7 @@ public class ViewManager : MonoBehaviour
     [SerializeField] private GameObject monitor;
     [SerializeField] private GameObject monitorSilhouette;
     [SerializeField] private GameObject windowSilhouette;
+    [SerializeField] private CallManager callManager;
 
     public ViewState CurrentState { get; private set; }
 
@@ -31,7 +32,9 @@ public class ViewManager : MonoBehaviour
         monitor.SetActive(true);
 
         monitorSilhouette.SetActive(true);
-        windowSilhouette.SetActive(true);  
+        windowSilhouette.SetActive(true);
+
+        callManager.RefreshAcceptBlink();
     }
 
     public void SetComputerView()

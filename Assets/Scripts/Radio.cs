@@ -31,7 +31,7 @@ public class Radio : MonoBehaviour
     [SerializeField] private int stationStatic = 2;
     [SerializeField] private int stationPitch = 1;
     [SerializeField] private float defaultPitch = 1f;
-    [SerializeField] private float pitchIncrement = 0.75f;
+    //[SerializeField] private float pitchIncrement = 0.75f;
 
     [SerializeField] TMPro.TextMeshProUGUI stationNameText;
     [SerializeField] string[] stationNames = { "OFF", "96.7", "88.7", "103.1", "90.9", "89.5", };

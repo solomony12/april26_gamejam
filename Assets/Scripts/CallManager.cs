@@ -12,6 +12,7 @@ public class CallManager : MonoBehaviour
     [SerializeField] private TMP_Text questionsLeftText;
 
     [SerializeField] private BlinkSprite acceptBlink;
+    private bool shouldAcceptBlink = false;
 
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private GameObject questionPanel;
@@ -95,8 +96,7 @@ public class CallManager : MonoBehaviour
         questionButtons.SetActive(false);
         rejectButton.SetActive(false);
         questionsLeftText.gameObject.SetActive(false);
-        if (acceptBlink != null)
-            acceptBlink.StopBlinking();
+        SetAcceptBlink(false);
 
         HideAllPanels();
 
@@ -121,8 +121,7 @@ public class CallManager : MonoBehaviour
         questionButtons.SetActive(false);
         rejectButton.SetActive(false);
         questionsLeftText.gameObject.SetActive(false);
-        if (acceptBlink != null)
-            acceptBlink.StopBlinking();
+        SetAcceptBlink(false);
 
         HideAllPanels();
 
@@ -254,8 +253,7 @@ public class CallManager : MonoBehaviour
             questionsLeftText.gameObject.SetActive(false);
         }
 
-        if (acceptBlink != null)
-            acceptBlink.StartBlinking();
+        SetAcceptBlink(true);
         rejectButton.SetActive(true);
         ShowQuestionPanelOnly();
         talkingCoroutine = null;
@@ -341,6 +339,31 @@ public class CallManager : MonoBehaviour
     {
         ShowTemporaryText(text, duration);
     }
+
+    private void SetAcceptBlink(bool active)
+    {
+        shouldAcceptBlink = active;
+
+        if (acceptBlink == null)
+            return;
+
+        if (active)
+            acceptBlink.StartBlinking();
+        else
+            acceptBlink.StopBlinking();
+    }
+
+    public void RefreshAcceptBlink()
+    {
+        if (acceptBlink == null)
+            return;
+
+        if (shouldAcceptBlink && callActive)
+            acceptBlink.StartBlinking();
+        else
+            acceptBlink.StopBlinking();
+    }
+
     private void PlayVoiceBlip()
     {
         if (voiceAudioSource == null || currentChar == null || currentChar.visitor == null)
