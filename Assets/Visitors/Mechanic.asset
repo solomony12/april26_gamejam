@@ -21,8 +21,8 @@ MonoBehaviour:
   birthMonth: 1
   birthDay: 4
   personality: Very talkative
-  note: 'Entered the park earlier today at 1:27 pm to fix the generator Got stuck
-    in the electrical room for 4 hours after a fallen log blocked the door '
+  note: 'Entered the park earlier today at 1 pm to fix the generator Got stuck in
+    the electrical room for 4 hours after a fallen log blocked the door '
   genuineGreeting: "open up this damn gate \u2018fore I tear it off it\u2019s hinges."
   mimicGreeting: "open up this damn gate \u2018fore I tear it off it\u2019s hinges."
   genuineClosing: "Oh and I\u2019m be billing for the time it took \u2018ya to let
@@ -38,7 +38,9 @@ MonoBehaviour:
 
     Al-catraz al-akabam. But you, you
     my friend, can call me Wood.'
-  genuineBirthdayResponse: 1972 January 4th
+  genuineBirthdayResponse: January 4th, 1972. Always hated having a birthday that
+    close to New Year's. Nobody ever wanted to come over because they were tired
+    of parties by then.
   genuineReasonResponse: "So I clock into work today and boss Says HEY ALEX and I
     was like yeah Mike? Park says they want you down at 9pm to fix the generator.
     And I was like what happened to the fix I did last week. And he says yeah well
@@ -54,26 +56,15 @@ MonoBehaviour:
     STUCK and there I am stuck banging on the door for the next three or four hours
     before that \nsenile old crone McGuffers finally comes to the shed to get some
     batteries for his dead hearing aids"
-  genuineTimeResponse: 1:27 but for billing reasons I entered at 1.
+  genuineTimeResponse: Around 1:27. Wrote down 1:00 on the form though. Accounting
+    likes round numbers. Never understood why, but arguing with accountants is a
+    battle you never win.
   mimicNameResponse: 'All my friends just call me Al, or Alex, or Alan wrench, or
     Al Might, or Alcatraz, or Alakazam
 
     Al-catraz al-akabam. But you, you my
     friend, can call me Wood.'
   mimicBirthdayResponse: It is 1972 January 4th.
-  mimicReasonResponse: "So I clock into work today and boss Says HEY ALEX and I was
-    like yeah Mike? Park says they want you down at 9pm to fix the generator. And
-    I was like what happened to the fix\nI did last week. And he says yeah well it
-    broke again. And I said I bet the power cables just loose again, did ya tell
-    them to check the power cable? And he say\u2019s yeah said they did \nand it\u2019s
-    not that. So I say son of a b***h and I leave at 8 to fix the generator. \u2018Course
-    then my car breaks down since the radiator overheats so I have to wait in the
-    shade till half\npast noon for it to cool down so I can continue up the path.
-    Anyways, I roll up and Layla at the gate was looking like a snack if you know
-    what I mean. So I ate her An\u2019 of course \nthe cable has come loose again
-    LIKE I SAID IT WAS. So I just plug \u2018er in, give it a good kick and it\u2019s
-    good as new. \u2018Course then I try to leave and THE DAMN DOOR\u2019S STUCK
-    and there\nI am stuck banging on the door for the next three or four hours before
-    that senile old crone McGuffers finally comes to the shed to get some batteries
-    for his dead hearing aids"
+  mimicReasonResponse: That's a damm long story I need to tell ya, but to be short,
+    to fix generator.
   mimicTimeResponse: 1:27 but for billing reasons I entered at 1.
