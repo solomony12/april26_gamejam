@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     private bool phoneRinging = false;
     private bool waitingForAnswer = false;
 
+    [SerializeField] private Visitor tutorialVisitor;
     private CharacterData[] characters;
     private int currentIndex = 0;
     private int currentCount = 0;
@@ -57,18 +59,19 @@ public class GameManager : MonoBehaviour
 
     private void CreateCharacters()
     {
-        characters = new CharacterData[visitors.Count()];
+        characters = new CharacterData[visitors.Count() + 1];
+        characters[0] = new CharacterData(tutorialVisitor);
         for (int i = 0; i < visitors.Count(); i++)
         {
-            characters[i] = new CharacterData(visitors[i]);
+            characters[i+1] = new CharacterData(visitors[i]);
         }
     }
 
     private void ShuffleCharacters()
     {
-        for(int i=0; i<characters.Length; i++)
+        for(int i=1; i<characters.Length; i++)
         {
-            int randomIndex = Random.Range(0, characters.Length);
+            int randomIndex = Random.Range(i, characters.Length);
             CharacterData temp = characters[i];
             characters[i] = characters[randomIndex];
             characters[randomIndex] = temp;
@@ -83,7 +86,7 @@ public class GameManager : MonoBehaviour
 
         while (assigned < mimicCount)
         {
-            int randomIndex = Random.Range(0, characters.Length);
+            int randomIndex = Random.Range(1, characters.Length);
 
             if (!mimicFlags[randomIndex])
             {
@@ -91,6 +94,7 @@ public class GameManager : MonoBehaviour
                 assigned++;
             }
         }
+        mimicFlags[0] = false;
     }
 
     private void TryTriggerRandomMailEvent()
@@ -188,14 +192,17 @@ public class GameManager : MonoBehaviour
         else
             playerWasCorrect = isActualMimic;
 
+        if (currentIndex!=0)
+        {
+            Debug.Log("current index is: " + currentIndex);
+            if (playerWasCorrect)
+                correctCount++;
+            else
+                wrongCount++;
 
-        if(playerWasCorrect)
-            correctCount++;
-        else
-            wrongCount++;
-
-        if (accepted && isActualMimic)
-            inMonsterCount++;
+            if (accepted && isActualMimic)
+                inMonsterCount++;
+        }
 
         StartCoroutine(HandleDecisionResult(playerWasCorrect, accepted));
     }

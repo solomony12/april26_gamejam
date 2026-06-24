@@ -15,6 +15,7 @@ public class Visitor : ScriptableObject
     public int birthMonth;
     public int birthDay;
     public string personality;
+    public string note;
 
     [Header("Greeting")]
     [TextArea] public string genuineGreeting;

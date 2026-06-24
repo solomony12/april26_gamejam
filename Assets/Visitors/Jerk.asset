@@ -16,32 +16,31 @@ MonoBehaviour:
   silhouetteReal: {fileID: -1536381860910832467, guid: c8a7d7a6cbe6946488a977305ec51fab, type: 3}
   silhouetteMimic: {fileID: -622765290409938135, guid: c3be6b02bcc462149b3caa4bc7a14a91, type: 3}
   voiceBlip: {fileID: 8300000, guid: ebb2c5e28c0002249a3c4bbd5749485d, type: 3}
-  visitorName: "Ja\u2019quiez de Dubois"
+  visitorName: Daniel DeWall
   birthYear: 1979
   birthMonth: 2
   birthDay: 1
-  personality: 'Really unpleasant and stubborn. Doesn''t like answering questions. '
-  genuineGreeting: "Can you open the gate? I can\u2019t get out C'est chiant(e)!,
-    I\u2019ve been waiting to get out for hours."
-  mimicGreeting: "Oi, open the gate you WANKA or I\u2019mma I will."
-  genuineClosing: Merde! Took long enough.
-  mimicClosing: Merde! Took long enough.
-  genuineRejected: Sacre Bleu!
-  mimicRejected: Sacre Bleu!
-  genuineNameResponse: "Ja\u2019quiez de Dubois."
-  genuineBirthdayResponse: Merde! What is it with this endless barrage of questions.
-    I was born MCMLXXIX t'es tellement con.
-  genuineReasonResponse: To be constantly pestered with questions, can you open the
-    damn gate already pissant.
-  genuineTimeResponse: "I hardly see how that\u2019s any of your business conard.
-    I\u2019ve been coming in and out of the park for the last few weeks and none
-    of those times did they need to ask when I last entered."
-  mimicNameResponse: They call me the scarlet slasher.
-  mimicBirthdayResponse: 'Circa 1979, in the year of our dearest Queen.
+  personality: 'Really unpleasant and stubborn.  '
+  note: 'Doesn''t like answering questions. Entered the park 3 weeks ago '
+  genuineGreeting: OPEN THE DAMN GATE!
+  mimicGreeting: Good day to you!
+  genuineClosing: Finally, Took you long enough.
+  mimicClosing: Finally, Took you long enough.
+  genuineRejected: Oh, piss off.
+  mimicRejected: Oh, piss off.
+  genuineNameResponse: "I hardly see how that\u2019s any of your concern.\n...\n....\nAlright,
+    Daniel DeWall. "
+  genuineBirthdayResponse: I hardly see how that is any of your concern.
+  genuineReasonResponse: "I came to the park so that I could finally relax at the
+    recommendation from my anger management counselor. \nTake a break from all the
+    stressors of the world ya know? See the beautiful sights. \nThe willows swaying
+    in the breeze. The birds chirping on their branches. And the operator that keeps
+    pestering me with an endless barrage of questions when you should\u2019ve been
+    OPENING THE DAMN GATE!"
+  genuineTimeResponse: When did you become so nosey, or were you just born like that.
+  mimicNameResponse: I'm Daniel DeWall.
+  mimicBirthdayResponse: 'February 2nd 1979, it is.
 
 '
-  mimicReasonResponse: "Me and blud were spiffing some joints. But then some opps
-    pulled up on me and my mates so we cap \u2018em ya hear? And if you nark I\u2019mma
-    shiv ya aight?"
-  mimicTimeResponse: "Absolutely stoned right now and I was blazing like a campfire
-    earlier so I haven\u2019t the foggiest.\r\n"
+  mimicReasonResponse: No reason in particular.
+  mimicTimeResponse: 3 weeks give your take, thank you for asking.

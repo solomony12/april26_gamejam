@@ -21,6 +21,10 @@ MonoBehaviour:
   birthMonth: 2
   birthDay: 22
   personality: Clueless, spacey. Very stupid. Bad memory.
+  note: "Got reported by other visitors to the park for scampering up trees and scarring
+    off all the wildlife. Required first aid after being attacked by a squirrel they
+    tried to stuff in their mouth. When asked why they simply responded \u201CUwu
+    so warm nyaaaa!\u201D "
   genuineGreeting: Nyaaa :# oohiyo :3 AraAra1, Can usa open the gate Owo
   mimicGreeting: Nyaaa :# oohiyo :3 AraAra1, Can usa open the gate Owo
   genuineClosing: Nyaaan~
@@ -28,7 +32,7 @@ MonoBehaviour:
   genuineRejected: Usa a meaanie >:(
   mimicRejected: Usa a meaanie >:(
   genuineNameResponse: "My name ummm\u2026 Oh nos. I\u2019ve forgotten my name ;(
-    \r\nCallsign ummm AraAra1"
+    \r\nIt was kittyish tho :3"
   genuineBirthdayResponse: Wuz born hmm 1992. Or maybe 72.
   genuineReasonResponse: 'Nyaaa  uza wanted to climb some  trees :3
 
@@ -37,8 +41,8 @@ MonoBehaviour:
 
     So I put them in my mouth :3'
   genuineTimeResponse: Mmmm. yesterday after night night yum yums :3
-  mimicNameResponse: "My name ummm\u2026 Oh nos. I\u2019ve forgotten my name ;( \r\nCallsign
-    ummm AraAra1"
+  mimicNameResponse: "My name ummm\u2026 Oh nos. I\u2019ve forgotten my name ;( \r\nIt
+    was kittyish tho :3"
   mimicBirthdayResponse: Wuz born hmm 1992. Or maybe 72.
   mimicReasonResponse: 'Nyaaa  uza wanted to climb some  trees :3
 

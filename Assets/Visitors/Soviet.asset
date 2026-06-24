@@ -20,7 +20,10 @@ MonoBehaviour:
   birthYear: 1952
   birthMonth: 9
   birthDay: 5
-  personality: An upstanding Patriotic American that is definitely not a soviet spy.
+  personality: 'An upstanding Patriotic American that is definitely not a soviet
+    spy. '
+  note: "Has been in and out of the park frequently for the last 5 years to access
+    his work at a nearby government facility \u201CEA-88\u201D"
   genuineGreeting: "CALLSIGN Arst0-tzka. HELLO COMRADE. I AM VERY PARIOTIC AMERICAN
     AND DEFINITELY NOT SOVIET SPY! \nI HATE THE COMMUNIST BASTARDS AND LOVE AMERICAN
     PRESIDENT MICHAEL JORDAN!"

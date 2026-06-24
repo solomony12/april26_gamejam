@@ -21,23 +21,34 @@ MonoBehaviour:
   birthMonth: 7
   birthDay: 22
   personality: Upbeat, happy, jovial
-  genuineGreeting: "Hello? I\u2019m at the gate."
+  note: 'Enteeed the park 6 days ago with her brother as part of a backpacking trip.
+    Avaline upbeat jovial personality and is known by her friends to be very sociable.
+    She  has a close brother named Dasni  '
+  genuineGreeting: I'm trying to find my Brother, his name is Dasni. Have you heard
+    from him? We got separated after part of the path gave way in a mudslide but
+    he told me he'd find a way to get around.
   mimicGreeting: "Hello? I\u2019m at the gate."
-  genuineClosing: "Thanks! Let me know if my brother gets out, alright, since I think
-    he\u2019s the one that has the car keys."
+  genuineClosing: "Thanks! If you hear from Dasni, tell him that I\u2019ll meet him
+    at the hotel."
   mimicClosing: "Thanks! Let me know if my brother gets out, alright, since I think
     he\u2019s the one that has the car keys."
-  genuineRejected: "Well I guess I\u2019ll just die here with him then."
+  genuineRejected: "Well I guess I\u2019ll just die here with him then!\n.... Ok.
+    Do keep an eye out for Dasni tho won't you?"
   mimicRejected: "Well I guess I\u2019ll just die here with him then."
   genuineNameResponse: "The name\u2019s Avaline! My brother\u2019s Dasni, if he comes
     \u2018round."
-  genuineBirthdayResponse: I actually had my 38th exactly 1 week before me and my
-    brother came to the park! We booked the trip to celebrate since we both love
-    the outdoors so much
-  genuineReasonResponse: To go backpacking!
-  genuineTimeResponse: "I entered the park last monday and I\u2019ve been backpacking
-    with my brother. We ended up getting separated after he fell off a cliff. I\u2019m
-    kind of traumatized, but it\u2019s chill"
+  genuineBirthdayResponse: 'I had my 38th exactly 1 week before me and my brother
+    came to the park. '
+  genuineReasonResponse: "We booked the trip to celebrate since we both love the
+    outdoors so much.... \nDear god this trip was a mistake! Wish we had\u2019nt
+    this trip.\r\nAnd now I keep hearing all these Weird noises I think somethings
+    been following me."
+  genuineTimeResponse: "My brother and I have been backpacking through the park since
+    last monday. We ended up getting separated after part of the trail gave way in
+    a mudslide. \nHe told me to head to the exit and promised that he would find
+    away around and meet up with me. That was a few hours ago and I still haven't
+    seen him and I'm really worried about him. Especially with the winds starting
+    to pick up."
   mimicNameResponse: "The name\u2019s Avaline! My brother\u2019s Dasni, if he comes
     \u2018round."
   mimicBirthdayResponse: I actually had my 38th exactly 9 days before me and my brother

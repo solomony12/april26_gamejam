@@ -21,6 +21,8 @@ MonoBehaviour:
   birthMonth: 1
   birthDay: 4
   personality: Very talkative
+  note: 'Entered the park earlier today at 1:27 pm to fix the generator Got stuck
+    in the electrical room for 4 hours after a fallen log blocked the door '
   genuineGreeting: "open up this damn gate \u2018fore I tear it off it\u2019s hinges."
   mimicGreeting: "open up this damn gate \u2018fore I tear it off it\u2019s hinges."
   genuineClosing: "Oh and I\u2019m be billing for the time it took \u2018ya to let
@@ -58,7 +60,7 @@ MonoBehaviour:
 
     Al-catraz al-akabam. But you, you my
     friend, can call me Wood.'
-  mimicBirthdayResponse: 1972 January 4th
+  mimicBirthdayResponse: It is 1972 January 4th.
   mimicReasonResponse: "So I clock into work today and boss Says HEY ALEX and I was
     like yeah Mike? Park says they want you down at 9pm to fix the generator. And
     I was like what happened to the fix\nI did last week. And he says yeah well it

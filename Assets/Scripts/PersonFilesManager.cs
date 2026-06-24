@@ -9,6 +9,7 @@ public class PersonFilesManager : MonoBehaviour
     [SerializeField] Image personImage;
     [SerializeField] TextMeshProUGUI basicDataText;
     [SerializeField] TextMeshProUGUI personalityText;
+    [SerializeField] TextMeshProUGUI noteText;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class PersonFilesManager : MonoBehaviour
         personImage.sprite = person.profile;
         basicDataText.text = $"Name: {person.visitorName}\n" +
                              $"Birth Date: {person.birthYear}/{person.birthMonth}/{person.birthDay}";
-        personalityText.text = $"Personality: {person.personality}";
+        personalityText.text = $"Personality: {person.personality}\n";
+        noteText.text = $"Note: {person.note}";
     }
 }
