@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class CallManager : MonoBehaviour
 {
@@ -27,6 +28,13 @@ public class CallManager : MonoBehaviour
 
     private int questionCount = 0;
     [SerializeField] private int maxQuestions = 3;
+    [SerializeField] private int tutoMaxQuestions = 20;
+    private int currentMaxQuestions;
+
+    [SerializeField] private TMP_Text askNameButtonText;
+    [SerializeField] private TMP_Text askBirthdayButtonText;
+    [SerializeField] private TMP_Text askReasonButtonText;
+    [SerializeField] private TMP_Text askTimeButtonText;
 
     private Coroutine currentCoroutine;
     private Coroutine talkingCoroutine;
@@ -40,11 +48,32 @@ public class CallManager : MonoBehaviour
         UpdateQuestionCountUI();
         questionsLeftText.gameObject.SetActive(false);
     }
+
+    private void SetQuestionButtonTexts()
+    {
+        if (currentChar.visitor.visitorName == "tuto") // tutorial character name can change
+        {
+            askNameButtonText.text = "- How do I accept or reject people?";
+            askBirthdayButtonText.text = "- What should I check in the files?";
+            askReasonButtonText.text = "- How do I spot a mimic?";
+            askTimeButtonText.text = "- What happens if I make a mistake?";
+        }
+        else
+        {
+            askNameButtonText.text = "- What is your name?";
+            askBirthdayButtonText.text = "- What is your date of birth?";
+            askReasonButtonText.text = "- Why did you enter the park?";
+            askTimeButtonText.text = "- When did you arrive here?";
+        }
+    }
+
     public void StartCall(CharacterData character, bool mimic)
     {
         currentChar = character;
         isMimic = mimic;
         questionCount = 0;
+        currentMaxQuestions = (currentChar.visitor.visitorName == "tuto") ? tutoMaxQuestions : maxQuestions;    // tutorial character name can change
+        SetQuestionButtonTexts();
         UpdateQuestionCountUI();
         callActive = true;
 
@@ -153,7 +182,7 @@ public class CallManager : MonoBehaviour
     }
     private int QuestionsLeft()
     {
-        return maxQuestions - questionCount;
+        return currentMaxQuestions - questionCount;
     }
 
     private void UpdateQuestionCountUI()
@@ -170,7 +199,7 @@ public class CallManager : MonoBehaviour
             return false;
         }
 
-        if (questionCount >= maxQuestions)
+        if (questionCount >= currentMaxQuestions)
         {
             return false;
         }
