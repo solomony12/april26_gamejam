@@ -16,23 +16,27 @@ MonoBehaviour:
   silhouetteReal: {fileID: 0}
   silhouetteMimic: {fileID: 0}
   voiceBlip: {fileID: 0}
-  visitorName: 
-  birthYear: 0
-  birthMonth: 0
-  birthDay: 0
-  personality: 
-  note: 
-  genuineGreeting: 
-  mimicGreeting: 
+  visitorName: Dasni
+  birthYear: 1968
+  birthMonth: 2
+  birthDay: 22
+  personality: Well spoken respectful young man with a love for the outdoors.
+  note: Entered the park last week with his sister
+  genuineGreeting: Le-me through.Think I hit my head I need medical attention.
+  mimicGreeting: Le-me through.Think I hit my head I need medical attention.
   genuineClosing: 
   mimicClosing: 
   genuineRejected: 
   mimicRejected: 
   genuineNameResponse: 
-  genuineBirthdayResponse: 
+  genuineBirthdayResponse: "\u2026 Hard to think\u2026.\r\nFebruary\u2026 I think
+    it was february\u2026 and I\u2019m\u2026 23"
   genuineReasonResponse: 
-  genuineTimeResponse: 
+  genuineTimeResponse: "Like\u2026 a week ago I think\u2026 oh man that\u2019s a 
+    Lot of blood."
   mimicNameResponse: 
-  mimicBirthdayResponse: 
+  mimicBirthdayResponse: "\u2026 Hard to think\u2026.\r\nFebruary\u2026 I think it
+    was february\u2026 and I\u2019m\u2026 23"
   mimicReasonResponse: 
-  mimicTimeResponse: 
+  mimicTimeResponse: "Like\u2026 a week ago I think\u2026 oh man that\u2019s a  Lot
+    of blood."

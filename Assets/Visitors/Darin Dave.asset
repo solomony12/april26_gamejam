@@ -16,23 +16,32 @@ MonoBehaviour:
   silhouetteReal: {fileID: 0}
   silhouetteMimic: {fileID: 0}
   voiceBlip: {fileID: 0}
-  visitorName: 
-  birthYear: 0
-  birthMonth: 0
-  birthDay: 0
-  personality: 
+  visitorName: Darin Dave
+  birthYear: 1970
+  birthMonth: 9
+  birthDay: 2
+  personality: Thick Southern accent
   note: 
-  genuineGreeting: 
-  mimicGreeting: 
-  genuineClosing: 
-  mimicClosing: 
-  genuineRejected: 
-  mimicRejected: 
-  genuineNameResponse: 
-  genuineBirthdayResponse: 
-  genuineReasonResponse: 
-  genuineTimeResponse: 
-  mimicNameResponse: 
-  mimicBirthdayResponse: 
-  mimicReasonResponse: 
-  mimicTimeResponse: 
+  genuineGreeting: Howdy Partner, say could you get the gate for me?
+  mimicGreeting: Howdy Partner, say could you get the gate for me?
+  genuineClosing: "Thanks partner: Stop by any time and I\u2019ll have a nice thick
+    jar of maple syrup for ya, I can tell ya that."
+  mimicClosing: "Thanks partner: Stop by any time and I\u2019ll have a nice thick
+    jar of maple syrup for ya, I can tell ya that."
+  genuineRejected: I guess no maple syrup for you.
+  mimicRejected: I guess no maple syrup for you.
+  genuineNameResponse: "Why I\u2019m Darin Dave of course!"
+  genuineBirthdayResponse: September 2nd 1970.
+  genuineReasonResponse: Just wanted to see the sights is all.
+  genuineTimeResponse: 'I reached Golden Ridge at 2pm then  cross to apalache about
+    an hour later
+
+    I Entered Golden Ridge at around 2pm, then crossed through
+    the Apallache pass an hour later'
+  mimicNameResponse: "Why I\u2019m Darin Dave of course!"
+  mimicBirthdayResponse: September 2nd 1970.
+  mimicReasonResponse: Just wanted to see the sights is all.
+  mimicTimeResponse: 'I reached the Apalache pass aat around 4:30
+
+    I reached
+    Golden ridge at 1 and hit apalache about an hour later.'

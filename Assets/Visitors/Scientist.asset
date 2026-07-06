@@ -17,22 +17,24 @@ MonoBehaviour:
   silhouetteMimic: {fileID: 0}
   voiceBlip: {fileID: 0}
   visitorName: 
-  birthYear: 0
-  birthMonth: 0
-  birthDay: 0
-  personality: 
-  note: 
-  genuineGreeting: 
-  mimicGreeting: 
+  birthYear: 1973
+  birthMonth: 3
+  birthDay: 17
+  personality: '[Personality not on file]'
+  note: Works as a junior researcher at the neighboring Blackstone facility.
+  genuineGreeting: "The storm\u2019s really picking up. Do you think you could let
+    me out? I need to get to my car."
+  mimicGreeting: "The storm\u2019s really picking up. Do you think you could let
+    me out? I need to get to my car."
   genuineClosing: 
   mimicClosing: 
   genuineRejected: 
   mimicRejected: 
-  genuineNameResponse: 
-  genuineBirthdayResponse: 
-  genuineReasonResponse: 
-  genuineTimeResponse: 
-  mimicNameResponse: 
-  mimicBirthdayResponse: 
-  mimicReasonResponse: 
-  mimicTimeResponse: 
+  genuineNameResponse: '*inaudible over speaker static*'
+  genuineBirthdayResponse: March 17th 1873
+  genuineReasonResponse: I work at blackstone as a lab assistant
+  genuineTimeResponse: Earlier today
+  mimicNameResponse: '*inaudible over speaker static*'
+  mimicBirthdayResponse: March 17th 1873
+  mimicReasonResponse: I work at blackstone as a lab assistant
+  mimicTimeResponse: Earlier today
