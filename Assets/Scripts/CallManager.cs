@@ -20,7 +20,7 @@ public class CallManager : MonoBehaviour
     [SerializeField] private AudioSource voiceAudioSource;
     [SerializeField] private int charactersPerBlip = 2;
 
-    [SerializeField] private float characterDelay = 0.03f;
+    [SerializeField] private float characterDelay = 0.05f;
     [SerializeField] private float punctuationDelayMultiplier = 4f;
 
     private CharacterData currentChar;
@@ -53,10 +53,10 @@ public class CallManager : MonoBehaviour
     {
         if (currentChar.visitor.visitorName == "tuto") // tutorial character name can change
         {
-            askNameButtonText.text = "- How do I accept or reject people?";
-            askBirthdayButtonText.text = "- What should I check in the files?";
-            askReasonButtonText.text = "- How do I spot a mimic?";
-            askTimeButtonText.text = "- What happens if I make a mistake?";
+            askNameButtonText.text = "- How do I use the computer?";
+            askBirthdayButtonText.text = "- What should I ask the callers?";
+            askReasonButtonText.text = "- How do I decide who to let through?";
+            askTimeButtonText.text = "- What is the radio for?";
         }
         else
         {

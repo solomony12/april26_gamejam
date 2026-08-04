@@ -22,21 +22,58 @@ MonoBehaviour:
   birthDay: 0
   personality: here is personality
   note: when and where
-  genuineGreeting: 'This is tutorial visitor
-
-    Should explain a lot about radio,
-    computer, mail checking, accept button
-
-    Also about question counts and rejecting'
+  genuineGreeting: "Hey Ranger Navorksy, it\u2019s me, Ranger Frank. \nStorm winds
+    are starting to pick up and they\u2019ve issued a park wide evacuation order.
+    \nAnd since you have control over the remote exit gate you\u2019ve been tasked
+    with vetting guests trying to exit the park. I\u2019m just stopping by to remind
+    you how to use the tools in your station. \nGuests will be buzzing in over this
+    intercom and asking to be let out of the park. \nIt's your job to question them
+    and compare their information to the information on file and let them through
+    the gate by hitting the flashing green button on your desk if it all matches
+    up."
   mimicGreeting: Should not be mimic
-  genuineClosing: Thanks
+  genuineClosing: "Remember to let guests through if all their information checks
+    out. Otherwise, tell them to go away.\nBest of luck! Storm\u2019s really starting
+    to brew it looks like it\u2019s gonna be one hell of a night.\r\n"
   mimicClosing: 0
-  genuineRejected: Hey
+  genuineRejected: "What are you doing, Navorsky? I\u2019m one of your own rangers!\r\n...Well,
+    I suppose that proves you know how to reject someone, at least.\r\nJust make
+    sure you\u2019re more careful when the real callers start coming through. \nCheck
+    their files, listen closely, and don\u2019t let any Mimics through that gate.\r\nBest
+    of luck. Storm\u2019s really starting to brew\u2014it looks like it\u2019s gonna
+    be one hell of a night."
   mimicRejected: 0
-  genuineNameResponse: So this is the name
-  genuineBirthdayResponse: birthday
-  genuineReasonResponse: reason
-  genuineTimeResponse: time
+  genuineNameResponse: "Click the monitor on your device to access your computer.
+    Switch your view back at anytime by hitting the close button. \nHere you can
+    access a lot of useful applications like mail, search, and the directory. \nMail
+    provides some useful background information, check back regularly. Search can
+    be used to type in the name of some websites you receive through emails or the
+    directory. \nThe directory is your most important application which you will
+    use to view information on visitors in the park. Compare information in the directory
+    to answers the guests give you. \nIf all the info matches let them through the
+    gate if not reject them."
+  genuineBirthdayResponse: "When a call comes through the microphone on your desk
+    will start blinking. Click it to pick up the call. \nThen question them on their
+    name, Date of birth, arrival time, and reason for visiting and compare their
+    answers to the information on file in the computer directory. \nAfter a while
+    guests get impatient and will stop answering your questions so make sure you
+    pay careful attention to their responses. The number of questions you have remaining
+    can be viewed in the top right of your screen. \nAlso, remember to compare their
+    personality to the description in their file as well."
+  genuineReasonResponse: "Once you\u2019ve compared all of a quests answers to their
+    file on the computer directory and checked the radio it\u2019s time to make a
+    decision. \nIf everything was correct, hit the blinking green button on your
+    desk to let guests through the gate. Don\u2019t press this button until your
+    sure you want to let the guest through. \nIf there was an inconsistency with
+    the information they gave and the information in the directory, their personality
+    didn\u2019t match their file, an abnormality was detected on the radio or if
+    they don\u2019t have a directory file, \ntell them to go away and do not allow
+    them through the gate."
+  genuineTimeResponse: "Sometimes a guest may appear to give all the right answers.
+    But not so fast! \nMake sure to check your radio. Some anomalies only show up
+    on the radio. \nClick on the radio to zoom in on it. Turn the knob on the radio
+    to change between channels or turn it off. Make sure to check all the channels
+    for any unusual static, pitch shifting, sounds or other irregularities."
   mimicNameResponse: 0
   mimicBirthdayResponse: 0
   mimicReasonResponse: 0
