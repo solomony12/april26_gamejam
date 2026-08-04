@@ -16,23 +16,33 @@ MonoBehaviour:
   silhouetteReal: {fileID: 0}
   silhouetteMimic: {fileID: 0}
   voiceBlip: {fileID: 0}
-  visitorName: 
-  birthYear: 0
-  birthMonth: 0
-  birthDay: 0
-  personality: 
-  note: 
-  genuineGreeting: 
-  mimicGreeting: 
-  genuineClosing: 
-  mimicClosing: 
-  genuineRejected: 
-  mimicRejected: 
-  genuineNameResponse: 
-  genuineBirthdayResponse: 
-  genuineReasonResponse: 
-  genuineTimeResponse: 
-  mimicNameResponse: 
-  mimicBirthdayResponse: 
-  mimicReasonResponse: 
-  mimicTimeResponse: 
+  visitorName: Cultist
+  birthYear: 666
+  birthMonth: 666
+  birthDay: 666
+  personality: ???
+  note: Do NOT let any people through matching these characteristics. Goes off on
+    long ideological ramblings. Preaches themes of idealism, eternity, and freedom.
+    Vaguely prescribes to marxists idealisms.
+  genuineGreeting: ~Greets with long unsettling intonations not quite unlike the
+    sound of a nail across a chalkboard put through a static filer~
+  mimicGreeting: ~Greets with long unsettling intonations not quite unlike the sound
+    of a nail across a chalkboard put through a static filer~
+  genuineClosing: "We\u2019ll be in touch. I won\u2019t forget your kindness."
+  mimicClosing: "We\u2019ll be in touch. I won\u2019t forget your kindness."
+  genuineRejected: I see. You will regret this.
+  mimicRejected: I see. You will regret this.
+  genuineNameResponse: My name? My name is irrelevant. I am a purpose. An idealism
+    in form.
+  genuineBirthdayResponse: I am eternal.
+  genuineReasonResponse: "Can you hear them as well? The voices on your radio? The
+    ones that carry another\u2019s name? They only wish to be free. They mean you
+    no harm. Let me through. Let me through and I can free them."
+  genuineTimeResponse: ...
+  mimicNameResponse: My name? My name is irrelevant. I am a purpose. An idealism
+    in form.
+  mimicBirthdayResponse: I am eternal.
+  mimicReasonResponse: "Can you hear them as well? The voices on your radio? The
+    ones that carry another\u2019s name? They only wish to be free. They mean you
+    no harm. Let me through. Let me through and I can free them."
+  mimicTimeResponse: ...

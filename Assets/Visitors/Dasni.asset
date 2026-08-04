@@ -24,19 +24,21 @@ MonoBehaviour:
   note: Entered the park last week with his sister
   genuineGreeting: Le-me through.Think I hit my head I need medical attention.
   mimicGreeting: Le-me through.Think I hit my head I need medical attention.
-  genuineClosing: 
-  mimicClosing: 
-  genuineRejected: 
-  mimicRejected: 
-  genuineNameResponse: 
+  genuineClosing: ~Silence on the other end~
+  mimicClosing: ~Silence on the other end~
+  genuineRejected: ..?
+  mimicRejected: ..?
+  genuineNameResponse: My name is Dasni
   genuineBirthdayResponse: "\u2026 Hard to think\u2026.\r\nFebruary\u2026 I think
     it was february\u2026 and I\u2019m\u2026 23"
-  genuineReasonResponse: 
+  genuineReasonResponse: I.. I entered the park last week with my sister. We were
+    getting some fresh air until we realized the gates closed.
   genuineTimeResponse: "Like\u2026 a week ago I think\u2026 oh man that\u2019s a 
     Lot of blood."
-  mimicNameResponse: 
+  mimicNameResponse: My name is Dasani
   mimicBirthdayResponse: "\u2026 Hard to think\u2026.\r\nFebruary\u2026 I think it
     was february\u2026 and I\u2019m\u2026 23"
-  mimicReasonResponse: 
+  mimicReasonResponse: I.. I entered the park last week with my sister. We were getting
+    some fresh air until we realized the gates closed.
   mimicTimeResponse: "Like\u2026 a week ago I think\u2026 oh man that\u2019s a  Lot
     of blood."
