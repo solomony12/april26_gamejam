@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb33d7c7324e44940b40ebf5e474aab1, type: 3}
   m_Name: Cultist
   m_EditorClassIdentifier: Assembly-CSharp::Visitor
-  profile: {fileID: 0}
-  silhouetteReal: {fileID: 0}
-  silhouetteMimic: {fileID: 0}
-  voiceBlip: {fileID: 0}
-  visitorName: Cultist
+  profile: {fileID: 5635029133707174625, guid: 6a7627b663f0946c68af3cca398dbe3b, type: 3}
+  silhouetteReal: {fileID: 549428877157040277, guid: 0eb58a0d929747e44b2c8eda160fbd82, type: 3}
+  silhouetteMimic: {fileID: -1409451196945165981, guid: ea9d20cfb3313394aa9c00251439f203, type: 3}
+  voiceBlip: {fileID: 8300000, guid: 7c688b6c99fae644f96dd4e2814cd3bc, type: 3}
+  visitorName: Cult Ist
   birthYear: 666
   birthMonth: 666
   birthDay: 666

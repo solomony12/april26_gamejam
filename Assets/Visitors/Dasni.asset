@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb33d7c7324e44940b40ebf5e474aab1, type: 3}
   m_Name: Dasni
   m_EditorClassIdentifier: Assembly-CSharp::Visitor
-  profile: {fileID: 0}
-  silhouetteReal: {fileID: 0}
-  silhouetteMimic: {fileID: 0}
-  voiceBlip: {fileID: 0}
+  profile: {fileID: -5353563231254371233, guid: cbc0cbfcfdf9e43058b123374b74ef9e, type: 3}
+  silhouetteReal: {fileID: -1536381860910832467, guid: c8a7d7a6cbe6946488a977305ec51fab, type: 3}
+  silhouetteMimic: {fileID: -622765290409938135, guid: c3be6b02bcc462149b3caa4bc7a14a91, type: 3}
+  voiceBlip: {fileID: 8300000, guid: aa8120a0d0543b24aa394dbc7ded695f, type: 3}
   visitorName: Dasni
   birthYear: 1968
   birthMonth: 2
